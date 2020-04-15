@@ -16,13 +16,63 @@
   *display: inline;
 }
 
+%one {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// 文本显示多少行就省略
+@mixin ells($row) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+
 i,
-span {
+span,
+em,
+strong {
   @extend %in-b;
   vertical-align: middle;
 }
 
+a {
+  @extend %in-b;
+  cursor: pointer;
+}
+
+// 白色背景和圆角
+.bc-br {
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
 /* 首页 */
+
+.banner {
+  position: relative;
+  .hd {
+    position: absolute;
+    bottom: 45px;
+    right: 22%;
+    li {
+      float: left;
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      margin-right: 16px;
+      cursor: pointer;
+      &.on {
+        width: 20px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
 
 // 类别
 .bw-class {
@@ -32,8 +82,7 @@ span {
   .class-cont {
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
-    border-radius: 4px;
+    @extend .bc-br;
     position: absolute;
     top: -15px;
   }
@@ -110,7 +159,93 @@ span {
 // 大标题
 .bw-title {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 29px;
+  .bw-icon {
+    width: 32px;
+    height: 32px;
+    &.icon1 {
+      background: url("../images/sprites.png") -274px -157px;
+    }
+    &.icon2 {
+      width: 27px;
+      height: 31px;
+      background: url("../images/sprites.png") -156px -133px;
+    }
+    &.icon3 {
+      width: 26px;
+      height: 35px;
+      background: url("../images/sprites.png") -83px -60px;
+    }
+    &.icon4 {
+      width: 35px;
+      height: 29px;
+      background: url("../images/sprites.png") -212px -128px;
+    }
+    &.icon5 {
+      width: 34px;
+      height: 36px;
+      background: url("../images/sprites.png") -274px -56px;
+    }
+    &.icon6 {
+      width: 24px;
+      height: 23px;
+      background: url("../images/sprites.png") -54px -330px;
+    }
+  }
+}
+
+// 二级标题
+.bw-sctitle {
+  @extend %clearfix;
+  line-height: 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+  .sc-l {
+    float: left;
+    font-size: 18px;
+    span {
+      margin-right: 6px;
+    }
+  }
+  .sc-r {
+    float: right;
+    color: #999999;
+  }
+  .on {
+    padding: 0 4px;
+    font-weight: bold;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-color: #3969fd;
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+    }
+  }
+}
+
+// 图标列表
+.icon-list {
+  i {
+    margin-right: 6px;
+  }
+}
+
+// 圆圈列表
+.circle-list {
+  &::before {
+    content: "";
+    @extend %in-b;
+    width: 3px;
+    height: 3px;
+    background-color: #666666;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
 }
 
 // 正在直播
@@ -181,7 +316,7 @@ span {
         .r-icon {
           width: 16px;
           height: 16px;
-          background: url(../images/yy.png) no-repeat;
+          background: url(../images/yy-nor.png) no-repeat;
         }
       }
       &.on {
@@ -214,20 +349,502 @@ span {
   }
 }
 
-// 二级建造师
-.bw-sc {
+// 按钮
+.bw-btn {
+  @extend %in-b;
+  background-image: linear-gradient(-48deg, #ff5e2c 0%, #ff9979 100%);
+  box-shadow: 0px 0px 5px 0px rgba(255, 98, 49, 0.5);
+  border-radius: 4px;
+  color: #fff;
+}
+
+// 首页模块
+.bw-post {
   margin-bottom: 40px;
   .bw-title {
     margin-bottom: 20px;
-    .bw-icon {
-      width: 32px;
-      height: 32px;
-      background: url("../images/sprites.png") -274px -157px;
+  }
+  .post-cont {
+    line-height: 26px;
+    @extend %clearfix;
+  }
+  .cont-l {
+    width: 835px;
+    float: left;
+  }
+  // 套餐
+  .cont-combo {
+    @extend %clearfix;
+    margin-right: -18px;
+    .combo-item {
+      float: left;
+      width: 266px;
+      @extend .bc-br;
+      padding: 0 13px 0 15px;
+      box-sizing: border-box;
+      margin-right: 18px;
+      margin-bottom: 18px;
+      .item-bg {
+        position: relative;
+        width: 266px;
+        height: 150px;
+        img {
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          left: -15px;
+        }
+        .bg-hot {
+          border-radius: 12px;
+          background: rgba(0, 0, 0, 0.5);
+          font-size: 12px;
+          line-height: 22px;
+          color: #fff;
+          padding-right: 6px;
+          position: absolute;
+          top: 12px;
+          left: -2px;
+          span {
+            background-image: linear-gradient(90deg, #2358fc 0%, #517cff 100%);
+            border-radius: 12px;
+            padding: 0 6px;
+            margin-top: -4px;
+            margin-right: 6px;
+          }
+        }
+      }
+      .item-detail {
+        border-bottom: 4px solid #f4f4f4;
+        padding: 16px 0 10px;
+        .detail-title {
+          font-size: 16px;
+        }
+        .detail-time {
+          font-size: 12px;
+          color: #777777;
+          span {
+            margin-left: 16px;
+          }
+        }
+        .detail-tea {
+          padding-top: 10px;
+          ul {
+            white-space: nowrap;
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            li {
+              @extend %in-b;
+              margin-right: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .item-price {
+        padding: 13px 0 17px;
+        line-height: 26px;
+        color: #ff5e2c;
+        span {
+          font-size: 20px;
+        }
+        em {
+          vertical-align: bottom;
+        }
+        .bw-btn {
+          padding: 0 7px;
+          float: right;
+        }
+      }
+      &:hover {
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51);
+      }
     }
   }
-  .sc-cont {
-    height: 708px;
+  // 问答
+  .cont-wd {
+    @extend .bc-br;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    .wd-detail {
+      padding: 10px 4px;
+      line-height: 28px;
+      @extend %clearfix;
+      ul {
+        width: 48%;
+        float: left;
+        &:nth-of-type(2) {
+          float: right;
+        }
+      }
+      i {
+        width: 16px;
+        height: 16px;
+        background: url(../images/w_1.png) no-repeat;
+      }
+      .detail-an {
+        line-height: 20px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        padding: 10px 16px;
+        box-sizing: border-box;
+        margin: 10px 0;
+      }
+      .an-text {
+        @include ells(2);
+        span {
+          display: inline;
+          color: #666666;
+        }
+      }
+    }
+  }
+  // 右侧
+  .cont-r {
+    width: 347px;
+    @extend .bc-br;
+    float: right;
+    padding: 14px;
+    box-sizing: border-box;
+    .r-guide {
+      line-height: 33px;
+      margin-right: -10px;
+      margin-bottom: 10px;
+      a {
+        padding: 0 20px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        margin: 0 10px 10px 0;
+        &:hover {
+          background-color: #2a57de;
+          color: #fff;
+        }
+      }
+    }
+    .r-detail {
+      > div {
+        display: none;
+        &.on {
+          display: block;
+        }
+      }
+    }
+    .news {
+      ul {
+        padding-top: 20px;
+      }
+    }
+    .icon-list {
+      @extend %clearfix;
+      border-bottom: 1px solid #ededed;
+      padding: 14px 0;
+      &:last-child {
+        border-bottom: none;
+      }
+      i {
+        width: 11px;
+        height: 12px;
+        background: url("../images/sprites.png") -431px -302px;
+        float: left;
+        margin-top: 7px;
+      }
+      .list-r {
+        float: left;
+        width: 94%;
+        line-height: 22px;
+      }
+      .list-b {
+        width: 94%;
+        .nnt {
+          padding-left: 80px;
+        }
+        strong,
+        a {
+          color: #ff5e2c;
+          font-weight: normal;
+        }
+        a {
+          float: right;
+          margin-top: 2px;
+          i {
+            width: 15px;
+            height: 15px;
+            background: url("../images/sprites.png") -194px -374px;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+    .r-t {
+      color: #f7623a;
+    }
+  }
+}
+
+// 教研团队
+.bar-slide {
+  position: relative;
+  .prev,
+  .next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  .next {
+    right: 0;
+  }
+  li {
+    @extend %clearfix;
+    .item {
+      width: 20%;
+      float: left;
+      > img {
+        width: 240px;
+        height: 293px;
+      }
+    }
+    .team-text {
+      padding: 15px 13px;
+      box-sizing: border-box;
+      strong {
+        font-weight: normal;
+        font-size: 18px;
+      }
+      span {
+        color: #999999;
+        float: right;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+/* 频道页 */
+
+// 课程试听
+.axn-course {
+  margin-bottom: 40px;
+  @extend %clearfix;
+  .c-l {
+    float: left;
+    width: 888px;
+    // height: 405px;
+    @extend .bc-br;
+    padding: 20px 18px;
+    box-sizing: border-box;
+    .bw-sctitle {
+      ul {
+        float: left;
+        line-height: 28px;
+        padding-left: 10px;
+        li {
+          float: left;
+          a {
+            padding: 0 10px;
+            color: #666666;
+            &:hover {
+              color: #415dfe;
+            }
+          }
+        }
+      }
+    }
+    .l-detail {
+      padding-top: 18px;
+      @extend %clearfix;
+      .d-bg {
+        float: left;
+        img {
+          width: 500px;
+          height: 308px;
+        }
+      }
+      .d-catalog {
+        float: right;
+        width: 332px;
+        height: 308px;
+        border: 1px solid #cccccc;
+      }
+    }
+  }
+  .c-r {
+    float: right;
+    width: 302px;
+    // height: 405px;
+    line-height: 28px;
     background-color: #ffffff;
-    border-radius: 4px;
+    padding: 20px 10px 18px 16px;
+    box-sizing: border-box;
+    .r-title {
+      font-size: 18px;
+      font-weight: bold;
+      @extend %one;
+      margin-bottom: 10px;
+    }
+    .r-st {
+      font-size: 12px;
+      color: #999999;
+    }
+    .r-tea {
+      padding: 30px 0 10px;
+      ul {
+        white-space: nowrap;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        li {
+          @extend %in-b;
+          margin-right: 16px;
+          text-align: center;
+          .txt {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+    .r-time {
+      height: 57px;
+      background-color: #f2f2f2;
+      border-radius: 3px;
+      font-size: 12px;
+      padding: 14px 0 14px 14px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      strong {
+        font-weight: normal;
+        color: #777777;
+        padding-left: 10px;
+      }
+      em {
+        padding: 0 6px 0 2px;
+        color: #777777;
+      }
+    }
+    .r-price {
+      padding: 13px 0 17px;
+      line-height: 26px;
+      color: #ff5e2c;
+      .txt {
+        font-size: 26px;
+      }
+      em {
+        vertical-align: sub;
+      }
+      .p-o {
+        font-size: 12px;
+        color: #999999;
+        text-decoration: line-through;
+      }
+      .p-btn {
+        float: right;
+        border-radius: 4px;
+        border: solid 1px #2358fc;
+        color: #2358fc;
+        padding: 0 10px;
+        &:hover {
+          background: #2358fc;
+          color: #fff;
+        }
+      }
+    }
+    .bw-btn {
+      width: 100%;
+      height: 41px;
+      line-height: 41px;
+      border-radius: 21px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+// 近期直播
+.axn-recent {
+  margin-bottom: 40px;
+  .bw-title {
+    margin-bottom: 16px;
+  }
+  .r-live {
+    .item {
+      width: 389px;
+      height: 123px;
+      @extend %clearfix;
+      @extend .bc-br;
+      padding: 14px 12px;
+      box-sizing: border-box;
+      > img {
+        float: left;
+        width: 66px;
+        height: 68px;
+        border-radius: 50%;
+        margin-top: 18px;
+        margin-right: 15px;
+      }
+      .team-detail {
+        float: left;
+        width: 282px;
+        .d-row {
+          line-height: 28px;
+          color: #999999;
+          margin-bottom: 4px;
+        }
+        .row-yy {
+          float: right;
+          height: 28px;
+          background-color: #fff6f4;
+          border-radius: 4px;
+          padding: 0 8px;
+          box-sizing: border-box;
+          i {
+            width: 16px;
+            height: 16px;
+            background: url(../images/yy-nor.png) no-repeat;
+          }
+          span {
+            color: #f7623a;
+            line-height: 30px;
+            margin-left: 6px;
+          }
+          &:hover {
+            background-image: linear-gradient(90deg, #ff5e2c 0%, #ff9d7e 100%);
+            span{
+              color: #fff;
+            }
+            
+          }
+        }
+        .row-ej {
+          background-color: #e8eefe;
+          border-radius: 4px;
+          color: #4464c5;
+          line-height: 21px;
+          margin-right: 8px;
+        }
+        .d-title {
+          color: #333333;
+        }
+        .icon-feel {
+          width: 48px;
+          height: 26px;
+          background: url("../images/sprites.png") -139px -83px;
+        }
+      }
+    }
   }
 }
