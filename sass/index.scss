@@ -44,6 +44,33 @@ a {
   cursor: pointer;
 }
 
+// 公共头部
+.header{
+  .wrap{
+    .center{
+      .nav{
+        li{
+          a{
+            display: inline;
+          }
+        }
+      }
+    }
+    .right{
+      a{
+        display: inline;
+      }
+    }
+  }
+}
+
+// 公共底部
+.footer {
+  .xg {
+    vertical-align: text-top;
+  }
+}
+
 // 白色背景和圆角
 .bc-br {
   background-color: #ffffff;
@@ -288,6 +315,18 @@ a {
       height: 23px;
       background: url("../images/sprites.png") -54px -330px;
       margin-right: 10px;
+    }
+  }
+  .live-close{
+    float: right;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+    i{
+      width: 11px;
+      height: 11px;
+      background: url(../images/close-btn.png) no-repeat;
+      margin-right: 4px;
     }
   }
   .live-cont {
@@ -2440,6 +2479,7 @@ a {
   }
   .tab-body {
     float: left;
+    width: 896px;
   }
 }
 
@@ -2511,6 +2551,19 @@ a {
   }
 }
 
+// 星星评价模块
+.star-m {
+  i {
+    width: 13px;
+    height: 12px;
+    background: url("../images/sprites.png") -431px -141px;
+    margin: 0 2px;
+    &.gray {
+      background: url("../images/sprites.png") -431px -109px;
+    }
+  }
+}
+
 // 历年真题
 .tk-past {
   ul {
@@ -2537,17 +2590,6 @@ a {
   .p-title {
     font-size: 18px;
     font-weight: bold;
-  }
-  .p-val {
-    i {
-      width: 13px;
-      height: 12px;
-      background: url("../images/sprites.png") -431px -141px;
-      margin: 0 2px;
-      &.gray {
-        background: url("../images/sprites.png") -431px -109px;
-      }
-    }
   }
   .p-time {
     color: #999999;
@@ -2619,18 +2661,6 @@ a {
     .r-title {
       font-size: 16px;
       font-weight: bold;
-    }
-  }
-  .p-val {
-    line-height: 14px;
-    i {
-      width: 13px;
-      height: 12px;
-      background: url("../images/sprites.png") -431px -141px;
-      margin: 0 2px;
-      &.gray {
-        background: url("../images/sprites.png") -431px -109px;
-      }
     }
   }
   .e-btn {
@@ -2770,11 +2800,32 @@ a {
   }
 }
 
+// 进度条模块 600 就是宽度 60
+.pmgressbar {
+  @extend %in-b;
+  height: 6px;
+  background-color: #eaeaea;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  .yes {
+    height: 100%;
+    background-image: linear-gradient(89deg, #003dbd 0%, #3a74eb 100%);
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+  }
+  em {
+    line-height: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 /* 章节练习 */
 .lx-tab {
   .tab-body {
-    width: 896px;
-    height: 716px;
     @extend .bc-br;
     padding: 0 20px;
     box-sizing: border-box;
@@ -2784,35 +2835,589 @@ a {
       margin-right: 20px;
       font-size: 16px;
     }
-    .degree{
+    .degree {
       font-size: 12px;
       color: #999999;
     }
     .i-head {
       border-bottom: 1px dotted #c1c1c1;
       line-height: 60px;
-      .h-name{
+      .h-name {
         font-weight: bold;
       }
-      .icon-hide {
-        width: 22px;
-        height: 22px;
-        background: url("../images/sprites.png") -388px -95px;
-        margin-right: 14px;
-      }
-    }
-    .i-detail {
-      padding-left: 30px;
     }
     .d-head {
       line-height: 54px;
       border-bottom: 1px dotted #c1c1c1;
-      
-      .icon-hide {
+    }
+
+    .icon-fix {
+      width: 19px;
+      height: 22px;
+      background: url("../images/sprites.png") -388px -304px;
+      margin: 4px 5px;
+      vertical-align: middle;
+    }
+
+    .i-detail {
+      padding-left: 30px;
+      display: none;
+      &.on {
+        display: block;
+      }
+      ul {
+        padding-left: 38px;
+        line-height: 48px;
+        display: none;
+        &.on {
+          display: block;
+        }
+      }
+      li {
+        height: 52px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 1px;
+          height: 38px;
+          background: url(../images/line_2.png) no-repeat;
+          position: absolute;
+          left: 5px;
+          top: 32px;
+        }
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+      }
+      .d-r {
+        float: left;
+        width: 97%;
+        border-bottom: 1px dotted #c1c1c1;
+        padding-right: 15px;
+        box-sizing: border-box;
+        .text {
+          width: 58%;
+        }
+        .rate {
+          width: 8%;
+          color: #999999;
+        }
+        .d-accuracy {
+          @extend %in-b;
+          width: 18%;
+          text-align: center;
+          span {
+            color: #ff5e2c;
+          }
+        }
+        &:hover {
+          background-color: #f5f5f5;
+          .icon-fix {
+            margin: 0;
+            width: 28px;
+            height: 29px;
+            background: url("../images/sprites.png") -10px -252px;
+          }
+        }
+      }
+    }
+    .icon-c {
+      float: left;
+      width: 12px;
+      height: 13px;
+      background: url(../images/lx_1.png) no-repeat;
+      margin-right: 10px;
+      margin-top: 18px;
+    }
+    &.down {
+      .i-head {
+        .icon-down {
+          width: 22px;
+          height: 22px;
+          background: url("../images/sprites.png") -388px -179px;
+          margin-right: 14px;
+        }
+      }
+      .d-head {
+        .icon-down {
+          width: 18px;
+          height: 18px;
+          background: url("../images/sprites.png") -260px -330px;
+          margin-right: 17px;
+        }
+      }
+    }
+    &.up {
+      .i-head {
+        .icon-up {
+          width: 22px;
+          height: 22px;
+          background: url("../images/sprites.png") -388px -95px;
+          margin-right: 14px;
+        }
+      }
+      .d-head {
+        .icon-up {
+          width: 18px;
+          height: 18px;
+          background: url("../images/sprites.png") -222px -330px;
+          margin-right: 17px;
+        }
+      }
+    }
+    &:last-child {
+      .i-head {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+/* 历年真题 */
+
+// 历年真题-未购买
+.no-buy {
+  height: 510px;
+  @extend .bc-br;
+  text-align: center;
+  padding-top: 26px;
+  box-sizing: border-box;
+  .bg {
+    width: 246px;
+  }
+  .hint {
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  .buy-btn {
+    font-size: 16px;
+    line-height: 40px;
+    color: #ffffff;
+    background-image: linear-gradient(-90deg, #2365fc 0%, #5286fe 100%);
+    box-shadow: 0px 2px 10px 0px rgba(37, 102, 253, 0.25);
+    border-radius: 20px;
+    padding: 0 52px;
+  }
+}
+
+// 题目列表
+.topic-list {
+  @extend .bc-br;
+  padding: 0 20px;
+  li {
+    line-height: 24px;
+    @extend %clearfix;
+    padding: 20px 0 20px 10px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: #f8f8f8;
+      .l-btn {
+        border: none;
+        color: #fff;
+        background-image: linear-gradient(270deg, #ff5e2c 0%, #ffa88d 100%);
+      }
+    }
+  }
+  .l-title,
+  .l-score {
+    float: left;
+  }
+  .l-btn {
+    float: right;
+  }
+  .l-title {
+    width: 410px;
+    @extend %clearfix;
+    .t-bg {
+      float: left;
+      margin-right: 10px;
+    }
+    .t-col {
+      float: left;
+    }
+    .t-text {
+      font-size: 16px;
+    }
+    .degree {
+      font-size: 12px;
+      color: #999999;
+    }
+  }
+  .l-score {
+    color: #999999;
+    padding-top: 10px;
+    span {
+      margin-right: 50px;
+    }
+  }
+  .l-btn {
+    padding: 0 16px;
+    height: 26px;
+    line-height: 24px;
+    background-color: #fff4f1;
+    color: #ff5e2c;
+    border: 1px solid #ff5e2c;
+    box-sizing: border-box;
+    border-radius: 13px;
+    margin-top: 10px;
+    margin-right: 28px;
+  }
+}
+
+/* 每日一练终端 */
+.exercise-terminal {
+  @extend %clearfix;
+  padding-top: 20px;
+  // 面包屑
+  .page-path {
+    height: 47px;
+    line-height: 47px;
+    @extend .bc-br;
+    color: #666666;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    .icon-site {
+      width: 11px;
+      height: 14px;
+      background: url("../images/sprites.png") -431px -173px;
+      margin-right: 6px;
+    }
+    p {
+      @extend %in-b;
+      a {
+        color: #666666;
+      }
+      .text {
+        color: #333333;
+        vertical-align: baseline;
+        font-weight: bold;
+      }
+    }
+  }
+  .t-l {
+    float: left;
+    width: 810px;
+    margin-right: 18px;
+  }
+
+  .zt-item {
+    @extend .bc-br;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    .c-title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      .type {
+        height: 20px;
+        line-height: 18px;
+        padding: 0 5px;
+        font-size: 14px;
+        vertical-align: baseline;
+        background-color: #e6bc7a;
+        color: #fff;
+        border-radius: 0 8px 0 8px;
+        margin-right: 6px;
+      }
+    }
+    li {
+      font-size: 16px;
+      line-height: 36px;
+      padding-left: 30px;
+      cursor: pointer;
+      span {
+        width: 22px;
+        height: 23px;
+        line-height: 20px;
+        background-color: #ececec;
+        border: solid 1px #cdcdcd;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 14px;
+        box-sizing: border-box;
+        margin-right: 10px;
+      }
+      &.on {
+        span {
+          border: none;
+          background-color: #4270fe;
+          color: #fff;
+        }
+      }
+      &:hover {
+        background-color: #f5f5f5;
+      }
+      &.error-answer,
+      &.right-answer {
+        span {
+          border: none;
+          width: 22px;
+          height: 22px;
+          text-indent: -9999px;
+        }
+      }
+      &.error-answer {
+        span {
+          background: url("../images/sprites.png") -388px -53px;
+        }
+      }
+      &.right-answer {
+        span {
+          background: url("../images/sprites.png") -388px -137px;
+        }
+      }
+    }
+    .zt-collect {
+      text-align: right;
+      i {
         width: 18px;
         height: 18px;
-        background: url("../images/sprites.png") -222px -330px;
-        margin-right: 17px;
+        background: url("../images/sprites.png") -146px -330px;
+        margin-right: 4px;
+        cursor: pointer;
+        &.on {
+          background: url("../images/sprites.png") -184px -330px;
+        }
+      }
+    }
+    .zt-parse {
+      line-height: 26px;
+      border-top: 1px dotted #c1c1c1;
+      padding-top: 20px;
+      margin-top: 24px;
+      .p-sel {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .p-intro {
+        font-size: 16px;
+        @extend %clearfix;
+        em {
+          font-weight: bold;
+          float: left;
+        }
+        span {
+          width: 89%;
+          color: #666666;
+          float: left;
+        }
+      }
+    }
+  }
+
+  .t-r {
+    float: left;
+    width: 372px;
+  }
+  .r-plan {
+    height: 47px;
+    line-height: 14px;
+    @extend .bc-br;
+    padding: 12px 16px 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    .p-k {
+      margin-right: 16px;
+    }
+  }
+  .r-time {
+    background-color: #fffaf8;
+    border-radius: 4px;
+    border: solid 1px #f2c1b1;
+    padding: 20px 17px;
+    box-sizing: border-box;
+    @extend %clearfix;
+    margin-bottom: 20px;
+    .t-col {
+      float: left;
+      line-height: 24px;
+      i {
+        width: 24px;
+        height: 24px;
+        background: url("../images/sprites.png") -10px -330px;
+      }
+      .t-residue {
+        @extend %in-b;
+        vertical-align: middle;
+        font-size: 20px;
+        color: #ff5e2c;
+      }
+    }
+    .t-btn {
+      float: right;
+      line-height: 30px;
+      .btn-pause,
+      .btn-submit {
+        float: left;
+        height: 30px;
+        line-height: 26px;
+        padding: 0 14px;
+        box-sizing: border-box;
+        border-radius: 15px;
+      }
+      .btn-pause {
+        box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25);
+        border: solid 1px #ff5e2c;
+        color: #ff5e2c;
+        margin-right: 10px;
+        i {
+          width: 8px;
+          height: 11px;
+          background: url("../images/sprites.png") -403px -374px;
+        }
+      }
+      .btn-submit {
+        color: #ffffff;
+        background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%);
+        box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25);
+        i {
+          width: 13px;
+          height: 10px;
+          background: url("../images/sprites.png") -431px -334px;
+        }
+      }
+    }
+  }
+  .r-scantron {
+    @extend .bc-br;
+    padding: 20px 24px 0;
+    box-sizing: border-box;
+    .diff {
+      float: right;
+      i {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        margin-left: 16px;
+      }
+      .without {
+        i {
+          background: url("../images/sprites.png") -334px -330px;
+        }
+      }
+      .done {
+        i {
+          background: url("../images/sprites.png") -86px -374px;
+        }
+      }
+      .error {
+        i {
+          background: url("../images/sprites.png") -50px -374px;
+        }
+      }
+    }
+    .s-number {
+      padding: 27px 0 16px 15px;
+      ul {
+        @extend %clearfix;
+      }
+      li {
+        float: left;
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+        background-color: #ffffff;
+        border: solid 1px #c1c1c1;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 50%;
+        color: #666666;
+        margin-right: 13px;
+        margin-bottom: 14px;
+        &.done {
+          background-color: #ebf0ff;
+          border: solid 1px #ebf0ff;
+          color: #4f5e8c;
+        }
+        &.error {
+          background-color: #ff653f;
+          border: solid 1px #ff653f;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  /* 真题模拟 */
+  .r-score {
+    height: 173px;
+    background: url(../images/zt_1.png) no-repeat;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    .s-num {
+      margin-bottom: 8px;
+      span {
+        font-size: 50px;
+        line-height: 42px;
+        color: #ff5e2c;
+      }
+      em {
+        vertical-align: bottom;
+      }
+    }
+    .s-explain {
+      height: 23px;
+      line-height: 20px;
+      padding: 0 8px;
+      border: solid 1px #dadada;
+      box-sizing: border-box;
+      border-radius: 12px;
+    }
+    .s-row {
+      @extend %clearfix;
+      padding: 18px 0;
+      margin: 0 26px;
+      position: relative;
+      .rise,
+      .fall {
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        i {
+          width: 4px;
+          height: 10px;
+        }
+      }
+      .rise {
+        color: #31a65a;
+        i {
+          background: url("../images/sprites.png") -104px -414px;
+        }
+      }
+      .fall {
+        top: 18px;
+        color: #e65733;
+        i {
+          background: url("../images/sprites.png") -80px -414px;
+        }
+      }
+      .row-col {
+        float: left;
+        width: 30%;
+        font-size: 16px;
+        border-right: 1px dotted #808080;
+        box-sizing: border-box;
+        &:last-child {
+          border-right: none;
+        }
+        &:nth-of-type(2) {
+          width: 40%;
+        }
+        .c-bottom {
+          display: block;
+          color: #999999;
+          font-size: 14px;
+        }
       }
     }
   }
