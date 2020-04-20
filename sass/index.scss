@@ -45,19 +45,19 @@ a {
 }
 
 // 公共头部
-.header{
-  .wrap{
-    .center{
-      .nav{
-        li{
-          a{
+.header {
+  .wrap {
+    .center {
+      .nav {
+        li {
+          a {
             display: inline;
           }
         }
       }
     }
-    .right{
-      a{
+    .right {
+      a {
         display: inline;
       }
     }
@@ -317,12 +317,12 @@ a {
       margin-right: 10px;
     }
   }
-  .live-close{
+  .live-close {
     float: right;
     font-size: 14px;
     color: #666666;
     cursor: pointer;
-    i{
+    i {
       width: 11px;
       height: 11px;
       background: url(../images/close-btn.png) no-repeat;
@@ -488,10 +488,10 @@ a {
   // 右侧
   .cont-r {
     width: 347px;
-    @extend .bc-br;
     float: right;
     padding: 14px;
     box-sizing: border-box;
+    @extend .bc-br;
     .r-guide {
       line-height: 33px;
       margin-right: -10px;
@@ -711,6 +711,149 @@ a {
 
 /* 频道页 */
 
+// 展开与收起
+.menu-list {
+  .list-item {
+    border-bottom: 1px solid #ededed;
+    .outer-icon {
+      width: 22px;
+      height: 22px;
+      background: url("../images/sprites.png") -388px -95px;
+      margin-right: 14px;
+    }
+    .inner-icon {
+      width: 18px;
+      height: 18px;
+      background: url("../images/sprites.png") -222px -330px;
+      margin-right: 10px;
+    }
+    .degree {
+      font-size: 12px;
+      color: #999999;
+    }
+    .h-name {
+      margin-right: 20px;
+      font-size: 16px;
+    }
+    .icon-fix {
+      width: 19px;
+      height: 22px;
+      background: url("../images/sprites.png") -388px -304px;
+      margin: 4px 5px;
+      vertical-align: middle;
+    }
+    .i-detail {
+      padding-left: 30px;
+      display: none;
+      ul {
+        padding-left: 38px;
+        line-height: 48px;
+        display: none;
+      }
+      li {
+        height: 52px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 1px;
+          height: 38px;
+          background: url(../images/line_2.png) no-repeat;
+          position: absolute;
+          left: 5px;
+          top: 32px;
+        }
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .icon-c {
+      float: left;
+      width: 12px;
+      height: 13px;
+      background: url(../images/lx_1.png) no-repeat;
+      margin-right: 10px;
+      margin-top: 18px;
+    }
+    .d-r {
+      float: left;
+      width: 96%;
+      .text {
+        width: 78%;
+      }
+    }
+
+    .row-play {
+      width: 14px;
+      height: 12px;
+      background: url("../images/sprites.png") -431px -77px;
+    }
+    .row-pause {
+      width: 16px;
+      height: 16px;
+      background: url("../images/sprites.png") -122px -374px;
+    }
+
+    .i-head {
+      line-height: 60px;
+      .h-name {
+        font-weight: bold;
+      }
+      .icon-down {
+        width: 22px;
+        height: 22px;
+        background: url("../images/sprites.png") -388px -179px;
+        margin-right: 14px;
+      }
+    }
+    .d-head {
+      line-height: 54px;
+      border-bottom: 1px dotted #c1c1c1;
+      .icon-up {
+        width: 18px;
+        height: 18px;
+        background: url("../images/sprites.png") -260px -330px;
+        margin-right: 17px;
+      }
+      .icon-down {
+        width: 18px;
+        height: 18px;
+        background: url("../images/sprites.png") -222px -330px;
+        margin-right: 17px;
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+      .i-head {
+        border-bottom: none;
+      }
+    }
+    // 打开
+    &.unfold {
+      .i-head {
+        border-bottom: 1px dotted #c1c1c1;
+      }
+      .outer-icon {
+        background: url("../images/sprites.png") -388px -179px;
+      }
+      .i-detail {
+        display: block;
+        &.on {
+          .inner-icon {
+            background: url("../images/sprites.png") -260px -330px;
+          }
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
 // 课程试听
 .axn-course {
   margin-bottom: 40px;
@@ -749,14 +892,104 @@ a {
           height: 308px;
         }
       }
-      .d-catalog {
-        float: right;
-        width: 332px;
-        height: 308px;
-        border: 1px solid #cccccc;
+    }
+  }
+
+  .d-catalog {
+    float: right;
+    width: 332px;
+    height: 308px;
+    overflow-y: auto;
+    .list-item {
+      line-height: 28px;
+      border-bottom: none;
+      .outer-icon {
+        width: 15px;
+        height: 15px;
+        background: url("../images/sprites.png") -264px -374px;
+        margin-right: 0;
+      }
+      .inner-icon {
+        width: 15px;
+        height: 15px;
+        background: url("../images/sprites.png") -229px -374px;
+      }
+      .h-name {
+        margin-right: 0;
+      }
+      .i-detail {
+        padding-left: 28px;
+        ul {
+          padding-left: 3px;
+          line-height: 28px;
+        }
+        li {
+          height: 29px;
+          &::before {
+            height: 14px;
+            left: 4px;
+            top: 25px;
+          }
+        }
+      }
+      .icon-c {
+        width: 9px;
+        height: 9px;
+        background: url("../images/sprites.png") -114px -301px;
+        margin-top: 12px;
+      }
+      .d-r {
+        width: 90%;
+        .text {
+          width: 80%;
+        }
+      }
+      .feel {
+        color: #ff5f2e;
+      }
+      .i-head {
+        padding: 0 8px;
+        line-height: 29px;
+        border-bottom: none;
+      }
+      .d-head {
+        line-height: 28px;
+        border-bottom: none;
+      }
+      // 打开
+      &.unfold {
+        .i-head {
+          background-color: #f2f2f2;
+        }
+        .outer-icon {
+          width: 15px;
+          height: 15px;
+          background: url("../images/sprites.png") -334px -374px;
+          margin-right: 0;
+        }
+        .i-head{
+          &.on{
+            .inner-icon {
+              width: 15px;
+              height: 15px;
+              background: url("../images/sprites.png") -299px -374px;
+            }
+          }
+        }
+
+        .i-detail {
+          &.on {
+            .inner-icon {
+              width: 15px;
+              height: 15px;
+              background: url("../images/sprites.png") -299px -374px;
+            }
+          }
+        }
       }
     }
   }
+
   .c-r {
     float: right;
     width: 302px;
@@ -1515,7 +1748,7 @@ a {
           }
         }
         .t-detail {
-          display: none;
+          // display: none;
           width: 240px;
           line-height: 22px;
           background-color: #ffffff;
@@ -1528,6 +1761,7 @@ a {
           position: absolute;
           top: 34px;
           right: 0;
+          z-index: 20;
           .d-row {
             margin-bottom: 6px;
           }
@@ -1782,20 +2016,6 @@ a {
               .row-key {
                 width: 76%;
               }
-              .row-val {
-                color: #999999;
-                margin-right: 10px;
-              }
-              .row-play {
-                width: 14px;
-                height: 12px;
-                background: url("../images/sprites.png") -431px -77px;
-              }
-              .row-pause {
-                width: 16px;
-                height: 16px;
-                background: url("../images/sprites.png") -122px -374px;
-              }
             }
           }
         }
@@ -1844,13 +2064,25 @@ a {
       }
     }
   }
-
   .cont-r {
     float: left;
     width: 372px;
-    @extend .bc-br;
+    .cont-wd {
+      margin-bottom: 18px;
+    }
     .an-text {
       -webkit-line-clamp: 3;
+    }
+  }
+  .row-val {
+    color: #999999;
+    margin-right: 10px;
+  }
+
+  // 展开与收起
+  .list-item {
+    .i-head {
+      padding: 0 16px;
     }
   }
 }
@@ -2313,6 +2545,11 @@ a {
     padding: 20px 10px;
     box-sizing: border-box;
     position: relative;
+    .sc-l {
+      span {
+        cursor: pointer;
+      }
+    }
   }
   .r-chat {
     padding: 10px 0 10px 6px;
@@ -2485,6 +2722,7 @@ a {
 
 // 真题解析试听
 .tk-parse {
+  margin-bottom: 20px;
   .bw-title {
     .more {
       float: right;
@@ -2493,9 +2731,9 @@ a {
     }
   }
   ul {
-    @extend %clearfix;
-    padding-top: 20px;
     line-height: 28px;
+    @extend %clearfix;
+    padding: 20px 0 10px;
     margin-right: -20px;
   }
   li {
@@ -2634,6 +2872,7 @@ a {
 
 // 模考试卷
 .tk-exam {
+  margin-bottom: 20px;
   ul {
     @extend %clearfix;
     padding-top: 20px;
@@ -2712,6 +2951,7 @@ a {
 
 /* 每日一练 */
 .yl-tab {
+  margin-bottom: 40px;
   .tab-body {
     width: 896px;
     height: 510px;
@@ -2827,72 +3067,20 @@ a {
 .lx-tab {
   .tab-body {
     @extend .bc-br;
-    padding: 0 20px;
+    padding: 0 20px 10px;
     box-sizing: border-box;
   }
-  .b-item {
-    .h-name {
-      margin-right: 20px;
-      font-size: 16px;
-    }
-    .degree {
-      font-size: 12px;
-      color: #999999;
-    }
+  .list-item {
     .i-head {
-      border-bottom: 1px dotted #c1c1c1;
       line-height: 60px;
-      .h-name {
-        font-weight: bold;
-      }
+      border-bottom: 1px dotted #c1c1c1;
     }
     .d-head {
       line-height: 54px;
       border-bottom: 1px dotted #c1c1c1;
     }
-
-    .icon-fix {
-      width: 19px;
-      height: 22px;
-      background: url("../images/sprites.png") -388px -304px;
-      margin: 4px 5px;
-      vertical-align: middle;
-    }
-
     .i-detail {
-      padding-left: 30px;
-      display: none;
-      &.on {
-        display: block;
-      }
-      ul {
-        padding-left: 38px;
-        line-height: 48px;
-        display: none;
-        &.on {
-          display: block;
-        }
-      }
-      li {
-        height: 52px;
-        position: relative;
-        &::before {
-          content: "";
-          width: 1px;
-          height: 38px;
-          background: url(../images/line_2.png) no-repeat;
-          position: absolute;
-          left: 5px;
-          top: 32px;
-        }
-        &:last-child {
-          &::before {
-            display: none;
-          }
-        }
-      }
       .d-r {
-        float: left;
         width: 97%;
         border-bottom: 1px dotted #c1c1c1;
         padding-right: 15px;
@@ -2922,54 +3110,12 @@ a {
           }
         }
       }
-    }
-    .icon-c {
-      float: left;
-      width: 12px;
-      height: 13px;
-      background: url(../images/lx_1.png) no-repeat;
-      margin-right: 10px;
-      margin-top: 18px;
-    }
-    &.down {
-      .i-head {
-        .icon-down {
-          width: 22px;
-          height: 22px;
-          background: url("../images/sprites.png") -388px -179px;
-          margin-right: 14px;
+      li {
+        &:last-child {
+          .d-r {
+            border-bottom: none;
+          }
         }
-      }
-      .d-head {
-        .icon-down {
-          width: 18px;
-          height: 18px;
-          background: url("../images/sprites.png") -260px -330px;
-          margin-right: 17px;
-        }
-      }
-    }
-    &.up {
-      .i-head {
-        .icon-up {
-          width: 22px;
-          height: 22px;
-          background: url("../images/sprites.png") -388px -95px;
-          margin-right: 14px;
-        }
-      }
-      .d-head {
-        .icon-up {
-          width: 18px;
-          height: 18px;
-          background: url("../images/sprites.png") -222px -330px;
-          margin-right: 17px;
-        }
-      }
-    }
-    &:last-child {
-      .i-head {
-        border-bottom: none;
       }
     }
   }
@@ -3223,6 +3369,9 @@ a {
     padding: 12px 16px 0 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    .rate {
+      color: #999999;
+    }
     .p-k {
       margin-right: 16px;
     }
@@ -3267,6 +3416,7 @@ a {
         border: solid 1px #ff5e2c;
         color: #ff5e2c;
         margin-right: 10px;
+        cursor: pointer;
         i {
           width: 8px;
           height: 11px;
@@ -3422,3 +3572,36 @@ a {
     }
   }
 }
+
+// 侧边导航
+.side-nav{
+  width: 112px;
+  height: 289px;
+  background: url(../images/side-nav.png) no-repeat;
+  padding: 12px 15px 0;
+  box-sizing: border-box;
+  text-align: center;
+
+  position: fixed;
+  top: 30%;
+  right: 10%;
+  ul{
+    margin-bottom: 4px;
+  }
+  li{
+    line-height: 30px;
+    a{
+      width: 100%;
+      color: #ffffff;
+      &:hover{
+        color: #ffb922;
+      }
+    }
+  }
+  .wechat-text{
+    color: #ffffff;
+    padding-top: 6px;
+  }
+}
+
+// 09-购买协议

@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
   <link rel="stylesheet" type="text/css" href="css/zg-base.css" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+  <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
 </head>
 
 <body>
@@ -73,16 +75,7 @@
           <div class="zt-collect">
             <i class="on"></i><span>收藏</span>
           </div>
-
-          <div class="zt-parse">
-            <div class="p-sel">正确答案：C</div>
-            <div class="p-intro">
-              <em>答案解析：</em>
-              <span>
-                甲施工企业年初向银行贷款流动资金200万元，换季计算并支付利息，季度利率1.5%，则甲施工企业一年应支付的该项流动资金贷款利息。
-              </span>
-            </div>
-          </div>
+          
         </div>
 
         <div class="zt-item">
@@ -109,7 +102,7 @@
           <span class="pmgressbar" style="width: 180px;">
             <em class="yes" style="width: 120px;"></em>
           </span>
-          <em>400/600</em>
+          <span class="rate">400/600</span>
         </div>
         <div class="r-time">
           <div class="t-col">
@@ -123,7 +116,7 @@
               <i></i>
               <span>暂停</span>
             </div>
-            <a href="" class="btn-submit">
+            <a href="javascript:;" class="btn-submit">
               <i></i>
               <span>交卷</span>
             </a>
@@ -188,6 +181,36 @@
 
   </div>
 
+  <!-- 19-每日一练终端-1 -->
+  <div class="mask">
+    <div class="model model-hf">
+      <p class="txt no-icon">您已暂停考试</p><br>
+      <div class="popup-link closed">继续考试</div>
+    </div>
+  </div>
+
+  <!-- 19-每日一练终端-2 -->
+  <div class="mask">
+    <div class="model model-hf">
+      <p class="txt no-icon">您还有<span>8</span>道题未做，是否确定交卷？</p><br>
+      <div class="popup-links">
+        <div class="popup-link link-l closed">继续做题</div>
+        <div class="popup-link">确定交卷</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 19-每日一练终端-3 -->
+  <div class="mask">
+    <div class="model model-hf">
+      <p class="txt no-icon">题目已做完，是否确定交卷？</p><br>
+      <div class="popup-links">
+        <div class="popup-link link-l closed">继续做题</div>
+        <div class="popup-link">确定交卷</div>
+      </div>
+    </div>
+  </div>
+
   <!-- 底部 -->
   <div class="footer">
     <div class="wrap">
@@ -232,10 +255,7 @@
     </div>
   </div>
 
-  <script type="text/javascript">
-    // jQuery(".banner").slide();
-    // jQuery(".post-team").slide(); 
-  </script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

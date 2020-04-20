@@ -12,8 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/zg-base.css" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-  <!-- <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script> -->
-  <!-- <script type="text/javascript" src="https://img.thea.cn/public/js/jquery.SuperSlide.2.1.1.js"></script> -->
+  <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
 </head>
 
 <body>
@@ -129,16 +128,16 @@
         <div class="tab-head">
           <ul>
             <li><span class="text">课程详情</span></li>
-            <li><span class="text">课程表</span><i></i></li>
+            <li class="on"><span class="text">课程表</span><i></i></li>
             <li><span class="text">讲师介绍</span></li>
-            <li class="on"><span class="text">学员评价</span><em>(1005)</em></li>
+            <li><span class="text">学员评价</span><em>(1005)</em></li>
           </ul>
         </div>
         <div class="tab-body">
           <div class="bd-item bd-intro">
             <img src="images/kc_1.png" alt="">
           </div>
-          <div class="bd-item bd-timetable">
+          <div class="bd-item bd-timetable on">
             <div class="i-bar">
               <img src="images/kc_2.png" alt="试听单元">
               <span>试听单元</span>
@@ -199,6 +198,81 @@
               <span>课程表</span>
             </div>
             <!-- 展开与收起 -->
+            <div class="menu-list">
+              <div class="list-item unfold">
+                <div class="i-head">
+                  <i class="outer-icon"></i>
+                  <span class="h-name">2019年 一建《建设工程经济》真题</span>
+                  <span class="degree">难易程度：</span>
+                  <span class="star-m">
+                    <i></i><i></i><i></i><i></i><i class="gray"></i>
+                  </span>
+                </div>
+                <div class="i-detail on">
+                  <div class="d-head">
+                    <i class="inner-icon"></i>
+                    <span class="h-name">2019年 一建《建设工程经济》真题</span>
+                    <span class="degree">难易程度：</span>
+                    <span class="star-m">
+                      <i></i><i></i><i></i><i class="gray"></i><i class="gray"></i>
+                    </span>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="icon-c"></i>
+                      <div class="d-r">
+                        <span class="text">第一节 2019年 一建《建设工程经济》真题</span>
+                        <span class="row-val">高清-20分钟00秒</span><i class="row-play"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="icon-c"></i>
+                      <div class="d-r">
+                        <span class="text">第一节 2019年 一建《建设工程经济》真题</span>
+                        <span class="row-val">高清-20分钟00秒</span><i class="row-pause"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="list-item unfold">
+                <div class="i-head">
+                  <i class="outer-icon"></i>
+                  <span class="h-name">2019年 一建《建设工程经济》真题</span>
+                  <span class="degree">难易程度：</span>
+                  <span class="star-m">
+                    <i></i><i></i><i></i><i></i><i class="gray"></i>
+                  </span>
+                </div>
+                <div class="i-detail">
+                  <div class="d-head">
+                    <i class="inner-icon"></i>
+                    <span class="h-name">2019年 一建《建设工程经济》真题</span>
+                    <span class="degree">难易程度：</span>
+                    <span class="star-m">
+                      <i></i><i></i><i></i><i class="gray"></i><i class="gray"></i>
+                    </span>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="icon-c"></i>
+                      <div class="d-r">
+                        <span class="text">第一节 2019年 一建《建设工程经济》真题</span>
+                        <span class="row-val">高清-20分钟00秒</span><i class="row-play"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="icon-c"></i>
+                      <div class="d-r">
+                        <span class="text">第一节 2019年 一建《建设工程经济》真题</span>
+                        <span class="row-val">高清-20分钟00秒</span><i class="row-pause"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="bd-item bd-evaluate">
             <ul>
@@ -246,7 +320,7 @@
               </li>
             </ul>
           </div>
-          <div class="bd-item bd-evaluate bd-student on">
+          <div class="bd-item bd-evaluate bd-student">
             <ul>
               <li>
                 <img src="images/avatar_6.png" alt="" class="avatar">
@@ -333,6 +407,13 @@
     </div>
   </div>
 
+  <!-- 04-课程终端-详情页-4 -->
+  <div class="mask">
+    <div class="model">
+      <p class="txt"><i class="icon bg-sc"></i>优惠券领取成功</p>
+    </div>
+  </div>
+
   <!-- 底部 -->
   <div class="footer">
     <div class="wrap">
@@ -376,11 +457,8 @@
       <p> 版权所有：深圳市诺达筑工教育科技有限公司 All Rights Reserved 粤ICP备19079295号-1</p>
     </div>
   </div>
-
-  <script type="text/javascript">
-    // jQuery(".banner").slide();
-    // jQuery(".post-team").slide(); 
-  </script>
+  
+  <script src="js/index.js"></script>
 </body>
 
 </html>

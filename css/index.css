@@ -3,7 +3,7 @@
 .bw-class ul:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .bar-slide li:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-recent .r-live .item:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .tab-body .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .r-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after { clear: both; }
 .bw-class ul:before, .bw-sctitle:before, .bw-live .live-cont:before, .bw-post .post-cont:before, .bw-post .cont-wd .wd-detail:before, .bw-post .cont-r .icon-list:before, .cont-combo:before, .bar-slide li:before, .axn-course:before, .axn-course .c-l .l-detail:before, .axn-recent .r-live .item:before, .axn-combo .combo-cont:before, .axn-combo .combo-cont .i-stage .s-row:before, .axn-combo .combo-cont .i-data:before, .d-answer:before, .free-trial:before, .free-trial .t-right .r-choice:before, .free-trial .t-right .r-choice .c-detail ul:before, .kc-cont:before, .kc-cont .cont-l .tab-head:before, .kc-cont .cont-l .tab-head ul:before, .kc-cont .cont-l .tab-body .bd-evaluate li:before, .order-head:before, .order-head .h-r ul:before, .order-address .order-msg ul:before, .order-address .p-detail ul:before, .order-address .order-tcp:before, .live-in:before, .live-in .in-r .r-hot:before, .live-in .in-r .r-tea:before, .live-past ul:before, .live-past ul li .p-playback:before, .liveroom-in:before, .liveroom-in .r-notice .n-row:before, .tk-tab:before, .tk-parse ul:before, .tk-past ul:before, .tk-exam ul:before, .yl-tab .b-week ul:before, .topic-list li:before, .topic-list .l-title:before, .exercise-terminal:before, .exercise-terminal .zt-item .zt-parse .p-intro:before, .exercise-terminal .r-time:before, .exercise-terminal .r-scantron .s-number ul:before, .exercise-terminal .r-score .s-row:before, .bw-class ul:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .bar-slide li:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-recent .r-live .item:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .tab-body .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .r-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after { content: ""; display: table; }
 
-i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .b-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue { display: inline-block; *zoom: 1; *display: inline; }
+i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .list-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue { display: inline-block; *zoom: 1; *display: inline; }
 
 .axn-course .c-r .r-title, .feel-listen .l-left .r-text, .free-trial .t-right .r-title { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
@@ -16,7 +16,7 @@ a { cursor: pointer; }
 
 .footer .xg { vertical-align: text-top; }
 
-.bc-br, .bw-class .class-cont, .cont-wd, .bw-post .cont-r, .cont-combo .c-item, .axn-course .c-l, .axn-recent .r-live .item, .free-trial, .kc-cont .cont-l, .kc-cont .cont-r, .order-address, .live-in, .live-past ul li, .tk-parse li, .tk-past li, .tk-exam li, .lx-tab .tab-body, .no-buy, .topic-list, .exercise-terminal .page-path, .exercise-terminal .zt-item, .exercise-terminal .r-plan, .exercise-terminal .r-scantron { background-color: #ffffff; border-radius: 4px; }
+.bc-br, .bw-class .class-cont, .cont-wd, .bw-post .cont-r, .cont-combo .c-item, .axn-course .c-l, .axn-recent .r-live .item, .free-trial, .kc-cont .cont-l, .order-address, .live-in, .live-past ul li, .tk-parse li, .tk-past li, .tk-exam li, .lx-tab .tab-body, .no-buy, .topic-list, .exercise-terminal .page-path, .exercise-terminal .zt-item, .exercise-terminal .r-plan, .exercise-terminal .r-scantron { background-color: #ffffff; border-radius: 4px; }
 
 /* 首页 */
 .banner { position: relative; }
@@ -149,6 +149,36 @@ a { cursor: pointer; }
 .bar-slide li .team-text span { color: #999999; float: right; line-height: 26px; }
 
 /* 频道页 */
+.menu-list .list-item { border-bottom: 1px solid #ededed; }
+.menu-list .list-item .outer-icon { width: 22px; height: 22px; background: url("../images/sprites.png") -388px -95px; margin-right: 14px; }
+.menu-list .list-item .inner-icon { width: 18px; height: 18px; background: url("../images/sprites.png") -222px -330px; margin-right: 10px; }
+.menu-list .list-item .degree { font-size: 12px; color: #999999; }
+.menu-list .list-item .h-name { margin-right: 20px; font-size: 16px; }
+.menu-list .list-item .icon-fix { width: 19px; height: 22px; background: url("../images/sprites.png") -388px -304px; margin: 4px 5px; vertical-align: middle; }
+.menu-list .list-item .i-detail { padding-left: 30px; display: none; }
+.menu-list .list-item .i-detail ul { padding-left: 38px; line-height: 48px; display: none; }
+.menu-list .list-item .i-detail li { height: 52px; position: relative; }
+.menu-list .list-item .i-detail li::before { content: ""; width: 1px; height: 38px; background: url(../images/line_2.png) no-repeat; position: absolute; left: 5px; top: 32px; }
+.menu-list .list-item .i-detail li:last-child::before { display: none; }
+.menu-list .list-item .icon-c { float: left; width: 12px; height: 13px; background: url(../images/lx_1.png) no-repeat; margin-right: 10px; margin-top: 18px; }
+.menu-list .list-item .d-r { float: left; width: 96%; }
+.menu-list .list-item .d-r .text { width: 78%; }
+.menu-list .list-item .row-play { width: 14px; height: 12px; background: url("../images/sprites.png") -431px -77px; }
+.menu-list .list-item .row-pause { width: 16px; height: 16px; background: url("../images/sprites.png") -122px -374px; }
+.menu-list .list-item .i-head { line-height: 60px; }
+.menu-list .list-item .i-head .h-name { font-weight: bold; }
+.menu-list .list-item .i-head .icon-down { width: 22px; height: 22px; background: url("../images/sprites.png") -388px -179px; margin-right: 14px; }
+.menu-list .list-item .d-head { line-height: 54px; border-bottom: 1px dotted #c1c1c1; }
+.menu-list .list-item .d-head .icon-up { width: 18px; height: 18px; background: url("../images/sprites.png") -260px -330px; margin-right: 17px; }
+.menu-list .list-item .d-head .icon-down { width: 18px; height: 18px; background: url("../images/sprites.png") -222px -330px; margin-right: 17px; }
+.menu-list .list-item:last-child { border-bottom: none; }
+.menu-list .list-item:last-child .i-head { border-bottom: none; }
+.menu-list .list-item.unfold .i-head { border-bottom: 1px dotted #c1c1c1; }
+.menu-list .list-item.unfold .outer-icon { background: url("../images/sprites.png") -388px -179px; }
+.menu-list .list-item.unfold .i-detail { display: block; }
+.menu-list .list-item.unfold .i-detail.on .inner-icon { background: url("../images/sprites.png") -260px -330px; }
+.menu-list .list-item.unfold .i-detail.on ul { display: block; }
+
 .axn-course { margin-bottom: 40px; }
 .axn-course .c-l { float: left; width: 888px; padding: 20px 18px; box-sizing: border-box; }
 .axn-course .c-l .bw-sctitle ul { float: left; line-height: 28px; padding-left: 10px; }
@@ -158,7 +188,25 @@ a { cursor: pointer; }
 .axn-course .c-l .l-detail { padding-top: 18px; }
 .axn-course .c-l .l-detail .d-bg { float: left; }
 .axn-course .c-l .l-detail .d-bg img { width: 500px; height: 308px; }
-.axn-course .c-l .l-detail .d-catalog { float: right; width: 332px; height: 308px; border: 1px solid #cccccc; }
+.axn-course .d-catalog { float: right; width: 332px; height: 308px; overflow-y: auto; }
+.axn-course .d-catalog .list-item { line-height: 28px; border-bottom: none; }
+.axn-course .d-catalog .list-item .outer-icon { width: 15px; height: 15px; background: url("../images/sprites.png") -264px -374px; margin-right: 0; }
+.axn-course .d-catalog .list-item .inner-icon { width: 15px; height: 15px; background: url("../images/sprites.png") -229px -374px; }
+.axn-course .d-catalog .list-item .h-name { margin-right: 0; }
+.axn-course .d-catalog .list-item .i-detail { padding-left: 28px; }
+.axn-course .d-catalog .list-item .i-detail ul { padding-left: 3px; line-height: 28px; }
+.axn-course .d-catalog .list-item .i-detail li { height: 29px; }
+.axn-course .d-catalog .list-item .i-detail li::before { height: 14px; left: 4px; top: 25px; }
+.axn-course .d-catalog .list-item .icon-c { width: 9px; height: 9px; background: url("../images/sprites.png") -114px -301px; margin-top: 12px; }
+.axn-course .d-catalog .list-item .d-r { width: 90%; }
+.axn-course .d-catalog .list-item .d-r .text { width: 80%; }
+.axn-course .d-catalog .list-item .feel { color: #ff5f2e; }
+.axn-course .d-catalog .list-item .i-head { padding: 0 8px; line-height: 29px; border-bottom: none; }
+.axn-course .d-catalog .list-item .d-head { line-height: 28px; border-bottom: none; }
+.axn-course .d-catalog .list-item.unfold .i-head { background-color: #f2f2f2; }
+.axn-course .d-catalog .list-item.unfold .outer-icon { width: 15px; height: 15px; background: url("../images/sprites.png") -334px -374px; margin-right: 0; }
+.axn-course .d-catalog .list-item.unfold .i-head.on .inner-icon { width: 15px; height: 15px; background: url("../images/sprites.png") -299px -374px; }
+.axn-course .d-catalog .list-item.unfold .i-detail.on .inner-icon { width: 15px; height: 15px; background: url("../images/sprites.png") -299px -374px; }
 .axn-course .c-r { float: right; width: 302px; line-height: 28px; background-color: #ffffff; padding: 20px 10px 18px 16px; box-sizing: border-box; }
 .axn-course .c-r .r-title { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
 .axn-course .c-r .r-st { font-size: 12px; color: #999999; }
@@ -325,7 +373,7 @@ a { cursor: pointer; }
 .free-trial .t-right .r-price .p-ticket .t-head { width: 164px; padding-right: 18px; box-sizing: border-box; position: absolute; right: 0; top: 0; }
 .free-trial .t-right .r-price .p-ticket .t-head .h-limit { color: #fff; width: 109px; height: 30px; line-height: 30px; background: url("../images/sprites.png") -10px -10px; text-align: center; }
 .free-trial .t-right .r-price .p-ticket .t-head .h-btn { float: right; color: #ff5e2c; cursor: pointer; }
-.free-trial .t-right .r-price .p-ticket .t-detail { display: none; width: 240px; line-height: 22px; background-color: #ffffff; box-shadow: 0px 2px 6px 0px rgba(170, 170, 170, 0.25); border-radius: 4px; border: solid 1px #e6e6e6; color: #ff5e2c; padding: 13px 16px 8px 10px; box-sizing: border-box; position: absolute; top: 34px; right: 0; }
+.free-trial .t-right .r-price .p-ticket .t-detail { width: 240px; line-height: 22px; background-color: #ffffff; box-shadow: 0px 2px 6px 0px rgba(170, 170, 170, 0.25); border-radius: 4px; border: solid 1px #e6e6e6; color: #ff5e2c; padding: 13px 16px 8px 10px; box-sizing: border-box; position: absolute; top: 34px; right: 0; z-index: 20; }
 .free-trial .t-right .r-price .p-ticket .t-detail .d-row { margin-bottom: 6px; }
 .free-trial .t-right .r-price .p-ticket .t-detail i { width: 61px; height: 22px; background: url("../images/sprites.png") -174px -206px; text-align: center; margin-right: 8px; }
 .free-trial .t-right .r-price .p-ticket .t-detail .row-limit { color: #444444; }
@@ -373,9 +421,6 @@ a { cursor: pointer; }
 .kc-cont .cont-l .tab-body .bd-timetable .d-listen .l-explain.on { display: block; }
 .kc-cont .cont-l .tab-body .bd-timetable .d-listen .l-explain .e-row .row-c { width: 6px; height: 6px; background: url(../images/sprites.png) -247px -177px; margin-right: 6px; }
 .kc-cont .cont-l .tab-body .bd-timetable .d-listen .l-explain .e-row .row-key { width: 76%; }
-.kc-cont .cont-l .tab-body .bd-timetable .d-listen .l-explain .e-row .row-val { color: #999999; margin-right: 10px; }
-.kc-cont .cont-l .tab-body .bd-timetable .d-listen .l-explain .e-row .row-play { width: 14px; height: 12px; background: url("../images/sprites.png") -431px -77px; }
-.kc-cont .cont-l .tab-body .bd-timetable .d-listen .l-explain .e-row .row-pause { width: 16px; height: 16px; background: url("../images/sprites.png") -122px -374px; }
 .kc-cont .cont-l .tab-body .bd-evaluate li { padding: 20px 0; }
 .kc-cont .cont-l .tab-body .bd-evaluate .avatar { float: left; margin-right: 20px; border-radius: 50%; }
 .kc-cont .cont-l .tab-body .bd-evaluate .e-detail { float: left; width: 86%; }
@@ -386,7 +431,10 @@ a { cursor: pointer; }
 .kc-cont .cont-l .tab-body .bd-student .e-detail .d-name { font-size: 14px; color: #999999; font-weight: normal; }
 .kc-cont .cont-l .tab-body .bd-student .e-detail .d-tiem { font-size: 12px; color: #999999; float: right; }
 .kc-cont .cont-r { float: left; width: 372px; }
+.kc-cont .cont-r .cont-wd { margin-bottom: 18px; }
 .kc-cont .cont-r .an-text { -webkit-line-clamp: 3; }
+.kc-cont .row-val { color: #999999; margin-right: 10px; }
+.kc-cont .list-item .i-head { padding: 0 16px; }
 
 /* 订单中心 */
 .order-head { line-height: 30px; background: url(../images/o-1.png) no-repeat; margin: 26px 0 19px; padding: 24px; box-sizing: border-box; }
@@ -479,6 +527,7 @@ a { cursor: pointer; }
 .liveroom-in { padding-top: 20px; }
 .liveroom-in .in-l { float: left; width: 920px; height: 562px; }
 .liveroom-in .in-r { float: left; width: 280px; height: 560px; background-color: #ffffff; padding: 20px 10px; box-sizing: border-box; position: relative; }
+.liveroom-in .in-r .sc-l span { cursor: pointer; }
 .liveroom-in .r-chat { padding: 10px 0 10px 6px; display: none; }
 .liveroom-in .r-chat.on { display: block; }
 .liveroom-in .r-chat .c-row { line-height: 31px; }
@@ -519,8 +568,9 @@ a { cursor: pointer; }
 .tk-tab .tab-sidebar .on .paper { background: url("../images/sprites.png") -342px -148px; }
 .tk-tab .tab-body { float: left; width: 896px; }
 
+.tk-parse { margin-bottom: 20px; }
 .tk-parse .bw-title .more { float: right; font-size: 14px; color: #666666; }
-.tk-parse ul { padding-top: 20px; line-height: 28px; margin-right: -20px; }
+.tk-parse ul { line-height: 28px; padding: 20px 0 10px; margin-right: -20px; }
 .tk-parse li { float: left; width: 284px; height: 182px; margin-right: 20px; margin-bottom: 20px; padding: 16px 20px 10px 20px; box-sizing: border-box; position: relative; }
 .tk-parse li:hover { box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51); }
 .tk-parse .p-title { font-size: 16px; }
@@ -545,6 +595,7 @@ a { cursor: pointer; }
 .tk-past .p-b .btn { width: 107px; height: 28px; border: solid 1px #325aea; box-sizing: border-box; border-radius: 15px; color: #255afc; background: #ffffff; margin-left: 10px; }
 .tk-past .p-b .btn:hover { border: 1px solid transparent; color: #fff; background-image: linear-gradient(90deg, #2358fc 0%, #517cff 100%); }
 
+.tk-exam { margin-bottom: 20px; }
 .tk-exam ul { padding-top: 20px; line-height: 28px; margin-right: -20px; }
 .tk-exam li { float: left; width: 284px; margin-right: 20px; margin-bottom: 20px; padding: 24px 14px 22px 16px; box-sizing: border-box; }
 .tk-exam li:hover { box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51); }
@@ -562,6 +613,7 @@ a { cursor: pointer; }
 .parse-switch .s-link i { width: 15px; height: 11px; background: url("../images/sprites.png") -10px -414px; margin-right: 2px; }
 
 /* 每日一练 */
+.yl-tab { margin-bottom: 40px; }
 .yl-tab .tab-body { width: 896px; height: 510px; background: url(../images/yl_1.png) no-repeat; padding-top: 103px; box-sizing: border-box; }
 .yl-tab .b-title { text-align: center; margin-bottom: 26px; }
 .yl-tab .b-title .text { font-size: 28px; margin-right: 20px; }
@@ -584,33 +636,17 @@ a { cursor: pointer; }
 .pmgressbar em { line-height: 14px; position: absolute; top: 0; left: 0; }
 
 /* 章节练习 */
-.lx-tab .tab-body { padding: 0 20px; box-sizing: border-box; }
-.lx-tab .b-item .h-name { margin-right: 20px; font-size: 16px; }
-.lx-tab .b-item .degree { font-size: 12px; color: #999999; }
-.lx-tab .b-item .i-head { border-bottom: 1px dotted #c1c1c1; line-height: 60px; }
-.lx-tab .b-item .i-head .h-name { font-weight: bold; }
-.lx-tab .b-item .d-head { line-height: 54px; border-bottom: 1px dotted #c1c1c1; }
-.lx-tab .b-item .icon-fix { width: 19px; height: 22px; background: url("../images/sprites.png") -388px -304px; margin: 4px 5px; vertical-align: middle; }
-.lx-tab .b-item .i-detail { padding-left: 30px; display: none; }
-.lx-tab .b-item .i-detail.on { display: block; }
-.lx-tab .b-item .i-detail ul { padding-left: 38px; line-height: 48px; display: none; }
-.lx-tab .b-item .i-detail ul.on { display: block; }
-.lx-tab .b-item .i-detail li { height: 52px; position: relative; }
-.lx-tab .b-item .i-detail li::before { content: ""; width: 1px; height: 38px; background: url(../images/line_2.png) no-repeat; position: absolute; left: 5px; top: 32px; }
-.lx-tab .b-item .i-detail li:last-child::before { display: none; }
-.lx-tab .b-item .i-detail .d-r { float: left; width: 97%; border-bottom: 1px dotted #c1c1c1; padding-right: 15px; box-sizing: border-box; }
-.lx-tab .b-item .i-detail .d-r .text { width: 58%; }
-.lx-tab .b-item .i-detail .d-r .rate { width: 8%; color: #999999; }
-.lx-tab .b-item .i-detail .d-r .d-accuracy { width: 18%; text-align: center; }
-.lx-tab .b-item .i-detail .d-r .d-accuracy span { color: #ff5e2c; }
-.lx-tab .b-item .i-detail .d-r:hover { background-color: #f5f5f5; }
-.lx-tab .b-item .i-detail .d-r:hover .icon-fix { margin: 0; width: 28px; height: 29px; background: url("../images/sprites.png") -10px -252px; }
-.lx-tab .b-item .icon-c { float: left; width: 12px; height: 13px; background: url(../images/lx_1.png) no-repeat; margin-right: 10px; margin-top: 18px; }
-.lx-tab .b-item.down .i-head .icon-down { width: 22px; height: 22px; background: url("../images/sprites.png") -388px -179px; margin-right: 14px; }
-.lx-tab .b-item.down .d-head .icon-down { width: 18px; height: 18px; background: url("../images/sprites.png") -260px -330px; margin-right: 17px; }
-.lx-tab .b-item.up .i-head .icon-up { width: 22px; height: 22px; background: url("../images/sprites.png") -388px -95px; margin-right: 14px; }
-.lx-tab .b-item.up .d-head .icon-up { width: 18px; height: 18px; background: url("../images/sprites.png") -222px -330px; margin-right: 17px; }
-.lx-tab .b-item:last-child .i-head { border-bottom: none; }
+.lx-tab .tab-body { padding: 0 20px 10px; box-sizing: border-box; }
+.lx-tab .list-item .i-head { line-height: 60px; border-bottom: 1px dotted #c1c1c1; }
+.lx-tab .list-item .d-head { line-height: 54px; border-bottom: 1px dotted #c1c1c1; }
+.lx-tab .list-item .i-detail .d-r { width: 97%; border-bottom: 1px dotted #c1c1c1; padding-right: 15px; box-sizing: border-box; }
+.lx-tab .list-item .i-detail .d-r .text { width: 58%; }
+.lx-tab .list-item .i-detail .d-r .rate { width: 8%; color: #999999; }
+.lx-tab .list-item .i-detail .d-r .d-accuracy { width: 18%; text-align: center; }
+.lx-tab .list-item .i-detail .d-r .d-accuracy span { color: #ff5e2c; }
+.lx-tab .list-item .i-detail .d-r:hover { background-color: #f5f5f5; }
+.lx-tab .list-item .i-detail .d-r:hover .icon-fix { margin: 0; width: 28px; height: 29px; background: url("../images/sprites.png") -10px -252px; }
+.lx-tab .list-item .i-detail li:last-child .d-r { border-bottom: none; }
 
 /* 历年真题 */
 .no-buy { height: 510px; text-align: center; padding-top: 26px; box-sizing: border-box; }
@@ -661,6 +697,7 @@ a { cursor: pointer; }
 .exercise-terminal .zt-item .zt-parse .p-intro span { width: 89%; color: #666666; float: left; }
 .exercise-terminal .t-r { float: left; width: 372px; }
 .exercise-terminal .r-plan { height: 47px; line-height: 14px; padding: 12px 16px 0 20px; box-sizing: border-box; margin-bottom: 20px; }
+.exercise-terminal .r-plan .rate { color: #999999; }
 .exercise-terminal .r-plan .p-k { margin-right: 16px; }
 .exercise-terminal .r-time { background-color: #fffaf8; border-radius: 4px; border: solid 1px #f2c1b1; padding: 20px 17px; box-sizing: border-box; margin-bottom: 20px; }
 .exercise-terminal .r-time .t-col { float: left; line-height: 24px; }
@@ -668,7 +705,7 @@ a { cursor: pointer; }
 .exercise-terminal .r-time .t-col .t-residue { vertical-align: middle; font-size: 20px; color: #ff5e2c; }
 .exercise-terminal .r-time .t-btn { float: right; line-height: 30px; }
 .exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { float: left; height: 30px; line-height: 26px; padding: 0 14px; box-sizing: border-box; border-radius: 15px; }
-.exercise-terminal .r-time .t-btn .btn-pause { box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25); border: solid 1px #ff5e2c; color: #ff5e2c; margin-right: 10px; }
+.exercise-terminal .r-time .t-btn .btn-pause { box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25); border: solid 1px #ff5e2c; color: #ff5e2c; margin-right: 10px; cursor: pointer; }
 .exercise-terminal .r-time .t-btn .btn-pause i { width: 8px; height: 11px; background: url("../images/sprites.png") -403px -374px; }
 .exercise-terminal .r-time .t-btn .btn-submit { color: #ffffff; background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%); box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25); }
 .exercise-terminal .r-time .t-btn .btn-submit i { width: 13px; height: 10px; background: url("../images/sprites.png") -431px -334px; }
@@ -698,5 +735,12 @@ a { cursor: pointer; }
 .exercise-terminal .r-score .s-row .row-col:last-child { border-right: none; }
 .exercise-terminal .r-score .s-row .row-col:nth-of-type(2) { width: 40%; }
 .exercise-terminal .r-score .s-row .row-col .c-bottom { display: block; color: #999999; font-size: 14px; }
+
+.side-nav { width: 112px; height: 289px; background: url(../images/side-nav.png) no-repeat; padding: 12px 15px 0; box-sizing: border-box; text-align: center; position: fixed; top: 30%; right: 10%; }
+.side-nav ul { margin-bottom: 4px; }
+.side-nav li { line-height: 30px; }
+.side-nav li a { width: 100%; color: #ffffff; }
+.side-nav li a:hover { color: #ffb922; }
+.side-nav .wechat-text { color: #ffffff; padding-top: 6px; }
 
 /*# sourceMappingURL=index.css.map */
