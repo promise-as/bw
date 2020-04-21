@@ -1,26 +1,6 @@
-%clearfix {
-  zoom: 1;
-  &:after {
-    clear: both;
-  }
-  &:before,
-  &:after {
-    content: "";
-    display: table;
-  }
-}
+@import "zg-base";
 
-%in-b {
-  display: inline-block;
-  *zoom: 1;
-  *display: inline;
-}
-
-%one {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
+$bg-box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51);
 
 // 文本显示多少行就省略
 @mixin ells($row) {
@@ -44,6 +24,7 @@ a {
   cursor: pointer;
 }
 
+/* 样式冲突 修正 */
 // 公共头部
 .header {
   .wrap {
@@ -63,7 +44,6 @@ a {
     }
   }
 }
-
 // 公共底部
 .footer {
   .xg {
@@ -113,11 +93,7 @@ a {
     position: absolute;
     top: -15px;
   }
-  ul {
-    height: 100%;
-    @extend %clearfix;
-  }
-  li {
+  .c-item {
     float: left;
     width: 25%;
     height: 100%;
@@ -125,11 +101,41 @@ a {
     box-sizing: border-box;
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
+    position: relative;
     .item {
       border-right: 1px dotted #9a9a9a;
       box-sizing: border-box;
     }
-    position: relative;
+    .bw-icon {
+      width: 53px;
+      height: 53px;
+      margin-right: 10px;
+    }
+    .bw-icon,
+    strong {
+      vertical-align: middle;
+    }
+    .icon-1 {
+      background: url("../images/sprites.png") -10px -60px;
+    }
+    .icon-2 {
+      background: url("../images/sprites.png") -139px -10px;
+    }
+    .icon-3 {
+      background: url("../images/sprites.png") -10px -133px;
+    }
+    .icon-4 {
+      background: url("../images/sprites.png") -83px -133px;
+    }
+    .i-col {
+      border-right: 1px dotted #9a9a9a;
+    }
+    &:last-child {
+      .i-col {
+        border-right: none;
+      }
+    }
     &.on {
       &::before {
         content: "";
@@ -153,32 +159,6 @@ a {
         bottom: 0;
         left: 0;
       }
-    }
-    &:last-child {
-      .item {
-        border-right: none;
-      }
-    }
-    .bw-icon {
-      width: 53px;
-      height: 53px;
-      margin-right: 10px;
-    }
-    .bw-icon,
-    strong {
-      vertical-align: middle;
-    }
-    .icon-1 {
-      background: url("../images/sprites.png") -10px -60px;
-    }
-    .icon-2 {
-      background: url("../images/sprites.png") -139px -10px;
-    }
-    .icon-3 {
-      background: url("../images/sprites.png") -10px -133px;
-    }
-    .icon-4 {
-      background: url("../images/sprites.png") -83px -133px;
     }
   }
 }
@@ -259,10 +239,17 @@ a {
     span {
       margin-right: 6px;
     }
+    li {
+      float: left;
+      margin-right: 8px;
+    }
   }
   .sc-r {
     float: right;
     color: #999999;
+    &:hover {
+      color: $txt-hover-color;
+    }
   }
   .on {
     padding: 0 4px;
@@ -336,9 +323,11 @@ a {
   }
   .cont-l {
     float: left;
+    width: 573px;
   }
   .cont-r {
     float: left;
+    width: 502px;
     li {
       line-height: 26px;
       border-bottom: 1px solid #e9e9e9;
@@ -358,8 +347,11 @@ a {
           height: 9px;
           background: url("../images/sprites.png") -114px -301px;
         }
+        span {
+          width: 440px;
+          @extend %one;
+        }
       }
-
       .r-row {
         color: #999999;
         span {
@@ -369,6 +361,7 @@ a {
       .r-ap {
         padding: 0 8px;
         height: 28px;
+        line-height: 24px;
         background-color: #fff6f4;
         border-radius: 4px;
         border: solid 1px #fe7449;
@@ -502,7 +495,7 @@ a {
         border-radius: 4px;
         margin: 0 10px 10px 0;
         &:hover {
-          background-color: #2a57de;
+          background-color: $bg-hover-color;
           color: #fff;
         }
       }
@@ -653,7 +646,7 @@ a {
       }
     }
     &:hover {
-      box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51);
+      box-shadow: $bg-box-shadow;
     }
   }
 }
@@ -664,9 +657,7 @@ a {
   .prev,
   .next {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 41%;
 
     width: 44px;
     height: 44px;
@@ -680,8 +671,11 @@ a {
       background-color: rgba(0, 0, 0, 0.4);
     }
   }
+  .prev {
+    left: 6px;
+  }
   .next {
-    right: 0;
+    right: 6px;
   }
   li {
     @extend %clearfix;
@@ -713,6 +707,17 @@ a {
 
 // 展开与收起
 .menu-list {
+  .row-play {
+    width: 14px;
+    height: 12px;
+    background: url("../images/sprites.png") -431px -77px;
+  }
+  .row-pause {
+    width: 16px;
+    height: 16px;
+    background: url("../images/sprites.png") -122px -374px;
+  }
+
   .list-item {
     border-bottom: 1px solid #ededed;
     .outer-icon {
@@ -785,20 +790,9 @@ a {
         width: 78%;
       }
     }
-
-    .row-play {
-      width: 14px;
-      height: 12px;
-      background: url("../images/sprites.png") -431px -77px;
-    }
-    .row-pause {
-      width: 16px;
-      height: 16px;
-      background: url("../images/sprites.png") -122px -374px;
-    }
-
     .i-head {
       line-height: 60px;
+      cursor: pointer;
       .h-name {
         font-weight: bold;
       }
@@ -812,6 +806,7 @@ a {
     .d-head {
       line-height: 54px;
       border-bottom: 1px dotted #c1c1c1;
+      cursor: pointer;
       .icon-up {
         width: 18px;
         height: 18px;
@@ -861,7 +856,6 @@ a {
   .c-l {
     float: left;
     width: 888px;
-    // height: 405px;
     @extend .bc-br;
     padding: 20px 18px;
     box-sizing: border-box;
@@ -967,8 +961,8 @@ a {
           background: url("../images/sprites.png") -334px -374px;
           margin-right: 0;
         }
-        .i-head{
-          &.on{
+        .i-head {
+          &.on {
             .inner-icon {
               width: 15px;
               height: 15px;
@@ -992,12 +986,13 @@ a {
 
   .c-r {
     float: right;
-    width: 302px;
+    width: 288px;
     // height: 405px;
     line-height: 28px;
-    background-color: #ffffff;
+    @extend .bc-br;
     padding: 20px 10px 18px 16px;
     box-sizing: border-box;
+    position: relative;
     .r-title {
       font-size: 18px;
       font-weight: bold;
@@ -1080,6 +1075,17 @@ a {
       font-size: 16px;
       font-weight: bold;
     }
+    &::before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #fff;
+      border-bottom: 7px solid transparent;
+      position: absolute;
+      left: -7px;
+      top: 28px;
+    }
   }
 }
 
@@ -1161,6 +1167,10 @@ a {
         }
       }
     }
+  }
+  .prev,
+  .next {
+    top: 32%;
   }
 }
 
@@ -1339,6 +1349,7 @@ a {
       font-size: 16px;
       text-align: center;
       a {
+        height: 40px;
         line-height: 40px;
         border: solid 1px #ff5e2c;
         color: #ff5e2c;
@@ -1481,6 +1492,7 @@ a {
   .l-left {
     float: left;
     .g-item {
+      display: block;
       height: 102px;
       background: #ffffff;
       padding: 25px 28px;
@@ -1724,7 +1736,7 @@ a {
       }
 
       .p-ticket {
-        float: right;
+        // float: right;
         position: relative;
         .t-head {
           width: 164px;
@@ -1748,7 +1760,7 @@ a {
           }
         }
         .t-detail {
-          // display: none;
+          display: none;
           width: 240px;
           line-height: 22px;
           background-color: #ffffff;
@@ -1781,6 +1793,11 @@ a {
             text-decoration: underline;
           }
         }
+        &.on {
+          .t-detail {
+            display: block;
+          }
+        }
       }
     }
     .r-choice {
@@ -1803,7 +1820,6 @@ a {
         box-sizing: border-box;
         background: #ffffff;
         border-radius: 4px;
-        // border: 1px solid pink;
         position: absolute;
         top: -12px;
         right: 0;
@@ -1830,6 +1846,17 @@ a {
             height: 7px;
             background: url("../images/sprites.png") -388px -346px;
             margin-left: 4px;
+          }
+        }
+        .unfold {
+          display: none;
+        }
+        &.on {
+          .unfold {
+            display: inline-block;
+          }
+          .fold {
+            display: none;
           }
         }
       }
@@ -1949,117 +1976,124 @@ a {
     }
     .tab-body {
       line-height: 28px;
-      .bd-item {
-        display: none;
-        &.on {
-          display: block;
+    }
+    .bd-item {
+      display: none;
+      &.on {
+        display: block;
+      }
+      .i-bar {
+        height: 45px;
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
         }
-        .i-bar {
-          height: 45px;
-          position: relative;
-          img {
-            position: absolute;
-            top: 0;
-          }
-          span {
-            font-size: 16px;
-            position: absolute;
-            top: 6px;
-            left: 70px;
-          }
+        span {
+          font-size: 16px;
+          position: absolute;
+          top: 6px;
+          left: 70px;
         }
       }
-      .bd-intro {
-        padding: 30px;
-      }
-      .bd-timetable {
-        .d-listen {
-          li {
-            border-bottom: 1px solid #ededed;
-            padding: 10px 0 10px 26px;
-            .head-icon {
-              width: 44px;
-              height: 25px;
-              background: url(../images/sprites.png) -274px -112px;
-              margin-right: 8px;
+    }
+    .bd-intro {
+      padding: 30px;
+    }
+    .bd-timetable {
+      .t-detail {
+        li {
+          border-bottom: 1px solid #ededed;
+          padding: 10px 0;
+          &.on {
+            .h-btn {
+              background: url("../images/sprites.png") -143px -301px;
             }
-            .head-text {
-              font-size: 16px;
-              color: #000000;
-            }
-            .head-btn {
-              width: 10px;
-              height: 7px;
-              background: url("../images/sprites.png") -388px -346px;
-              float: right;
-              cursor: pointer;
-              margin-top: 12px;
-              margin-right: 18px;
-              &.on {
-                background: url("../images/sprites.png") -143px -301px;
-              }
-            }
-          }
-          .l-explain {
-            padding-left: 58px;
-            display: none;
-            &.on {
+            .l-explain {
               display: block;
             }
-            .e-row {
-              .row-c {
-                width: 6px;
-                height: 6px;
-                background: url(../images/sprites.png) -247px -177px;
-                margin-right: 6px;
-              }
-              .row-key {
-                width: 76%;
-              }
-            }
           }
         }
       }
-      .bd-evaluate {
-        li {
-          padding: 20px 0;
-          @extend %clearfix;
+
+      .l-head {
+        padding-left: 26px;
+        cursor: pointer;
+        .h-icon {
+          width: 44px;
+          height: 25px;
+          background: url(../images/sprites.png) -274px -112px;
+          margin-right: 8px;
         }
-        .avatar {
-          float: left;
-          margin-right: 20px;
-          border-radius: 50%;
+        .h-text {
+          font-size: 16px;
+          color: #000000;
         }
-        .e-detail {
-          float: left;
-          width: 86%;
-          .d-name {
-            font-size: 16px;
-            font-weight: bold;
+      }
+      .h-btn {
+        width: 10px;
+        height: 7px;
+        background: url("../images/sprites.png") -388px -346px;
+        float: right;
+        cursor: pointer;
+        margin-top: 12px;
+        margin-right: 18px;
+      }
+      .l-explain {
+        padding-left: 58px;
+        display: none;
+        .e-row {
+          .row-c {
+            width: 6px;
+            height: 6px;
+            background: url(../images/sprites.png) -247px -177px;
+            margin-right: 6px;
           }
-          .d-text {
-            line-height: 22px;
+          .row-key {
+            width: 76%;
           }
         }
       }
-      .bd-student {
-        li {
-          border-bottom: 1px dotted #c1c1c1;
-          &:last-child {
-            border-bottom: none;
-          }
+    }
+    .bd-evaluate {
+      li {
+        padding: 20px 0;
+        @extend %clearfix;
+      }
+      .avatar {
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+      .e-detail {
+        float: left;
+        width: 86%;
+        .d-name {
+          font-size: 16px;
+          font-weight: bold;
         }
-        .e-detail {
-          .d-name {
-            font-size: 14px;
-            color: #999999;
-            font-weight: normal;
-          }
-          .d-tiem {
-            font-size: 12px;
-            color: #999999;
-            float: right;
-          }
+        .d-text {
+          line-height: 22px;
+        }
+      }
+    }
+    .bd-student {
+      li {
+        border-bottom: 1px dotted #c1c1c1;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      .e-detail {
+        .d-name {
+          font-size: 14px;
+          color: #999999;
+          font-weight: normal;
+        }
+        .d-tiem {
+          font-size: 12px;
+          color: #999999;
+          float: right;
         }
       }
     }
@@ -2198,7 +2232,7 @@ a {
       .fix {
         cursor: pointer;
       }
-      &:hover {
+      &.on {
         background-color: #f5f5f5;
         .icon-c {
           background: url("../images/sprites.png") -431px -10px;
@@ -2551,7 +2585,7 @@ a {
       }
     }
   }
-  .r-chat {
+  .d-chat {
     padding: 10px 0 10px 6px;
     display: none;
     &.on {
@@ -2577,7 +2611,7 @@ a {
       }
     }
   }
-  .r-notice {
+  .d-notice {
     display: none;
     &.on {
       display: block;
@@ -2853,6 +2887,7 @@ a {
     bottom: 22px;
     margin: auto;
     .btn {
+      float: right;
       width: 107px;
       height: 28px;
       border: solid 1px #325aea;
@@ -2860,7 +2895,6 @@ a {
       border-radius: 15px;
       color: #255afc;
       background: #ffffff;
-      margin-left: 10px;
       &:hover {
         border: 1px solid transparent;
         color: #fff;
@@ -2969,7 +3003,7 @@ a {
     .time {
       height: 30px;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 28px;
       color: #ff5e2c;
       border: solid 1px #ff5e2c;
       padding: 0 18px;
@@ -3073,7 +3107,6 @@ a {
   .list-item {
     .i-head {
       line-height: 60px;
-      border-bottom: 1px dotted #c1c1c1;
     }
     .d-head {
       line-height: 54px;
@@ -3281,7 +3314,7 @@ a {
       span {
         width: 22px;
         height: 23px;
-        line-height: 20px;
+        line-height: 23px;
         background-color: #ececec;
         border: solid 1px #cdcdcd;
         border-radius: 50%;
@@ -3328,7 +3361,9 @@ a {
         background: url("../images/sprites.png") -146px -330px;
         margin-right: 4px;
         cursor: pointer;
-        &.on {
+      }
+      &.on {
+        i {
           background: url("../images/sprites.png") -184px -330px;
         }
       }
@@ -3366,7 +3401,7 @@ a {
     height: 47px;
     line-height: 14px;
     @extend .bc-br;
-    padding: 12px 16px 0 20px;
+    padding: 14px 16px 0 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
     .rate {
@@ -3574,7 +3609,7 @@ a {
 }
 
 // 侧边导航
-.side-nav{
+.side-nav {
   width: 112px;
   height: 289px;
   background: url(../images/side-nav.png) no-repeat;
@@ -3585,23 +3620,21 @@ a {
   position: fixed;
   top: 30%;
   right: 10%;
-  ul{
+  ul {
     margin-bottom: 4px;
   }
-  li{
+  li {
     line-height: 30px;
-    a{
+    a {
       width: 100%;
       color: #ffffff;
-      &:hover{
+      &:hover {
         color: #ffb922;
       }
     }
   }
-  .wechat-text{
+  .wechat-text {
     color: #ffffff;
     padding-top: 6px;
   }
 }
-
-// 09-购买协议

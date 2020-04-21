@@ -1,104 +1,112 @@
+// 显示弹窗
+function showPop(i) {
+  $('.mask').eq(i).show();
+}
+
+// 关闭弹窗
+$('.closed').click(function () {
+  $('.mask').hide();
+});
+
+// DOM（不包含图片）加载完之后执行
 $(function () {
-  function showPop(i) {
-    $('.mask').eq(i).show();
-  }
-  $('.closed').click(function () {
-    $('.mask').hide();
-  });
+  // 切换 类
+  // aimEle: 目标元素，className: 类名
+  function switchClass(aimEle, className) {
 
-  // 04-课程终端-详情页-4
-  $('.get').click(function () {
-    showPop(0);
-  })
+    if ($(aimEle).hasClass(className)) {
 
-  // 08-立即报名-地址下拉
-  $('.fix').click(function () {
+      $(aimEle).removeClass(className);
 
-    showPop(0);
+    } else {
 
-    // 修改地址弹窗
-    $('.sel-label-box input').click(function (e) {
-      $('.sel-label-box .sel-label').toggleClass('show');
-      $('.sel-label-box .sel-box').toggleClass('show');
-      console.log('1')
-    });
-    $('.modify-address .sel p').on('click', function () {
-      $(this).parent('.sel').addClass('cur').siblings().removeClass('cur');
-    });
-    $('.modify-address li').on('click', function () {
-      $(this).addClass('cur').siblings().removeClass('cur');
-      $('.modify-address .sel-label input').val(getAddress());
-    });
+      $(aimEle).addClass(className)
 
-    function getAddress() {
-      var province, city, area, street;
-      province = $('.modify-address').find('.province li.cur').text();
-      city = $('.modify-address').find('.city li.cur').text();
-      area = $('.modify-address').find('.area li.cur').text();
-      street = $('.modify-address').find('.street li.cur').text();
-      return province + ' ' + city + ' ' + area + ' ' + street;
-    };
-    $('.modify-address .check input').click(function (event) {
-      $(this).parent('.check').toggleClass('choice');
-    });
-  })
-
-
-
-  // 09-微信支付
-  $('.now-pay').click(function () {
-    var i = 2; // 2: 微信，3: 支付宝
-    showPop(3);
-  })
-
-  // 09-购买协议
-  $('.protocol').click(function () {
-    showPop(4);
-  })
-
-  // 10-签订协议步骤弹窗
-  $('.xy-mask .step-1 .agree').click(function (event) {
-    $(this).toggleClass('choice');
-  });
-  $('.xy-mask .step-1 .popup-link').click(function (event) {
-    if ($('.step-1 .agree').hasClass('choice')) {
-      $('.xy-mask .zg-popup').hide();
-      $('.xy-mask .step-2').show();
     }
-  });
-  $('.xy-mask .step-2 .popup-link').click(function (event) {
-    $('.xy-mask .zg-popup').hide();
-    $('.xy-mask .step-3').show();
-  });
+  }
 
+  // 展开与收起
+  // outerBox: 最外层盒子，headBox: 头部盒子
+  function unfold(outerBox, headBox, className) {
 
-  // 11-直播-回放
-  $('.live-playback').click(function () {
-    showPop(0);
-  })
+    $(outerBox).each(function () {
 
-  // 11-直播-预约直播
-  $('.row-yy').click(function () {
-    showPop(1);
-  })
+      var that = this;
 
-  // 13-题库-开始做题
-  $('.do-topic').click(function () {
-    showPop(0);
-  })
+      $(that).find(headBox).click(function () {
 
-  // 19-每日一练终端-1
-  $('.btn-pause').click(function () {
-    showPop(0);
-  })
+        switchClass(that, className);
 
-  // 19-每日一练终端-2
-  $('.btn-submit').click(function () {
-    showPop(1);
-  })
+      })
+    })
+  }
+  unfold('.menu-list .list-item', '.i-head', 'unfold');
+  unfold('.menu-list .i-detail', '.d-head', 'on');
+  // 课程终端 优惠券领取
+  unfold('.r-price .p-ticket', '.h-btn', 'on');
+  // 课程终端 选择课程
+  unfold('.t-right .c-detail', '.d-btn', 'on');
+  // 课程终端 试听单元
+  unfold('.d-listen li', '.l-head', 'on');
+  // 每日一练终端 收藏i
+  unfold('.zt-collect', 'i', 'on');
 
-  // 19-每日一练终端-3
-  $('.btn-submit').click(function () {
-    showPop(2);
-  })
+  // 鼠标移入
+  // contBox: 内容盒子,
+  function mouseEnter(headBox, contBox, className) {
+
+    $(headBox).each(function (i) {
+
+      var that = this;
+
+      // console.log(that)
+
+      $(that).mouseenter(function () {
+
+        $(that).addClass(className).siblings().removeClass(className);
+
+        $($(contBox)[i]).addClass(className).siblings().removeClass(className);
+      })
+    })
+  }
+  // 首页 右侧tab
+  mouseEnter('.sc-l li', '.r-detail .d-item', 'on');
+  // 课程终端 左侧tab
+  mouseEnter('.tab-head li', '.tab-body .bd-item', 'on');
+  // 免费试听
+  mouseEnter('.l-catalog .g-item', null, 'on');
+  // 订单中心 地址修改
+  mouseEnter('.a-all .a-bar', null, 'on');
+
+  // 鼠标点击
+  // contBox: 内容盒子,
+  function mouseClick(headBox, contBox, className) {
+
+    $(headBox).each(function (i) {
+
+      var that = this;
+
+      $(that).click(function () {
+
+        $(that).addClass(className).siblings().removeClass(className);
+
+        $($(contBox)[i]).addClass(className).siblings().removeClass(className);
+      })
+    })
+  }
+  // 首页 类别
+  mouseClick('.class-cont .c-item', null, 'on');
+  // 订单中心 支付方式
+  mouseClick('.p-detail li', null, 'on');
+  // 每日一练终端 做题
+  mouseClick('.zt-item li', null, 'on');
+
+  // 关闭区块
+  function closeHandle(closeBtn, closeBox) {
+    $(closeBtn).click(function () {
+      $(closeBox).hide();
+    })
+  }
+  // 首页 正在直播
+  closeHandle($('.bw-live .live-close'), $('.bw-live'));
 });

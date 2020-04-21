@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/index.css" />
 
   <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="https://img.thea.cn/public/js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 
 <body>
@@ -97,7 +98,7 @@
               <div class="team-detail">
                 <div class="d-row">
                   2019-11-08 16:00
-                  <a href="javascirpt:;" class="row-yy"><i></i><span>预约</span></a>
+                  <a href="javascript:;" class="row-yy"><i></i><span>预约</span></a>
                 </div>
                 <div class="d-row d-title">【2020年二建管理】现场管理和安全</div>
                 <div class="d-row">
@@ -110,7 +111,7 @@
               <div class="team-detail">
                 <div class="d-row">
                   2019-11-08 16:00
-                  <a href="javascirpt:;" class="row-yy"><i></i><span>预约</span></a>
+                  <a href="javascript:;" class="row-yy"><i></i><span>预约</span></a>
                 </div>
                 <div class="d-row d-title">【2020年二建管理】现场管理和安全</div>
                 <div class="d-row">
@@ -123,7 +124,48 @@
               <div class="team-detail">
                 <div class="d-row">
                   2019-11-08 16:00
-                  <a href="javascirpt:;" class="row-yy"><i></i><span>预约</span></a>
+                  <a href="javascript:;" class="row-yy"><i></i><span>预约</span></a>
+                </div>
+                <div class="d-row d-title">【2020年二建管理】现场管理和安全</div>
+                <div class="d-row">
+                  <span class="row-ej">二级建造师</span><i class="icon-feel"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <img src="images/avatar_4.png" alt="唐忍">
+              <div class="team-detail">
+                <div class="d-row">
+                  2019-11-08 16:00
+                  <a href="javascript:;" class="row-yy"><i></i><span>预约</span></a>
+                </div>
+                <div class="d-row d-title">【2020年二建管理】现场管理和安全</div>
+                <div class="d-row">
+                  <span class="row-ej">二级建造师</span><i class="icon-feel"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/avatar_4.png" alt="唐忍">
+              <div class="team-detail">
+                <div class="d-row">
+                  2019-11-08 16:00
+                  <a href="javascript:;" class="row-yy"><i></i><span>预约</span></a>
+                </div>
+                <div class="d-row d-title">【2020年二建管理】现场管理和安全</div>
+                <div class="d-row">
+                  <span class="row-ej">二级建造师</span><i class="icon-feel"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/avatar_4.png" alt="唐忍">
+              <div class="team-detail">
+                <div class="d-row">
+                  2019-11-08 16:00
+                  <a href="javascript:;" class="row-yy"><i></i><span>预约</span></a>
                 </div>
                 <div class="d-row d-title">【2020年二建管理】现场管理和安全</div>
                 <div class="d-row">
@@ -353,7 +395,7 @@
         </div>
         <div class="zf-msg">
           <span class="l-txt">直播时间：</span>
-          <p class="r-txt">2019-11-12   19：00</p>
+          <p class="r-txt">2019-11-12 19：00</p>
         </div>
         <div class="zf-ma">
           <div class="zf-ma-img">
@@ -409,7 +451,23 @@
     </div>
   </div>
 
-  <script src="js/index.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(".bar-slide").slide();
+
+      // 11-直播-回放
+      $('.live-playback').click(function () {
+        showPop(0);
+      })
+
+      // 11-直播-预约直播
+      $('.row-yy').click(function () {
+        showPop(1);
+      })
+    })
+
+  </script>
 </body>
 
 </html>
