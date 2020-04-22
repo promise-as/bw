@@ -77,11 +77,13 @@ $(function () {
   mouseEnter('.l-catalog .g-item', null, 'on');
   // 订单中心 地址修改
   mouseEnter('.a-all .a-bar', null, 'on');
+  // 每日一练 扫一扫
+  mouseEnter('.sys .sys-item', '.sp .sp-item', 'on');
 
   // 鼠标点击
   // contBox: 内容盒子,
   function mouseClick(headBox, contBox, className) {
-
+    
     $(headBox).each(function (i) {
 
       var that = this;
@@ -100,6 +102,7 @@ $(function () {
   mouseClick('.p-detail li', null, 'on');
   // 每日一练终端 做题
   mouseClick('.zt-item li', null, 'on');
+  
 
   // 关闭区块
   function closeHandle(closeBtn, closeBox) {

@@ -9,8 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <title>每日一练终端</title>
   <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
-  <link rel="stylesheet" type="text/css" href="css/zg-base.css" />
-  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/platform/thea/202004/hbj/bw/css/index.css" />
 
   <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
 </head>
@@ -21,7 +20,7 @@
     <div class="wrap">
       <h1 class="logo left">
         <a href="">
-          <img src="images/logo.png">
+          <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/logo.png">
         </a>
       </h1>
       <div class="center">
@@ -92,6 +91,20 @@
           </div>
         </div>
 
+        <div class="zt-item">
+          <div class="c-title">
+            1、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
+          </div>
+          <ul>
+            <li><span>A</span>自动灭火系统</li>
+            <li><span>B</span>火灾自动报警系统</li>
+            <li class="on"><span>C</span>防排烟系统</li>
+            <li><span>D</span>建筑防火间距</li>
+          </ul>
+          <div class="zt-collect">
+            <i></i><span>收藏</span>
+          </div>
+        </div>
       </div>
 
       <div class="t-r">
@@ -177,7 +190,19 @@
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- 侧边导航 -->
+  <div class="side-nav">
+    <ul>
+      <li><a href="">优惠课程</a></li>
+      <li><a href="">免费刷题</a></li>
+      <li><a href="">报考咨询</a></li>
+      <li><a href="">选课咨询</a></li>
+      <li><a href="">售后服务</a></li>
+    </ul>
+    <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/wechat-code.jpg" alt="">
+    <div class="wechat-text">微信公众号</div>
   </div>
 
   <!-- 19-每日一练终端-1 -->
@@ -191,7 +216,7 @@
   <!-- 19-每日一练终端-2 -->
   <div class="mask">
     <div class="model model-hf">
-      <p class="txt no-icon">您还有<span>8</span>道题未做，是否确定交卷？</p><br>
+      <p class="txt no-icon">您还有<span id='incomplete'>8</span>道题未做，是否确定交卷？</p><br>
       <div class="popup-links">
         <div class="popup-link link-l closed">继续做题</div>
         <div class="popup-link">确定交卷</div>
@@ -210,51 +235,7 @@
     </div>
   </div>
 
-  <!-- 底部 -->
-  <div class="footer">
-    <div class="wrap">
-      <div class="foot-tit">
-        友情链接
-      </div>
-      <div class="links-box">
-        <a href="" target="_blank">教育联展网</a><i class="xg">/</i>
-        <a href="" target="_blank">中华网考试</a><i class="xg">/</i>
-        <a href="" target="_blank">培训码头</a><i class="xg">/</i>
-        <a href="" target="_blank">中华网考试</a><i class="xg">/</i>
-        <a href="" target="_blank">培训码头</a><i class="xg">/</i>
-        <a href="" target="_blank">教育联展网</a><i class="xg">/</i>
-        <a href="" target="_blank">中华网考试</a><i class="xg">/</i>
-        <a href="" target="_blank">培训码头</a><i class="xg">/</i>
-        <a href="" target="_blank">中华网考试</a><i class="xg">/</i>
-        <a href="" target="_blank">培训码头</a>
-      </div>
-      <div class="btm">
-        <div class="left">
-          <div class="foot-tit">
-            联系我们
-          </div>
-          <p>培训咨询：<span>189 8878 7139</span>（微信同号）</p>
-          <p>办公地址：深圳市南山区科技园高新中路一道长园新材料港1栋二层北侧</p>
-          <p>地铁站：罗宝线深大站A4出口<i class="xg">/</i>公交站：科苑北、科苑立交南</p>
-        </div>
-        <div class="right">
-          <div class="foot-tit">
-            移动学习
-          </div>
-          <img class="ma" src="images/ma.png">
-          <div class="p-box">
-            <p class="p1"><span>诺达筑工</span>教育</p>
-            <p class="p2">筑工类执业资格辅导专家!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyright">
-      <p> 版权所有：深圳市诺达筑工教育科技有限公司 All Rights Reserved 粤ICP备19079295号-1</p>
-    </div>
-  </div>
-
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/js/index.js"></script>
   <script type="text/javascript">
     $(function () {
       // 19-每日一练终端-1
@@ -262,15 +243,40 @@
         showPop(0);
       })
 
+      // i: 1 题目还有没做到，i: 2 题目已做完
+      var i = 1;
+      // 判断答题卡里面的题目是否做完
+      function isFinish(answerBox, item, doneClass, i) {
+        // 题目的数量
+        var topicNumber = $(answerBox).find(item);
+
+        // 已完成的题目
+        var finishTopic = $(answerBox).find('.' + doneClass);
+
+        // 未完成的题目
+        var nofinish = topicNumber.length - finishTopic.length;
+
+        $('#incomplete').text(nofinish);
+
+        topicNumber.each(function () {
+          if ($(this).hasClass(doneClass) == false) {
+            i = 1;
+          }
+        })
+
+        showPop(i);
+      }
+
+      // 是否提交
+      function isSubmit(i) {
+        isFinish($('.s-number'), 'li', 'done', i);
+      }
+
       // 19-每日一练终端-2
       $('.btn-submit').click(function () {
-        showPop(1);
+        isSubmit(i)
       })
 
-      // 19-每日一练终端-3
-      $('.btn-submit').click(function () {
-        showPop(2);
-      })
     })
   </script>
 </body>
