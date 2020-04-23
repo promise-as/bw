@@ -13,7 +13,7 @@ h1, h2, h3, h4, p { *margin-top: 0; }
 
 a { cursor: pointer; }
 
-.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .list-item .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live .item .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .list-item .d-r .text, .menu-list .l-first .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live .item .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
 .header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt, i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .list-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue { display: inline-block; *zoom: 1; *display: inline; }
 
@@ -219,6 +219,8 @@ i, span, em, strong { vertical-align: middle; }
 
 .bc-br, .bw-class .class-cont, .cont-wd, .bw-post .cont-r, .cont-combo .c-item, .axn-course .c-l, .axn-course .c-r, .axn-recent .r-live .item, .free-trial, .kc-cont .cont-l, .order-address, .live-in, .live-past ul li, .tk-parse li, .tk-past li, .tk-exam li, .lx-tab .tab-body, .no-buy, .topic-list, .exercise-terminal .page-path, .exercise-terminal .zt-item, .exercise-terminal .r-plan, .exercise-terminal .r-scantron { background-color: #ffffff; border-radius: 4px; }
 
+.amplify, .course-list .c-item:hover { transform: scale(1.1); }
+
 /* 首页 */
 .banner { position: relative; }
 .banner .hd { position: absolute; bottom: 45px; right: 22%; }
@@ -293,7 +295,7 @@ i, span, em, strong { vertical-align: middle; }
 
 .bw-btn { background-image: linear-gradient(-48deg, #ff5e2c 0%, #ff9979 100%); box-shadow: 0px 0px 5px 0px rgba(255, 98, 49, 0.5); border-radius: 4px; color: #fff; }
 
-.cont-wd { padding: 12px 14px 0; box-sizing: border-box; margin-bottom: 22px; }
+.cont-wd { height: 282px; padding: 12px 14px 0; box-sizing: border-box; }
 .cont-wd .wd-detail { padding: 10px 4px; line-height: 28px; }
 .cont-wd .wd-detail li a { width: 93%; }
 .cont-wd .wd-detail i { width: 16px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/w_1.png) no-repeat; }
@@ -307,7 +309,7 @@ i, span, em, strong { vertical-align: middle; }
 .bw-post .cont-l { width: 835px; float: left; }
 .bw-post .cont-wd .wd-detail ul { width: 48%; float: left; }
 .bw-post .cont-wd .wd-detail ul:nth-of-type(2) { float: right; }
-.bw-post .cont-r { width: 347px; float: right; padding: 14px; box-sizing: border-box; }
+.bw-post .cont-r { float: right; width: 347px; height: 708px; padding: 14px; box-sizing: border-box; }
 .bw-post .cont-r .r-guide { line-height: 33px; margin-right: -10px; margin-bottom: 10px; }
 .bw-post .cont-r .r-guide a { padding: 0 20px; background-color: #f0f0f0; border-radius: 4px; margin: 0 10px 10px 0; }
 .bw-post .cont-r .r-guide a:hover { background-color: #2a57de; color: #fff; }
@@ -327,7 +329,7 @@ i, span, em, strong { vertical-align: middle; }
 .bw-post .cont-r .r-t { color: #f7623a; }
 
 .cont-combo { margin-right: -18px; }
-.cont-combo .c-item { float: left; width: 266px; padding: 0 13px 0 15px; box-sizing: border-box; margin-right: 18px; margin-bottom: 18px; }
+.cont-combo .c-item { float: left; width: 266px; height: 408px; padding: 0 13px 0 15px; box-sizing: border-box; margin-right: 18px; margin-bottom: 18px; }
 .cont-combo .c-item .item-bg { position: relative; width: 266px; height: 150px; }
 .cont-combo .c-item .item-bg img { border-radius: 4px; position: absolute; top: 0; left: -15px; }
 .cont-combo .c-item .item-bg .bg-hot { border-radius: 12px; background: rgba(0, 0, 0, 0.5); font-size: 12px; line-height: 22px; color: #fff; padding-right: 6px; position: absolute; top: 12px; left: -2px; }
@@ -352,14 +354,15 @@ i, span, em, strong { vertical-align: middle; }
 .bar-slide .prev { left: 6px; }
 .bar-slide .next { right: 6px; }
 .bar-slide li .item { width: 20%; float: left; }
-.bar-slide li .item > img { width: 240px; height: 293px; }
+.bar-slide li .item > img { width: 240px; height: 293px; transition: 1s; }
+.bar-slide li .item > img:hover { transform: scale(1.1); }
 .bar-slide li .team-text { padding: 15px 13px; box-sizing: border-box; }
 .bar-slide li .team-text strong { font-weight: normal; font-size: 18px; }
 .bar-slide li .team-text span { color: #999999; float: right; line-height: 26px; }
 
 /* 频道页 */
 .menu-list .row-play { width: 14px; height: 12px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -77px; }
-.menu-list .row-pause { width: 16px; height: 16px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -122px -374px; }
+.menu-list .row-pause { width: 16px; height: 16px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -122px -374px; vertical-align: middle; }
 .menu-list .list-item { border-bottom: 1px solid #ededed; }
 .menu-list .list-item .outer-icon { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px; margin-right: 14px; }
 .menu-list .list-item .inner-icon { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 10px; }
@@ -387,8 +390,42 @@ i, span, em, strong { vertical-align: middle; }
 .menu-list .list-item.unfold .i-detail { display: block; }
 .menu-list .list-item.unfold .i-detail.on .inner-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px; }
 .menu-list .list-item.unfold .i-detail.on ul { display: block; }
+.menu-list .l-first { border-bottom: 1px solid #ededed; }
+.menu-list .l-first .f-head, .menu-list .l-first .s-head, .menu-list .l-first .t-head { cursor: pointer; }
+.menu-list .l-first .f-head { line-height: 60px; padding-left: 15px; }
+.menu-list .l-first .s-head { line-height: 50px; border-bottom: 1px dotted #c1c1c1; }
+.menu-list .l-first .t-head { line-height: 40px; border-bottom: 1px dotted #c1c1c1; }
+.menu-list .l-first .f-icon { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px; margin-right: 14px; }
+.menu-list .l-first .f-text { font-size: 18px; font-weight: bold; }
+.menu-list .l-first .f-second { display: none; padding-left: 35px; }
+.menu-list .l-first .s-icon { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 10px; }
+.menu-list .l-first .s-three { padding-left: 20px; display: none; }
+.menu-list .l-first .t-icon { width: 15px; height: 15px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -264px -374px; margin-right: 10px; }
+.menu-list .l-first .t-detail { padding-left: 20px; display: none; }
+.menu-list .l-first .t-detail ul { padding: 0 0 10px 3px; line-height: 48px; }
+.menu-list .l-first .t-detail li { height: 30px; line-height: 30px; border-bottom: none; position: relative; }
+.menu-list .l-first .t-detail li::before { content: ""; width: 1px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat; position: absolute; left: 5px; top: 26px; }
+.menu-list .l-first .t-detail li:last-child::before { display: none; }
+.menu-list .l-first .icon-c { float: left; width: 12px; height: 13px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat; margin-right: 10px; margin-top: 10px; }
+.menu-list .l-first .d-r { float: left; width: 96%; }
+.menu-list .l-first .d-r .text { width: 78%; vertical-align: middle; }
+.menu-list .l-first .i-head { line-height: 60px; cursor: pointer; }
+.menu-list .l-first .i-head .h-name { font-weight: bold; }
+.menu-list .l-first .i-head .icon-down { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px; margin-right: 14px; }
+.menu-list .l-first .d-head { height: 54px; line-height: 54px; cursor: pointer; }
+.menu-list .l-first .d-head .icon-up { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px; margin-right: 17px; }
+.menu-list .l-first .d-head .icon-down { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 17px; }
+.menu-list .l-first:last-child { border-bottom: none; }
+.menu-list .l-first:last-child .i-head { border-bottom: none; }
+.menu-list .l-first.f-unfold .f-head { border-bottom: 1px dotted #c1c1c1; }
+.menu-list .l-first.f-unfold .f-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px; }
+.menu-list .l-first.f-unfold .f-second { display: block; }
+.menu-list .l-first .s-unfold .s-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px; }
+.menu-list .l-first .s-unfold .s-three { display: block; }
+.menu-list .l-first .t-unfold .t-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -334px -374px; }
+.menu-list .l-first .t-unfold .t-detail { display: block; }
 
-.axn-course { height: 405px; margin-bottom: 40px; }
+.axn-course { margin-bottom: 40px; }
 .axn-course .c-l { float: left; width: 888px; height: 100%; padding: 20px 18px; box-sizing: border-box; }
 .axn-course .c-l .bw-sctitle ul { float: left; line-height: 28px; padding-left: 10px; }
 .axn-course .c-l .bw-sctitle ul li { float: left; }
@@ -425,8 +462,8 @@ i, span, em, strong { vertical-align: middle; }
 .axn-course .c-r .r-tea ul li { margin-right: 16px; text-align: center; }
 .axn-course .c-r .r-tea ul li .txt { padding-top: 10px; }
 .axn-course .c-r .r-time { height: 57px; background-color: #f2f2f2; border-radius: 3px; font-size: 12px; padding: 14px 0 14px 14px; box-sizing: border-box; margin-bottom: 20px; }
-.axn-course .c-r .r-time strong { font-weight: normal; color: #777777; padding-left: 10px; }
-.axn-course .c-r .r-time em { padding: 0 6px 0 2px; color: #777777; }
+.axn-course .c-r .r-time strong { font-weight: normal; color: #777777; padding-left: 4px; }
+.axn-course .c-r .r-time em { padding: 0 2px; color: #777777; }
 .axn-course .c-r .r-price { padding: 13px 0 17px; line-height: 26px; color: #ff5e2c; }
 .axn-course .c-r .r-price .txt { font-size: 26px; }
 .axn-course .c-r .r-price em { vertical-align: sub; }
@@ -457,6 +494,7 @@ i, span, em, strong { vertical-align: middle; }
 .axn-combo { margin-bottom: 40px; }
 .axn-combo .bw-title { margin-bottom: 20px; }
 .axn-combo .bw-title .more { float: right; font-size: 14px; color: #999999; }
+.axn-combo .bw-title .more:hover { color: #2754df; }
 .axn-combo .combo-cont { margin-right: -20px; }
 .axn-combo .combo-cont .c-item { float: left; width: 381px; background: #ffffff; border-radius: 12px 12px 4px 4px; margin-right: 20px; }
 .axn-combo .combo-cont .c-item:hover { box-shadow: 0px 0px 18px 0px rgba(3, 3, 3, 0.14); }
@@ -518,6 +556,9 @@ i, span, em, strong { vertical-align: middle; }
 .axn-residue .r-flow .flow-item.on .i-detail { background-color: #f3f7ff; }
 .axn-residue .r-flow .flow-item:last-child::before { display: none; }
 
+.axn-info .cont-wd:first-child { height: 372px; margin-bottom: 22px; }
+.axn-info .cont-r { height: 676px; }
+
 .d-answer { padding: 14px; background-color: #f2f2f2; border-radius: 4px; margin: 10px 0; }
 .d-answer .an-l { float: left; width: 95px; height: 72px; border-radius: 4px; margin-right: 8px; }
 .d-answer .an-l img { width: 100%; height: 100%; }
@@ -553,7 +594,7 @@ i, span, em, strong { vertical-align: middle; }
 .listen-course li a:hover { border: solid 1px #3e6dfe; }
 .listen-course .on a { border: solid 1px #3e6dfe; color: #3e6dfe; }
 
-.course-list .c-item { width: 288px; margin-right: 16px; }
+.course-list .c-item { width: 288px; height: 325px; margin-right: 16px; }
 .course-list .c-item .detail-title { line-height: 25px; padding: 20px 0 10px; }
 .course-list .c-item .item-detail { border-bottom: 1px solid #e6e6e6; }
 .course-list .c-item .item-bg { width: 260px; height: 146px; }
@@ -561,7 +602,7 @@ i, span, em, strong { vertical-align: middle; }
 .course-list .c-item .item-bg .bg-hot { left: 10px; top: 20px; }
 .course-list .c-item .d-intro { color: #777777; }
 .course-list .c-item .p-btn { float: right; border-radius: 4px; line-height: 26px; padding: 0 10px; box-sizing: border-box; border: solid 1px #ff5e2c; color: #ff5e2c; }
-.course-list .c-item .p-btn:hover { background: #ff5e2c; color: #fff; }
+.course-list .c-item:hover .p-btn { background: #ff5e2c; color: #fff; }
 
 /* 课程终端 */
 .free-trial { margin: 10px 0 22px; padding: 24px; box-sizing: border-box; }
@@ -593,7 +634,8 @@ i, span, em, strong { vertical-align: middle; }
 .free-trial .t-right .r-choice { height: 26px; margin-bottom: 10px; position: relative; }
 .free-trial .t-right .r-choice .c-key { color: #999999; float: left; margin-right: 4px; }
 .free-trial .t-right .r-choice .c-detail { float: left; width: 526px; height: 50px; overflow: hidden; border-radius: 4px; padding: 12px 0 0 10px; box-sizing: border-box; background: #ffffff; border-radius: 4px; position: absolute; top: -12px; right: 0; }
-.free-trial .t-right .r-choice .c-detail li { float: left; border-radius: 4px; border: solid 1px #c1c1c1; padding: 0 10px; box-sizing: border-box; margin-right: 10px; margin-bottom: 9px; }
+.free-trial .t-right .r-choice .c-detail li { float: left; border-radius: 4px; border: solid 1px #c1c1c1; padding: 0 10px; box-sizing: border-box; margin-right: 10px; margin-bottom: 9px; cursor: pointer; }
+.free-trial .t-right .r-choice .c-detail li.on { border: solid 1px #ff5e2c; color: #ff5e2c; }
 .free-trial .t-right .r-choice .c-detail .d-btn { color: #999999; cursor: pointer; position: absolute; top: 9px; right: 8px; }
 .free-trial .t-right .r-choice .c-detail .d-btn i { width: 10px; height: 7px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -346px; margin-left: 4px; }
 .free-trial .t-right .r-choice .c-detail .unfold { display: none; }
@@ -626,16 +668,16 @@ i, span, em, strong { vertical-align: middle; }
 .kc-cont .cont-l .bd-item .i-bar img { position: absolute; top: 0; }
 .kc-cont .cont-l .bd-item .i-bar span { font-size: 16px; position: absolute; top: 6px; left: 70px; }
 .kc-cont .cont-l .bd-intro { padding: 30px; }
-.kc-cont .cont-l .bd-timetable .t-detail li { border-bottom: 1px solid #ededed; padding: 10px 0; }
-.kc-cont .cont-l .bd-timetable .t-detail li.on .h-btn { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -143px -301px; }
-.kc-cont .cont-l .bd-timetable .t-detail li.on .l-explain { display: block; }
+.kc-cont .cont-l .bd-timetable .tt-detail li { border-bottom: 1px solid #ededed; padding: 10px 0; }
+.kc-cont .cont-l .bd-timetable .tt-detail li.on .h-btn { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -143px -301px; }
+.kc-cont .cont-l .bd-timetable .tt-detail li.on .l-explain { display: block; }
 .kc-cont .cont-l .bd-timetable .l-head { padding-left: 26px; cursor: pointer; }
 .kc-cont .cont-l .bd-timetable .l-head .h-icon { width: 44px; height: 25px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png) -274px -112px; margin-right: 8px; }
 .kc-cont .cont-l .bd-timetable .l-head .h-text { font-size: 16px; color: #000000; }
 .kc-cont .cont-l .bd-timetable .h-btn { width: 10px; height: 7px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -346px; float: right; cursor: pointer; margin-top: 12px; margin-right: 18px; }
 .kc-cont .cont-l .bd-timetable .l-explain { padding-left: 58px; display: none; }
 .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-c { width: 6px; height: 6px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png) -247px -177px; margin-right: 6px; }
-.kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key { width: 76%; vertical-align: middle; }
+.kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key { width: 77%; vertical-align: middle; }
 .kc-cont .cont-l .bd-evaluate li { padding: 20px 0; }
 .kc-cont .cont-l .bd-evaluate .avatar { float: left; margin-right: 20px; border-radius: 50%; }
 .kc-cont .cont-l .bd-evaluate .e-detail { float: left; width: 86%; }
@@ -694,7 +736,7 @@ i, span, em, strong { vertical-align: middle; }
 .order-address .order-msg .msg-item .price .num { font-size: 18px; }
 .order-address .p-detail { height: 177px; background-color: #f5f5f5; padding: 23px 25px; box-sizing: border-box; font-size: 16px; }
 .order-address .p-detail ul { text-align: center; }
-.order-address .p-detail li { width: 198px; float: left; height: 47px; line-height: 38px; background-color: #ffffff; border-radius: 4px; border: solid 1px #dadada; box-sizing: border-box; margin-right: 28px; }
+.order-address .p-detail li { width: 198px; float: left; height: 47px; line-height: 38px; background-color: #ffffff; border-radius: 4px; border: solid 1px #dadada; box-sizing: border-box; margin-right: 28px; cursor: pointer; }
 .order-address .p-detail .d-wechat i { width: 23px; height: 23px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -10px; }
 .order-address .p-detail .d-alipay i { width: 21px; height: 21px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -263px; }
 .order-address .p-detail .on { border: solid 1px #ff5e2c; }
@@ -743,7 +785,7 @@ i, span, em, strong { vertical-align: middle; }
 .liveroom-in { padding-top: 20px; }
 .liveroom-in .in-l { float: left; width: 920px; height: 562px; }
 .liveroom-in .in-r { float: left; width: 280px; height: 560px; background-color: #ffffff; padding: 20px 10px; box-sizing: border-box; position: relative; }
-.liveroom-in .in-r .sc-l span { cursor: pointer; }
+.liveroom-in .in-r .sc-l li { cursor: pointer; }
 .liveroom-in .d-chat { padding: 10px 0 10px 6px; display: none; }
 .liveroom-in .d-chat.on { display: block; }
 .liveroom-in .d-chat .c-row { line-height: 31px; }
@@ -924,14 +966,14 @@ i, span, em, strong { vertical-align: middle; }
 .exercise-terminal .r-time { background-color: #fffaf8; border-radius: 4px; border: solid 1px #f2c1b1; padding: 20px 17px; box-sizing: border-box; margin-bottom: 20px; }
 .exercise-terminal .r-time .t-col { float: left; line-height: 24px; }
 .exercise-terminal .r-time .t-col i { width: 24px; height: 24px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -10px -330px; }
-.exercise-terminal .r-time .t-col .t-residue { vertical-align: middle; font-size: 20px; color: #ff5e2c; }
+.exercise-terminal .r-time .t-col .t-residue { font-size: 20px; color: #ff5e2c; }
 .exercise-terminal .r-time .t-btn { float: right; line-height: 30px; }
 .exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { float: left; height: 30px; line-height: 26px; padding: 0 14px; box-sizing: border-box; border-radius: 15px; }
 .exercise-terminal .r-time .t-btn .btn-pause { box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25); border: solid 1px #ff5e2c; color: #ff5e2c; margin-right: 10px; cursor: pointer; }
 .exercise-terminal .r-time .t-btn .btn-pause i { width: 8px; height: 11px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -403px -374px; }
 .exercise-terminal .r-time .t-btn .btn-submit { color: #ffffff; background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%); box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25); }
 .exercise-terminal .r-time .t-btn .btn-submit i { width: 13px; height: 10px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -334px; }
-.exercise-terminal .r-scantron { padding: 20px 24px 0; box-sizing: border-box; }
+.exercise-terminal .r-scantron { height: 374px; padding: 20px 24px 0; box-sizing: border-box; }
 .exercise-terminal .r-scantron .diff { float: right; }
 .exercise-terminal .r-scantron .diff i { width: 16px; height: 16px; margin-right: 6px; margin-left: 16px; }
 .exercise-terminal .r-scantron .diff .without i { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -334px -330px; }
@@ -941,6 +983,9 @@ i, span, em, strong { vertical-align: middle; }
 .exercise-terminal .r-scantron .s-number li { float: left; width: 31px; height: 31px; line-height: 31px; background-color: #ffffff; border: solid 1px #c1c1c1; box-sizing: border-box; text-align: center; border-radius: 50%; color: #666666; margin-right: 13px; margin-bottom: 14px; }
 .exercise-terminal .r-scantron .s-number li.done { background-color: #ebf0ff; border: solid 1px #ebf0ff; color: #4f5e8c; }
 .exercise-terminal .r-scantron .s-number li.error { background-color: #ff653f; border: solid 1px #ff653f; color: #ffffff; }
+.exercise-terminal .r-scantron .s-number a { float: left; width: 31px; height: 31px; line-height: 31px; background-color: #ffffff; border: solid 1px #c1c1c1; box-sizing: border-box; text-align: center; border-radius: 50%; color: #666666; margin-right: 13px; margin-bottom: 14px; }
+.exercise-terminal .r-scantron .s-number a.done { background-color: #ebf0ff; border: solid 1px #ebf0ff; color: #4f5e8c; }
+.exercise-terminal .r-scantron .s-number a.error { background-color: #ff653f; border: solid 1px #ff653f; color: #ffffff; }
 .exercise-terminal .r-score { height: 173px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/zt_1.png) no-repeat; margin-bottom: 20px; text-align: center; padding-top: 20px; box-sizing: border-box; }
 .exercise-terminal .r-score .s-num { margin-bottom: 8px; }
 .exercise-terminal .r-score .s-num span { font-size: 50px; line-height: 42px; color: #ff5e2c; }
@@ -993,5 +1038,12 @@ i, span, em, strong { vertical-align: middle; }
 .broadcast li .txt .b .ss a { width: 76px; height: 26px; line-height: 26px; color: #ff5e2c; text-align: center; border-radius: 4px; border: solid 1px #ff5e2c; margin-right: 6px; vertical-align: middle; }
 .broadcast li .txt .b .ss a:hover { background-image: linear-gradient(-48deg, #ff5e2c 0%, #ff9979 100%); color: #fff; }
 .broadcast li .txt .b .ss .st { width: 42px; height: 42px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -212px -10px; }
+
+.mask .model.model-hf { margin-left: -140px; }
+
+#suspend { position: fixed; top: 108px; left: 62%; }
+
+.kczd-cont .qjwt { height: 336px; }
+.kczd-cont .kctj { height: 456px; }
 
 /*# sourceMappingURL=index.css.map */

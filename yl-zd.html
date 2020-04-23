@@ -61,7 +61,7 @@
           </p>
         </div>
 
-        <div class="zt-item">
+        <div class="zt-item" id="t1">
           <div class="c-title">
             1、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
           </div>
@@ -76,9 +76,9 @@
           </div>
         </div>
 
-        <div class="zt-item">
+        <div class="zt-item" id="t2">
           <div class="c-title">
-            1、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
+            2、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
           </div>
           <ul>
             <li><span>A</span>自动灭火系统</li>
@@ -91,9 +91,54 @@
           </div>
         </div>
 
-        <div class="zt-item">
+        <div class="zt-item" id="t3">
           <div class="c-title">
-            1、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
+            3、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
+          </div>
+          <ul>
+            <li><span>A</span>自动灭火系统</li>
+            <li><span>B</span>火灾自动报警系统</li>
+            <li class="on"><span>C</span>防排烟系统</li>
+            <li><span>D</span>建筑防火间距</li>
+          </ul>
+          <div class="zt-collect">
+            <i></i><span>收藏</span>
+          </div>
+        </div>
+
+        <div class="zt-item" id="t4">
+          <div class="c-title">
+            4、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
+          </div>
+          <ul>
+            <li class="on"><span>A</span>自动灭火系统</li>
+            <li><span>B</span>火灾自动报警系统</li>
+            <li><span>C</span>防排烟系统</li>
+            <li><span>D</span>建筑防火间距</li>
+          </ul>
+          <div class="zt-collect on">
+            <i></i><span>收藏</span>
+          </div>
+        </div>
+
+        <div class="zt-item" id="t5">
+          <div class="c-title">
+            5、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
+          </div>
+          <ul>
+            <li><span>A</span>自动灭火系统</li>
+            <li><span>B</span>火灾自动报警系统</li>
+            <li class="on"><span>C</span>防排烟系统</li>
+            <li><span>D</span>建筑防火间距</li>
+          </ul>
+          <div class="zt-collect">
+            <i></i><span>收藏</span>
+          </div>
+        </div>
+
+        <div class="zt-item" id="t6">
+          <div class="c-title">
+            6、<span class="type">单选</span>下列选项中，不属于建筑主动防火措施的是( )。
           </div>
           <ul>
             <li><span>A</span>自动灭火系统</li>
@@ -107,7 +152,7 @@
         </div>
       </div>
 
-      <div class="t-r">
+      <div class="t-r" id="suspend">
         <div class="r-plan">
           <span class="p-k">测试进度</span>
           <!-- 600 就是宽度 120，倍率 0.3 -->
@@ -149,43 +194,12 @@
             </div>
           </div>
           <div class="s-number">
-            <ul>
-              <li class="done">1</li>
-              <li>2</li>
-              <li class="done">3</li>
-              <li class="done">4</li>
-              <li class="done">5</li>
-              <li class="done">6</li>
-              <li class="done">7</li>
-              <li class="done">8</li>
-              <li class="done">9</li>
-              <li class="done">10</li>
-              <li class="done">11</li>
-              <li class="done">12</li>
-              <li class="done">13</li>
-              <li class="done">14</li>
-              <li class="done">15</li>
-              <li class="done">16</li>
-              <li class="done">17</li>
-              <li class="done">18</li>
-              <li class="done">19</li>
-              <li class="done">20</li>
-              <li class="done">21</li>
-              <li>22</li>
-              <li>23</li>
-              <li>24</li>
-              <li>25</li>
-              <li>26</li>
-              <li>27</li>
-              <li>28</li>
-              <li>29</li>
-              <li>30</li>
-              <li>31</li>
-              <li>32</li>
-              <li>33</li>
-              <li>34</li>
-              <li>35</li>
-            </ul>
+            <a href="#t1" class="done">1</a>
+            <a href="#t2" class="done">2</a>
+            <a href="#t3">3</a>
+            <a href="#t4" class="done">4</a>
+            <a href="#t5" class="done">5</a>
+            <a href="#t6" class="done">6</a>
           </div>
         </div>
       </div>
@@ -238,6 +252,10 @@
   <script type="text/javascript" src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/js/index.js"></script>
   <script type="text/javascript">
     $(function () {
+
+      // 每日一练终端 做题
+      mouseClick('.zt-item li', null, 'on');
+
       // 19-每日一练终端-1
       $('.btn-pause').click(function () {
         showPop(0);
@@ -259,9 +277,13 @@
         $('#incomplete').text(nofinish);
 
         topicNumber.each(function () {
-          if ($(this).hasClass(doneClass) == false) {
+          
+          if (nofinish > 0) {
             i = 1;
+          }else{
+            i = 2;
           }
+
         })
 
         showPop(i);
@@ -269,7 +291,7 @@
 
       // 是否提交
       function isSubmit(i) {
-        isFinish($('.s-number'), 'li', 'done', i);
+        isFinish($('.s-number'), 'a', 'done', i);
       }
 
       // 19-每日一练终端-2

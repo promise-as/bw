@@ -67,6 +67,11 @@ a {
   border-radius: 4px;
 }
 
+// 放大
+.amplify {
+  transform: scale(1.1);
+}
+
 /* 首页 */
 
 .banner {
@@ -433,10 +438,11 @@ a {
 
 // 问答
 .cont-wd {
+  height: 282px;
   @extend .bc-br;
   padding: 12px 14px 0;
   box-sizing: border-box;
-  margin-bottom: 22px;
+  // margin-bottom: 22px;
   .wd-detail {
     padding: 10px 4px;
     line-height: 28px;
@@ -498,8 +504,9 @@ a {
   }
   // 右侧
   .cont-r {
-    width: 347px;
     float: right;
+    width: 347px;
+    height: 708px;
     padding: 14px;
     box-sizing: border-box;
     @extend .bc-br;
@@ -595,6 +602,7 @@ a {
   .c-item {
     float: left;
     width: 266px;
+    height: 408px;
     @extend .bc-br;
     padding: 0 13px 0 15px;
     box-sizing: border-box;
@@ -712,6 +720,10 @@ a {
       > img {
         width: 240px;
         height: 293px;
+        transition: 1s;
+        &:hover{
+          transform: scale(1.1);
+        }
       }
     }
     .team-text {
@@ -743,6 +755,7 @@ a {
     width: 16px;
     height: 16px;
     background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -122px -374px;
+    vertical-align: middle;
   }
   .list-item {
     border-bottom: 1px solid #ededed;
@@ -876,11 +889,181 @@ a {
       }
     }
   }
+
+  // 三层 展开与收起
+  .l-first {
+    border-bottom: 1px solid #ededed;
+    .f-head, .s-head, .t-head{
+      cursor: pointer;
+      
+    }
+    .f-head{
+      line-height: 60px;
+      padding-left: 15px;
+    }
+    .s-head{
+      line-height: 50px;
+      border-bottom: 1px dotted #c1c1c1;
+    }
+    .t-head{
+      line-height: 40px;
+      border-bottom: 1px dotted #c1c1c1;
+    }
+    .f-icon {
+      width: 22px;
+      height: 22px;
+      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px;
+      margin-right: 14px;
+    }
+    .f-text{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .f-second{
+      display: none;
+      padding-left: 35px;
+    }
+
+    .s-icon {
+      width: 18px;
+      height: 18px;
+      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px;
+      margin-right: 10px;
+    }
+    .s-three{
+      padding-left: 20px;
+      display: none;
+    }
+
+    .t-icon{
+      width: 15px;
+      height: 15px;
+      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -264px -374px;
+      margin-right: 10px;
+    }
+    
+    .t-detail {
+      padding-left: 20px;
+      display: none;
+      ul {
+        padding: 0 0 10px 3px;
+        line-height: 48px;
+        // display: none;
+      }
+      li {
+        height: 30px;
+        line-height: 30px;
+        border-bottom: none;
+        position: relative;
+        &::before {
+          content: "";
+          width: 1px;
+          // height: 38px;
+          height: 16px;
+          background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat;
+          position: absolute;
+          left: 5px;
+          top: 26px;
+        }
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .icon-c {
+      float: left;
+      width: 12px;
+      height: 13px;
+      background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    .d-r {
+      float: left;
+      width: 96%;
+      .text {
+        width: 78%;
+        @extend %one;
+        vertical-align: middle;
+      }
+    }
+    .i-head {
+      line-height: 60px;
+      cursor: pointer;
+      .h-name {
+        font-weight: bold;
+      }
+      .icon-down {
+        width: 22px;
+        height: 22px;
+        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px;
+        margin-right: 14px;
+      }
+    }
+    .d-head {
+      height: 54px;
+      line-height: 54px;
+      cursor: pointer;
+      .icon-up {
+        width: 18px;
+        height: 18px;
+        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px;
+        margin-right: 17px;
+      }
+      .icon-down {
+        width: 18px;
+        height: 18px;
+        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px;
+        margin-right: 17px;
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+      .i-head {
+        border-bottom: none;
+      }
+    }
+    // 第一层
+    &.f-unfold {
+      .f-head {
+        border-bottom: 1px dotted #c1c1c1;
+      }
+      .f-icon {
+        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px;
+      }
+
+      .f-second{
+        display: block;
+      }
+
+    }
+    // 第二层
+    .s-unfold{
+      .s-icon {
+        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px;
+      }
+      .s-three{
+        display: block;
+      }
+    }
+    // 第二层
+    .t-unfold{
+      .t-icon {
+        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -334px -374px;
+      }
+      .t-detail{
+        display: block;
+      }
+    }
+  }
+
 }
 
 // 课程试听
 .axn-course {
-  height: 405px;
   margin-bottom: 40px;
   @extend %clearfix;
   .c-l {
@@ -1065,10 +1248,10 @@ a {
       strong {
         font-weight: normal;
         color: #777777;
-        padding-left: 10px;
+        padding-left: 4px;
       }
       em {
-        padding: 0 6px 0 2px;
+        padding: 0 2px;
         color: #777777;
       }
     }
@@ -1217,6 +1400,9 @@ a {
       float: right;
       font-size: 14px;
       color: #999999;
+      &:hover{
+        color: $txt-hover-color;
+      }
     }
   }
   .combo-cont {
@@ -1491,6 +1677,17 @@ a {
 }
 
 // 相关资讯
+.axn-info{
+  .cont-wd{
+    &:first-child{
+      height: 372px;
+      margin-bottom: 22px;
+    }
+  }
+  .cont-r{
+    height: 676px;
+  }
+}
 .d-answer {
   padding: 14px;
   background-color: #f2f2f2;
@@ -1659,6 +1856,7 @@ a {
 .course-list {
   .c-item {
     width: 288px;
+    height: 325px;
     margin-right: 16px;
     .detail-title {
       line-height: 25px;
@@ -1691,7 +1889,10 @@ a {
       box-sizing: border-box;
       border: solid 1px #ff5e2c;
       color: #ff5e2c;
-      &:hover {
+    }
+    &:hover{
+      @extend .amplify;
+      .p-btn{
         background: #ff5e2c;
         color: #fff;
       }
@@ -1872,6 +2073,11 @@ a {
           box-sizing: border-box;
           margin-right: 10px;
           margin-bottom: 9px;
+          cursor: pointer;
+          &.on{
+            border: solid 1px #ff5e2c;
+            color: #ff5e2c;
+          }
         }
         .d-btn {
           color: #999999;
@@ -2040,7 +2246,7 @@ a {
       padding: 30px;
     }
     .bd-timetable {
-      .t-detail {
+      .tt-detail {
         li {
           border-bottom: 1px solid #ededed;
           padding: 10px 0;
@@ -2088,7 +2294,7 @@ a {
             margin-right: 6px;
           }
           .row-key {
-            width: 76%;
+            width: 77%;
             @extend %one;
             vertical-align: middle;
           }
@@ -2368,6 +2574,7 @@ a {
       border: solid 1px #dadada;
       box-sizing: border-box;
       margin-right: 28px;
+      cursor: pointer;
     }
     .d-wechat {
       i {
@@ -2623,7 +2830,7 @@ a {
     box-sizing: border-box;
     position: relative;
     .sc-l {
-      span {
+      li {
         cursor: pointer;
       }
     }
@@ -3495,7 +3702,6 @@ a {
       }
       .t-residue {
         @extend %in-b;
-        vertical-align: middle;
         font-size: 20px;
         color: #ff5e2c;
       }
@@ -3537,6 +3743,7 @@ a {
     }
   }
   .r-scantron {
+    height: 374px;
     @extend .bc-br;
     padding: 20px 24px 0;
     box-sizing: border-box;
@@ -3570,6 +3777,31 @@ a {
         @extend %clearfix;
       }
       li {
+        float: left;
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+        background-color: #ffffff;
+        border: solid 1px #c1c1c1;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 50%;
+        color: #666666;
+        margin-right: 13px;
+        margin-bottom: 14px;
+        &.done {
+          background-color: #ebf0ff;
+          border: solid 1px #ebf0ff;
+          color: #4f5e8c;
+        }
+        &.error {
+          background-color: #ff653f;
+          border: solid 1px #ff653f;
+          color: #ffffff;
+        }
+      }
+
+      a {
         float: left;
         width: 31px;
         height: 31px;
@@ -3848,5 +4080,29 @@ a {
         }
       }
     }
+  }
+}
+
+.mask{
+  .model{
+    &.model-hf{
+      margin-left: -140px;
+    }
+  }
+}
+
+// 悬浮固定
+#suspend{
+  position: fixed;
+  top: 108px;
+  left: 62%;
+}
+
+.kczd-cont{
+  .qjwt{
+    height: 336px;
+  }
+  .kctj{
+    height: 456px;
   }
 }

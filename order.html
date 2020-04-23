@@ -373,17 +373,7 @@
 
   <!-- 10-签订协议步骤-1 -->
   <div class="mask xy-mask">
-    <div class="zg-popup zg-popup-5 step-1">
-      <div class="popup-con">
-        <p class="popup-tit">用户购买协议</p>
-        <p class="xy-con">用户务必仔细阅读并透彻理解本协议，用户提交信息支付成功的行为视为对本协议全部内容的认可，本协议自用户提交信息之日起生效。</p>
-        <p class="agree">《用户购买协议》</p>
-        <div class="popup-link">
-          同意并继续
-        </div>
-      </div>
-    </div>
-    <div class="zg-popup zg-popup-3 step-2">
+    <div class="zg-popup zg-popup-3 step-2" style="display: block;">
       <div class="close close-2 closed"><i class="icon bg-c_12x12"></i>关闭</div>
       <div class="popup-con xieyi">
         <p class="popup-tit">2019年二级建造师【无忧取证班】套餐协议</p>
@@ -408,17 +398,6 @@
         <div class="popup-link">
           同意并继续
         </div>
-      </div>
-    </div>
-    <div class="zg-popup zg-popup-5 step-3">
-      <div class="popup-con">
-        <p class="popup-tit">填写身份证信息</p>
-        <form class="xy-form">
-          <input type="text" placeholder="请输入您的真实姓名">
-          <input type="text" placeholder="请输入您的身份证号码">
-          <input type="submit" class="popup-link" value="签订协议">
-        </form>
-        <p class="tips">为了确保您的课程能顺利进行，请填写真实有效的身份证信息，若信息有误，将导致课程无法正常开展，您将承担相应风险。</p>
       </div>
     </div>
   </div>
@@ -531,8 +510,9 @@
 
       // 10-签订协议步骤弹窗
       $('.xy-mask .step-1 .agree').click(function (event) {
-        $(this).toggleClass('choice');
+        // $(this).toggleClass('choice');
       });
+      
       $('.xy-mask .step-1 .popup-link').click(function (event) {
         if ($('.step-1 .agree').hasClass('choice')) {
           $('.xy-mask .zg-popup').hide();
