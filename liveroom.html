@@ -55,7 +55,7 @@
       <div class="in-l">
         <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/live_3.jpg" alt="">
       </div>
-      
+
       <div class="in-r">
         <div class="bw-sctitle">
           <ul class="sc-l">
@@ -100,7 +100,7 @@
                 <a href="" class="buy">点击这里购买</a>
               </div>
             </div>
-            
+
             <div class="n-row">
               <i class="row-icon"></i>
               <div class="row-v">
@@ -123,17 +123,45 @@
   <!-- 侧边导航 -->
   <div class="side-nav">
     <ul>
-      <li><a href="">优惠课程</a></li>
-      <li><a href="">免费刷题</a></li>
-      <li><a href="">报考咨询</a></li>
-      <li><a href="">选课咨询</a></li>
-      <li><a href="">售后服务</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">优惠课程</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">免费刷题</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">报考咨询</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">选课咨询</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">售后服务</a></li>
     </ul>
     <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/wechat-code.jpg" alt="">
     <div class="wechat-text">微信公众号</div>
   </div>
 
   <script type="text/javascript" src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/js/index.js"></script>
+
+  <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
+  <script type="text/javascript">
+    var _echatServer = ['v.rainbowred.com'];
+    window._echat = window._echat || function () { (_echat.q = _echat.q || []).push(arguments) }; _echat.l = +new Date;
+    _echat('initParam', { companyId: 378 });
+    _echat('initParam', { echatTag: '深圳-职业项目' });
+    (function () {
+      var echat = document.createElement('script');
+      echat.type = 'text/javascript';
+      echat.async = true;
+      echat.id = 'echatmodulejs';
+      echat.setAttribute('charset', 'UTF-8');
+      echat.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'vs.rainbowred.com/visitor/echat.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(echat, s);
+    })();
+    function ECHATCustomMiniChat(echatTag, visEvt, lan, metaData, myData, routeEntranceId) {
+      var customObj = {};
+      echatTag && (customObj.echatTag = echatTag);
+      visEvt && (customObj.visEvt = JSON.stringify(visEvt));
+      lan && (customObj.lan = lan);
+      metaData && (customObj.metaData = metaData);
+      myData && (customObj.myData = myData);
+      routeEntranceId && (customObj.routeEntranceId = routeEntranceId);
+      ECHAT.customMiniChat(customObj);
+    }
+  </script>
 </body>
 
 </html>

@@ -22,6 +22,8 @@ function mouseClick(headBox, contBox, className) {
 
 // DOM（不包含图片）加载完之后执行
 $(function () {
+  // theaMsForm($('.sign-in'));
+  
   // 关闭区块
   function closeHandle(closeBtn, closeBox) {
     $(closeBtn).click(function () {
@@ -53,8 +55,6 @@ $(function () {
   unfold('.r-price .p-ticket', '.h-btn', 'on');
   // 课程终端 选择课程
   unfold('.t-right .c-detail', '.d-btn', 'on');
-  // 课程终端 选择课程 具体课程按钮
-  // unfold('.c-detail .c-detail', 'li', 'on');
 
   // 课程终端 试听单元
   unfold('.d-listen li', '.l-head', 'on');
@@ -78,8 +78,7 @@ $(function () {
   mouseEnter('.tab-head li', '.tab-body .bd-item', 'on');
   // 免费试听
   mouseEnter('.l-catalog .g-item', null, 'on');
-  // 订单中心 地址修改
-  mouseEnter('.a-all .a-bar', null, 'on');
+  
   // 每日一练 扫一扫
   mouseEnter('.sys .sys-item', '.sp .sp-item', 'on');
 

@@ -84,7 +84,7 @@
           <i class="icon-c"></i>
           <span class="msg">深圳市 南山区 粤海街道 长园新材料港1栋二层北侧 （张三 收） 18812345672</span>
           <div class="bar-r">
-            <span class="type">默认地址</span>
+            <a href="javascript:;" class="type">默认地址</a>
             <i class="icon-fix"></i>
             <span class="fix">修改</span>
           </div>
@@ -93,7 +93,7 @@
           <i class="icon-c"></i>
           <span class="msg">深圳市 南山区 粤海街道 长园新材料港1栋二层北侧 （张三 收） 18812345672</span>
           <div class="bar-r">
-            <span class="type">默认地址</span>
+            <a href="javascript:;" class="type">默认地址</a>
             <i class="icon-fix"></i>
             <span class="fix">修改</span>
           </div>
@@ -102,7 +102,7 @@
           <i class="icon-c"></i>
           <span class="msg">深圳市 南山区 粤海街道 长园新材料港1栋二层北侧 （张三 收） 18812345672</span>
           <div class="bar-r">
-            <span class="type">默认地址</span>
+            <a href="javascript:;" class="type">默认地址</a>
             <i class="icon-fix"></i>
             <span class="fix">修改</span>
           </div>
@@ -221,11 +221,11 @@
   <!-- 侧边导航 -->
   <div class="side-nav">
     <ul>
-      <li><a href="">优惠课程</a></li>
-      <li><a href="">免费刷题</a></li>
-      <li><a href="">报考咨询</a></li>
-      <li><a href="">选课咨询</a></li>
-      <li><a href="">售后服务</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">优惠课程</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">免费刷题</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">报考咨询</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">选课咨询</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">售后服务</a></li>
     </ul>
     <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/wechat-code.jpg" alt="">
     <div class="wechat-text">微信公众号</div>
@@ -449,6 +449,9 @@
   <script type="text/javascript" src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/js/index.js"></script>
   <script type="text/javascript">
     $(function () {
+      // 订单中心 地址修改
+      mouseClick('.a-all .a-bar', null, 'on');
+
       // 08-立即报名-地址下拉
       $('.fix').click(function () {
 
@@ -495,7 +498,7 @@
 
       $('.now-pay').click(function () {
         paymentHandle('.p-detail li')
-        
+
         if (payIndex == 0) {
           showPop(1);
         } else if (payIndex == 1) {
@@ -509,22 +512,38 @@
       })
 
       // 10-签订协议步骤弹窗
-      $('.xy-mask .step-1 .agree').click(function (event) {
-        // $(this).toggleClass('choice');
-      });
-      
-      $('.xy-mask .step-1 .popup-link').click(function (event) {
-        if ($('.step-1 .agree').hasClass('choice')) {
-          $('.xy-mask .zg-popup').hide();
-          $('.xy-mask .step-2').show();
-        }
-      });
-      $('.xy-mask .step-2 .popup-link').click(function (event) {
-        $('.xy-mask .zg-popup').hide();
-        $('.xy-mask .step-3').show();
-      });
-
+      $('.popup-link').click(function () {
+        $('.mask').hide();
+      })
     })
+  </script>
+
+  <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
+  <script type="text/javascript">
+    var _echatServer = ['v.rainbowred.com'];
+    window._echat = window._echat || function () { (_echat.q = _echat.q || []).push(arguments) }; _echat.l = +new Date;
+    _echat('initParam', { companyId: 378 });
+    _echat('initParam', { echatTag: '深圳-职业项目' });
+    (function () {
+      var echat = document.createElement('script');
+      echat.type = 'text/javascript';
+      echat.async = true;
+      echat.id = 'echatmodulejs';
+      echat.setAttribute('charset', 'UTF-8');
+      echat.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'vs.rainbowred.com/visitor/echat.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(echat, s);
+    })();
+    function ECHATCustomMiniChat(echatTag, visEvt, lan, metaData, myData, routeEntranceId) {
+      var customObj = {};
+      echatTag && (customObj.echatTag = echatTag);
+      visEvt && (customObj.visEvt = JSON.stringify(visEvt));
+      lan && (customObj.lan = lan);
+      metaData && (customObj.metaData = metaData);
+      myData && (customObj.myData = myData);
+      routeEntranceId && (customObj.routeEntranceId = routeEntranceId);
+      ECHAT.customMiniChat(customObj);
+    }
   </script>
 </body>
 

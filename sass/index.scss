@@ -464,6 +464,10 @@ a {
       padding: 10px 16px;
       box-sizing: border-box;
       margin: 10px 0;
+      display: none;
+      &.on{
+        display: block;
+      }
     }
     .an-text {
       @include ells(2);
@@ -565,6 +569,7 @@ a {
       }
       .list-b {
         width: 94%;
+        font-size: 12px;
         .nnt {
           padding-left: 80px;
         }
@@ -577,13 +582,16 @@ a {
           float: right;
           margin-top: 2px;
           width: 20%;
-          background-color: #fff6f4;
-          border-radius: 4px;
+          font-size: 14px;
           i {
             width: 15px;
             height: 15px;
             background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -194px -374px;
             margin-top: 4px;
+          }
+          &:hover{
+            background-color: #fff6f4;
+            border-radius: 4px;
           }
         }
       }
@@ -683,6 +691,7 @@ a {
     }
     &:hover {
       box-shadow: $bg-box-shadow;
+      @extend .amplify;
     }
   }
 }
@@ -1571,7 +1580,7 @@ a {
       text-align: center;
       a {
         height: 40px;
-        line-height: 40px;
+        line-height: 38px;
         border: solid 1px #ff5e2c;
         color: #ff5e2c;
         border-radius: 20px;
@@ -1644,14 +1653,22 @@ a {
         .h-time {
           color: #ff5e2c;
         }
+        &:hover{
+          .h-text {
+            background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -92px -206px;
+          }
+        }
       }
       .i-detail {
         margin-left: 18px;
         background-color: #f9f9f9;
         padding: 8px 0 8px 22px;
         box-sizing: border-box;
-        span {
+        a {
           margin-right: 20px;
+        }
+        &:hover{
+          background-color: #f3f7ff;
         }
       }
       &.on {
@@ -1891,7 +1908,6 @@ a {
       color: #ff5e2c;
     }
     &:hover{
-      @extend .amplify;
       .p-btn{
         background: #ff5e2c;
         color: #fff;
@@ -2353,7 +2369,14 @@ a {
         a {
           width: 92%;
         }
+        .l-head{
+          width: 92%;
+          @extend %one;
+        }
       }
+    }
+    .icon-list{
+      cursor: pointer;
     }
     .an-text {
       -webkit-line-clamp: 3;
@@ -2469,10 +2492,14 @@ a {
       }
       .bar-r {
         float: right;
+        display: none;
       }
       .type {
         color: #999999;
         margin-right: 20px;
+        &:hover{
+          color: #2459fc;
+        }
       }
       .icon-fix {
         width: 13px;
@@ -2481,11 +2508,19 @@ a {
       }
       .fix {
         cursor: pointer;
+        &:hover{
+          color: #2459fc;
+        }
       }
       &.on {
-        background-color: #f5f5f5;
         .icon-c {
           background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -10px;
+        }
+      }
+      &:hover{
+        background-color: #f5f5f5;
+        .bar-r{
+          display: block;
         }
       }
     }
@@ -3007,7 +3042,7 @@ a {
 
 // 真题解析试听
 .tk-parse {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   .bw-title {
     .more {
       float: right;
@@ -3021,7 +3056,7 @@ a {
   ul {
     line-height: 28px;
     @extend %clearfix;
-    padding: 20px 0 10px;
+    padding: 20px 0 0;
     margin-right: -20px;
   }
   li {
@@ -3092,6 +3127,7 @@ a {
 
 // 历年真题
 .tk-past {
+  margin-bottom: 10px;
   ul {
     @extend %clearfix;
     padding-top: 20px;
@@ -3160,7 +3196,7 @@ a {
 
 // 模考试卷
 .tk-exam {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   ul {
     @extend %clearfix;
     padding-top: 20px;
@@ -4057,7 +4093,7 @@ a {
         .ss {
           float: right;
           height: 100%;
-          a {
+          .bm {
             width: 76px;
             height: 26px;
             line-height: 26px;
@@ -4076,6 +4112,7 @@ a {
             width: 42px;
             height: 42px;
             background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -212px -10px;
+            vertical-align: middle;
           }
         }
       }
@@ -4083,19 +4120,20 @@ a {
   }
 }
 
+// 遮罩层
 .mask{
   .model{
     &.model-hf{
-      margin-left: -140px;
+      margin-left: -190px;
     }
   }
 }
 
 // 悬浮固定
-#suspend{
+.suspend{
   position: fixed;
-  top: 108px;
   left: 62%;
+  top: 0;
 }
 
 .kczd-cont{

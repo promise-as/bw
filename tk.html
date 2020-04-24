@@ -87,13 +87,13 @@
               <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/avatar_5.png" alt="">
               <span>李旭</span>
             </div>
-            <a href="javascript:;" class="t-r">
+            <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="t-r">
               <i></i>
               <span>免费试听</span>
             </a>
           </div>
         </li>
-        
+
       </ul>
     </div>
 
@@ -137,7 +137,7 @@
             </div>
           </div>
           <div class="e-btn">
-            <a href="javascript:;">做题</a>
+            <a href="javascript:;" class="in-test">做题</a>
           </div>
         </li>
       </ul>
@@ -147,11 +147,11 @@
   <!-- 侧边导航 -->
   <div class="side-nav">
     <ul>
-      <li><a href="">优惠课程</a></li>
-      <li><a href="">免费刷题</a></li>
-      <li><a href="">报考咨询</a></li>
-      <li><a href="">选课咨询</a></li>
-      <li><a href="">售后服务</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">优惠课程</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">免费刷题</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">报考咨询</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">选课咨询</a></li>
+      <li><a href="javascript:void(0)" onclick="ECHATCustomMiniChat()">售后服务</a></li>
     </ul>
     <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/wechat-code.jpg" alt="">
     <div class="wechat-text">微信公众号</div>
@@ -246,9 +246,9 @@
   <script type="text/javascript">
     $(function () {
       // 关闭弹窗
-      function closePopup(){
+      function closePopup() {
         $('.mask').hide();
-      } 
+      }
 
       // 显示 13-题库-选择类型
       showPop(0);
@@ -257,18 +257,45 @@
         showPop(1);
       })
 
-      $('.sel-subject').click(function(){
+      $('.sel-subject').click(function () {
         closePopup()
       })
 
-      $('.popup-link').click(function(){
+      $('.popup-link').click(function () {
         closePopup()
       })
 
-      $('.in-test').click(function(){
+      $('.in-test').click(function () {
         showPop(2);
       })
     })
+  </script>
+  <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
+  <script type="text/javascript">
+    var _echatServer = ['v.rainbowred.com'];
+    window._echat = window._echat || function () { (_echat.q = _echat.q || []).push(arguments) }; _echat.l = +new Date;
+    _echat('initParam', { companyId: 378 });
+    _echat('initParam', { echatTag: '深圳-职业项目' });
+    (function () {
+      var echat = document.createElement('script');
+      echat.type = 'text/javascript';
+      echat.async = true;
+      echat.id = 'echatmodulejs';
+      echat.setAttribute('charset', 'UTF-8');
+      echat.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'vs.rainbowred.com/visitor/echat.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(echat, s);
+    })();
+    function ECHATCustomMiniChat(echatTag, visEvt, lan, metaData, myData, routeEntranceId) {
+      var customObj = {};
+      echatTag && (customObj.echatTag = echatTag);
+      visEvt && (customObj.visEvt = JSON.stringify(visEvt));
+      lan && (customObj.lan = lan);
+      metaData && (customObj.metaData = metaData);
+      myData && (customObj.myData = myData);
+      routeEntranceId && (customObj.routeEntranceId = routeEntranceId);
+      ECHAT.customMiniChat(customObj);
+    }
   </script>
 </body>
 

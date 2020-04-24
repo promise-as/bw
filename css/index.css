@@ -13,7 +13,7 @@ h1, h2, h3, h4, p { *margin-top: 0; }
 
 a { cursor: pointer; }
 
-.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .list-item .d-r .text, .menu-list .l-first .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live .item .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .list-item .d-r .text, .menu-list .l-first .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live .item .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .kc-cont .cont-r .cont-wd li .l-head, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
 .header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt, i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .list-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue { display: inline-block; *zoom: 1; *display: inline; }
 
@@ -219,7 +219,7 @@ i, span, em, strong { vertical-align: middle; }
 
 .bc-br, .bw-class .class-cont, .cont-wd, .bw-post .cont-r, .cont-combo .c-item, .axn-course .c-l, .axn-course .c-r, .axn-recent .r-live .item, .free-trial, .kc-cont .cont-l, .order-address, .live-in, .live-past ul li, .tk-parse li, .tk-past li, .tk-exam li, .lx-tab .tab-body, .no-buy, .topic-list, .exercise-terminal .page-path, .exercise-terminal .zt-item, .exercise-terminal .r-plan, .exercise-terminal .r-scantron { background-color: #ffffff; border-radius: 4px; }
 
-.amplify, .course-list .c-item:hover { transform: scale(1.1); }
+.amplify, .cont-combo .c-item:hover { transform: scale(1.1); }
 
 /* 首页 */
 .banner { position: relative; }
@@ -299,7 +299,8 @@ i, span, em, strong { vertical-align: middle; }
 .cont-wd .wd-detail { padding: 10px 4px; line-height: 28px; }
 .cont-wd .wd-detail li a { width: 93%; }
 .cont-wd .wd-detail i { width: 16px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/w_1.png) no-repeat; }
-.cont-wd .wd-detail .detail-an { line-height: 20px; background-color: #f0f0f0; border-radius: 4px; padding: 10px 16px; box-sizing: border-box; margin: 10px 0; }
+.cont-wd .wd-detail .detail-an { line-height: 20px; background-color: #f0f0f0; border-radius: 4px; padding: 10px 16px; box-sizing: border-box; margin: 10px 0; display: none; }
+.cont-wd .wd-detail .detail-an.on { display: block; }
 .cont-wd .wd-detail .an-text { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .cont-wd .wd-detail .an-text span { display: inline; color: #666666; }
 
@@ -321,11 +322,12 @@ i, span, em, strong { vertical-align: middle; }
 .bw-post .cont-r .icon-list:last-child { border-bottom: none; }
 .bw-post .cont-r .icon-list i { width: 11px; height: 12px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -302px; float: left; margin-top: 7px; }
 .bw-post .cont-r .icon-list .list-r { float: left; width: 94%; line-height: 22px; }
-.bw-post .cont-r .icon-list .list-b { width: 94%; }
+.bw-post .cont-r .icon-list .list-b { width: 94%; font-size: 12px; }
 .bw-post .cont-r .icon-list .list-b .nnt { padding-left: 80px; }
 .bw-post .cont-r .icon-list .list-b strong, .bw-post .cont-r .icon-list .list-b a { color: #ff5e2c; font-weight: normal; }
-.bw-post .cont-r .icon-list .list-b a { float: right; margin-top: 2px; width: 20%; background-color: #fff6f4; border-radius: 4px; }
+.bw-post .cont-r .icon-list .list-b a { float: right; margin-top: 2px; width: 20%; font-size: 14px; }
 .bw-post .cont-r .icon-list .list-b a i { width: 15px; height: 15px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -194px -374px; margin-top: 4px; }
+.bw-post .cont-r .icon-list .list-b a:hover { background-color: #fff6f4; border-radius: 4px; }
 .bw-post .cont-r .r-t { color: #f7623a; }
 
 .cont-combo { margin-right: -18px; }
@@ -534,7 +536,7 @@ i, span, em, strong { vertical-align: middle; }
 .axn-combo .combo-cont .i-price .d-r em { color: #ff5e2c; }
 .axn-combo .combo-cont .i-price .d-r .p-o { color: #999999; text-decoration: line-through; }
 .axn-combo .combo-cont .i-btn { padding: 20px 0; font-size: 16px; text-align: center; }
-.axn-combo .combo-cont .i-btn a { height: 40px; line-height: 40px; border: solid 1px #ff5e2c; color: #ff5e2c; border-radius: 20px; padding: 0 34px; box-sizing: border-box; margin: 0 10px; }
+.axn-combo .combo-cont .i-btn a { height: 40px; line-height: 38px; border: solid 1px #ff5e2c; color: #ff5e2c; border-radius: 20px; padding: 0 34px; box-sizing: border-box; margin: 0 10px; }
 .axn-combo .combo-cont .i-btn a.bw-btn { border: none; color: #fff; }
 
 .axn-residue { padding: 6px 12px 0; }
@@ -549,8 +551,10 @@ i, span, em, strong { vertical-align: middle; }
 .axn-residue .r-flow .flow-item .i-head .h-c { width: 9px; height: 9px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/c-nor.png) no-repeat; }
 .axn-residue .r-flow .flow-item .i-head .h-text { width: 62px; height: 26px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -10px -206px; color: #fff; text-align: center; margin-right: 6px; }
 .axn-residue .r-flow .flow-item .i-head .h-time { color: #ff5e2c; }
+.axn-residue .r-flow .flow-item .i-head:hover .h-text { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -92px -206px; }
 .axn-residue .r-flow .flow-item .i-detail { margin-left: 18px; background-color: #f9f9f9; padding: 8px 0 8px 22px; box-sizing: border-box; }
-.axn-residue .r-flow .flow-item .i-detail span { margin-right: 20px; }
+.axn-residue .r-flow .flow-item .i-detail a { margin-right: 20px; }
+.axn-residue .r-flow .flow-item .i-detail:hover { background-color: #f3f7ff; }
 .axn-residue .r-flow .flow-item.on .i-head .h-c { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -114px -301px; }
 .axn-residue .r-flow .flow-item.on .i-head .h-text { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -92px -206px; }
 .axn-residue .r-flow .flow-item.on .i-detail { background-color: #f3f7ff; }
@@ -690,6 +694,8 @@ i, span, em, strong { vertical-align: middle; }
 .kc-cont .cont-r { float: left; width: 372px; }
 .kc-cont .cont-r .cont-wd { margin-bottom: 18px; }
 .kc-cont .cont-r .cont-wd li a { width: 92%; }
+.kc-cont .cont-r .cont-wd li .l-head { width: 92%; }
+.kc-cont .cont-r .icon-list { cursor: pointer; }
 .kc-cont .cont-r .an-text { -webkit-line-clamp: 3; }
 .kc-cont .row-val { color: #999999; margin-right: 10px; }
 .kc-cont .list-item .i-head { padding: 0 16px; }
@@ -713,12 +719,15 @@ i, span, em, strong { vertical-align: middle; }
 .order-address .a-all { padding: 20px 0; }
 .order-address .a-all .a-bar { line-height: 37px; }
 .order-address .a-all .a-bar .icon-c { width: 14px; height: 14px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -369px -374px; margin-right: 10px; }
-.order-address .a-all .a-bar .bar-r { float: right; }
+.order-address .a-all .a-bar .bar-r { float: right; display: none; }
 .order-address .a-all .a-bar .type { color: #999999; margin-right: 20px; }
+.order-address .a-all .a-bar .type:hover { color: #2459fc; }
 .order-address .a-all .a-bar .icon-fix { width: 13px; height: 11px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -271px; }
 .order-address .a-all .a-bar .fix { cursor: pointer; }
-.order-address .a-all .a-bar.on { background-color: #f5f5f5; }
+.order-address .a-all .a-bar .fix:hover { color: #2459fc; }
 .order-address .a-all .a-bar.on .icon-c { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -10px; }
+.order-address .a-all .a-bar:hover { background-color: #f5f5f5; }
+.order-address .a-all .a-bar:hover .bar-r { display: block; }
 .order-address .order-msg { margin-bottom: 40px; }
 .order-address .order-msg .msg-head { background-color: #f5f5f5; line-height: 37px; font-weight: bold; }
 .order-address .order-msg ul { text-align: center; }
@@ -826,10 +835,10 @@ i, span, em, strong { vertical-align: middle; }
 .tk-tab .tab-sidebar .s-nav .on .paper { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -342px -148px; }
 .tk-tab .tab-body { float: left; width: 896px; }
 
-.tk-parse { margin-bottom: 20px; }
+.tk-parse { margin-bottom: 10px; }
 .tk-parse .bw-title .more { float: right; font-size: 14px; color: #666666; }
 .tk-parse .bw-title .more:hover { color: #2754df; }
-.tk-parse ul { line-height: 28px; padding: 20px 0 10px; margin-right: -20px; }
+.tk-parse ul { line-height: 28px; padding: 20px 0 0; margin-right: -20px; }
 .tk-parse li { float: left; width: 284px; height: 182px; margin-right: 20px; margin-bottom: 20px; padding: 16px 20px 10px 20px; box-sizing: border-box; position: relative; }
 .tk-parse li:hover { box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51); }
 .tk-parse .p-title { font-size: 16px; }
@@ -844,6 +853,7 @@ i, span, em, strong { vertical-align: middle; }
 .star-m i { width: 13px; height: 12px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -141px; margin: 0 2px; }
 .star-m i.gray { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -109px; }
 
+.tk-past { margin-bottom: 10px; }
 .tk-past ul { padding-top: 20px; line-height: 28px; margin-right: -20px; text-align: center; }
 .tk-past li { float: left; width: 284px; height: 220px; margin-right: 20px; margin-bottom: 20px; padding: 20px 20px 10px 20px; box-sizing: border-box; position: relative; }
 .tk-past li:hover { box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51); }
@@ -854,7 +864,7 @@ i, span, em, strong { vertical-align: middle; }
 .tk-past .p-b .btn { float: right; width: 107px; height: 28px; border: solid 1px #325aea; box-sizing: border-box; border-radius: 15px; color: #255afc; background: #ffffff; }
 .tk-past .p-b .btn:hover { border: 1px solid transparent; color: #fff; background-image: linear-gradient(90deg, #2358fc 0%, #517cff 100%); }
 
-.tk-exam { margin-bottom: 20px; }
+.tk-exam { margin-bottom: 10px; }
 .tk-exam ul { padding-top: 20px; line-height: 28px; margin-right: -20px; }
 .tk-exam li { float: left; width: 284px; margin-right: 20px; margin-bottom: 20px; padding: 24px 14px 22px 16px; box-sizing: border-box; }
 .tk-exam li:hover { box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.51); }
@@ -1035,13 +1045,13 @@ i, span, em, strong { vertical-align: middle; }
 .broadcast li .txt .b .q { float: left; font-size: 18px; height: 100%; line-height: 42px; font-weight: bold; color: #ff5e2c; }
 .broadcast li .txt .b .q i { font-size: 14px; }
 .broadcast li .txt .b .ss { float: right; height: 100%; }
-.broadcast li .txt .b .ss a { width: 76px; height: 26px; line-height: 26px; color: #ff5e2c; text-align: center; border-radius: 4px; border: solid 1px #ff5e2c; margin-right: 6px; vertical-align: middle; }
-.broadcast li .txt .b .ss a:hover { background-image: linear-gradient(-48deg, #ff5e2c 0%, #ff9979 100%); color: #fff; }
-.broadcast li .txt .b .ss .st { width: 42px; height: 42px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -212px -10px; }
+.broadcast li .txt .b .ss .bm { width: 76px; height: 26px; line-height: 26px; color: #ff5e2c; text-align: center; border-radius: 4px; border: solid 1px #ff5e2c; margin-right: 6px; vertical-align: middle; }
+.broadcast li .txt .b .ss .bm:hover { background-image: linear-gradient(-48deg, #ff5e2c 0%, #ff9979 100%); color: #fff; }
+.broadcast li .txt .b .ss .st { width: 42px; height: 42px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -212px -10px; vertical-align: middle; }
 
-.mask .model.model-hf { margin-left: -140px; }
+.mask .model.model-hf { margin-left: -190px; }
 
-#suspend { position: fixed; top: 108px; left: 62%; }
+.suspend { position: fixed; left: 62%; top: 0; }
 
 .kczd-cont .qjwt { height: 336px; }
 .kczd-cont .kctj { height: 456px; }
