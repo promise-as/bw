@@ -465,7 +465,7 @@ a {
       box-sizing: border-box;
       margin: 10px 0;
       display: none;
-      &.on{
+      &.on, &.answer-show{
         display: block;
       }
     }
