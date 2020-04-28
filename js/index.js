@@ -22,7 +22,34 @@ function mouseClick(headBox, contBox, className) {
 
 // DOM（不包含图片）加载完之后执行
 $(function () {
-  // theaMsForm($('.sign-in'));
+  theaMsForm($('.sign-in'));
+
+  // 首页和频道页的类别
+  function classHeightChange(outerEle, parentEle, itemEle){
+
+    var itemLen = $(outerEle).find(itemEle).length;
+
+    if(itemLen == 5){
+      $(itemEle).width('20%');
+    }
+    if(itemLen == 6){
+      $(itemEle).width('16.66%');
+    }
+
+    if(itemLen >= 7){
+      $(itemEle).width('16.66%');
+      $(outerEle).height($(outerEle).height() * 2);
+      $(parentEle).css({
+        'background': 'transparent'
+      })
+      $(itemEle).css({
+        'background': '#fff',
+        'borderRadius': '4px',
+        'marginBottom': '10px'
+      })
+    }
+  }
+  classHeightChange('.bw-class', '.class-cont', '.c-item');
   
   // 关闭区块
   function closeHandle(closeBtn, closeBox) {
