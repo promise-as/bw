@@ -20,6 +20,18 @@ function mouseClick(headBox, contBox, className) {
   })
 }
 
+// 鼠标移入
+  // contBox: 内容盒子,
+  function mouseEnter(headBox, contBox, className) {
+    $(headBox).each(function (i) {
+      var that = this;
+      $(that).mouseenter(function () {
+        $(that).addClass(className).siblings().removeClass(className);
+        $($(contBox)[i]).addClass(className).siblings().removeClass(className);
+      })
+    })
+  }
+
 // DOM（不包含图片）加载完之后执行
 $(function () {
   theaMsForm($('.sign-in'));
@@ -27,17 +39,17 @@ $(function () {
   // 首页和频道页的类别
   function classHeightChange(outerEle, parentEle, itemEle){
 
-    var itemLen = $(outerEle).find(itemEle).length;
+    var itemLen = $(parentEle).find(itemEle).length;
 
     if(itemLen == 5){
-      $(itemEle).width('20%');
+      $(parentEle).find(itemEle).width('20%');
     }
     if(itemLen == 6){
-      $(itemEle).width('16.66%');
+      $(parentEle).find(itemEle).width('16.66%');
     }
 
     if(itemLen >= 7){
-      $(itemEle).width('16.66%');
+      $(parentEle).find(itemEle).width('16.66%');
       $(outerEle).height($(outerEle).height() * 2);
       $(parentEle).css({
         'background': 'transparent'
@@ -88,17 +100,7 @@ $(function () {
   // 每日一练终端 收藏i
   unfold('.zt-collect', 'i', 'on');
 
-  // 鼠标移入
-  // contBox: 内容盒子,
-  function mouseEnter(headBox, contBox, className) {
-    $(headBox).each(function (i) {
-      var that = this;
-      $(that).mouseenter(function () {
-        $(that).addClass(className).siblings().removeClass(className);
-        $($(contBox)[i]).addClass(className).siblings().removeClass(className);
-      })
-    })
-  }
+  
   // 首页 右侧tab
   mouseEnter('.sc-l li', '.r-detail .d-item', 'on');
   // 课程终端 左侧tab

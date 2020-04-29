@@ -48,11 +48,11 @@ a {
   .xg {
     vertical-align: text-top;
   }
-  .btm{
-    .right{
-      .p-box{
-        .p1{
-          span{
+  .btm {
+    .right {
+      .p-box {
+        .p1 {
+          span {
             vertical-align: top;
           }
         }
@@ -144,7 +144,8 @@ a {
     .i-col {
       border-right: 1px dotted #9a9a9a;
     }
-    &:last-child, &:nth-of-type(6) {
+    &:last-child,
+    &:nth-of-type(6) {
       .i-col {
         border-right: none;
       }
@@ -342,7 +343,42 @@ a {
   }
   .cont-l {
     float: left;
-    width: 573px;
+    .l-item {
+      width: 573px;
+      height: 322px;
+      position: relative;
+      display: none;
+      > img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &.on {
+        display: block;
+      }
+      .i-detail {
+        width: 128px;
+        height: 46px;
+        line-height: 40px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 23px;
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        img, span{
+          vertical-align: middle;
+        }
+      }
+    }
   }
   .cont-r {
     float: left;
@@ -464,7 +500,8 @@ a {
       box-sizing: border-box;
       margin: 10px 0;
       display: none;
-      &.on, &.answer-show{
+      &.on,
+      &.answer-show {
         display: block;
       }
     }
@@ -588,7 +625,7 @@ a {
             background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -194px -374px;
             margin-top: 4px;
           }
-          &:hover{
+          &:hover {
             background-color: #fff6f4;
             border-radius: 4px;
           }
@@ -729,7 +766,7 @@ a {
         width: 240px;
         height: 293px;
         transition: 1s;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
         }
       }
@@ -901,19 +938,20 @@ a {
   // 三层 展开与收起
   .l-first {
     border-bottom: 1px solid #ededed;
-    .f-head, .s-head, .t-head{
+    .f-head,
+    .s-head,
+    .t-head {
       cursor: pointer;
-      
     }
-    .f-head{
+    .f-head {
       line-height: 60px;
       padding-left: 15px;
     }
-    .s-head{
+    .s-head {
       line-height: 50px;
       border-bottom: 1px dotted #c1c1c1;
     }
-    .t-head{
+    .t-head {
       line-height: 40px;
       border-bottom: 1px dotted #c1c1c1;
     }
@@ -923,11 +961,11 @@ a {
       background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px;
       margin-right: 14px;
     }
-    .f-text{
+    .f-text {
       font-size: 18px;
       font-weight: bold;
     }
-    .f-second{
+    .f-second {
       display: none;
       padding-left: 35px;
     }
@@ -938,18 +976,18 @@ a {
       background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px;
       margin-right: 10px;
     }
-    .s-three{
+    .s-three {
       padding-left: 20px;
       display: none;
     }
 
-    .t-icon{
+    .t-icon {
       width: 15px;
       height: 15px;
       background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -264px -374px;
       margin-right: 10px;
     }
-    
+
     .t-detail {
       padding-left: 20px;
       display: none;
@@ -1043,31 +1081,29 @@ a {
         background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px;
       }
 
-      .f-second{
+      .f-second {
         display: block;
       }
-
     }
     // 第二层
-    .s-unfold{
+    .s-unfold {
       .s-icon {
         background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px;
       }
-      .s-three{
+      .s-three {
         display: block;
       }
     }
     // 第二层
-    .t-unfold{
+    .t-unfold {
       .t-icon {
         background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -334px -374px;
       }
-      .t-detail{
+      .t-detail {
         display: block;
       }
     }
   }
-
 }
 
 // 课程试听
@@ -1408,7 +1444,7 @@ a {
       float: right;
       font-size: 14px;
       color: #999999;
-      &:hover{
+      &:hover {
         color: $txt-hover-color;
       }
     }
@@ -1652,7 +1688,7 @@ a {
         .h-time {
           color: #ff5e2c;
         }
-        &:hover{
+        &:hover {
           .h-text {
             background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -92px -206px;
           }
@@ -1666,7 +1702,7 @@ a {
         a {
           margin-right: 20px;
         }
-        &:hover{
+        &:hover {
           background-color: #f3f7ff;
         }
       }
@@ -1693,14 +1729,14 @@ a {
 }
 
 // 相关资讯
-.axn-info{
-  .cont-wd{
-    &:first-child{
+.axn-info {
+  .cont-wd {
+    &:first-child {
       height: 372px;
       margin-bottom: 22px;
     }
   }
-  .cont-r{
+  .cont-r {
     height: 676px;
   }
 }
@@ -1906,8 +1942,8 @@ a {
       border: solid 1px #ff5e2c;
       color: #ff5e2c;
     }
-    &:hover{
-      .p-btn{
+    &:hover {
+      .p-btn {
         background: #ff5e2c;
         color: #fff;
       }
@@ -2089,7 +2125,7 @@ a {
           margin-right: 10px;
           margin-bottom: 9px;
           cursor: pointer;
-          &.on{
+          &.on {
             border: solid 1px #ff5e2c;
             color: #ff5e2c;
           }
@@ -2368,13 +2404,13 @@ a {
         a {
           width: 92%;
         }
-        .l-head{
+        .l-head {
           width: 92%;
           @extend %one;
         }
       }
     }
-    .icon-list{
+    .icon-list {
       cursor: pointer;
     }
     .an-text {
@@ -2496,7 +2532,7 @@ a {
       .type {
         color: #999999;
         margin-right: 20px;
-        &:hover{
+        &:hover {
           color: #2459fc;
         }
       }
@@ -2507,7 +2543,7 @@ a {
       }
       .fix {
         cursor: pointer;
-        &:hover{
+        &:hover {
           color: #2459fc;
         }
       }
@@ -2516,9 +2552,9 @@ a {
           background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -10px;
         }
       }
-      &:hover{
+      &:hover {
         background-color: #f5f5f5;
-        .bar-r{
+        .bar-r {
           display: block;
         }
       }
@@ -3047,7 +3083,7 @@ a {
       float: right;
       font-size: 14px;
       color: #666666;
-      &:hover{
+      &:hover {
         color: $txt-hover-color;
       }
     }
@@ -4038,7 +4074,7 @@ a {
         }
       }
     }
-    .hint{
+    .hint {
       line-height: 14px;
       color: #666666;
     }
@@ -4120,26 +4156,26 @@ a {
 }
 
 // 遮罩层
-.mask{
-  .model{
-    &.model-hf{
+.mask {
+  .model {
+    &.model-hf {
       margin-left: -190px;
     }
   }
 }
 
 // 悬浮固定
-.suspend{
+.suspend {
   position: fixed;
   left: 62%;
   top: 0;
 }
 
-.kczd-cont{
-  .qjwt{
+.kczd-cont {
+  .qjwt {
     height: 336px;
   }
-  .kctj{
+  .kctj {
     height: 456px;
   }
 }

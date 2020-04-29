@@ -277,7 +277,12 @@ i, span, em, strong { vertical-align: middle; }
 .bw-live .live-close { float: right; font-size: 14px; color: #666666; cursor: pointer; }
 .bw-live .live-close i { width: 11px; height: 11px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/close-btn.png) no-repeat; margin-right: 4px; }
 .bw-live .live-cont { padding: 0 0 10px 50px; box-sizing: border-box; }
-.bw-live .cont-l { float: left; width: 573px; }
+.bw-live .cont-l { float: left; }
+.bw-live .cont-l .l-item { width: 573px; height: 322px; position: relative; display: none; }
+.bw-live .cont-l .l-item > img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+.bw-live .cont-l .l-item.on { display: block; }
+.bw-live .cont-l .l-item .i-detail { width: 128px; height: 46px; line-height: 40px; background: rgba(0, 0, 0, 0.5); border-radius: 23px; color: #fff; font-size: 22px; text-align: center; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+.bw-live .cont-l .l-item .i-detail img, .bw-live .cont-l .l-item .i-detail span { vertical-align: middle; }
 .bw-live .cont-r { float: left; width: 502px; }
 .bw-live .cont-r li { line-height: 26px; border-bottom: 1px solid #e9e9e9; padding-bottom: 18px; margin-left: 70px; margin-bottom: 16px; position: relative; }
 .bw-live .cont-r li:last-child { border-bottom: none; }
