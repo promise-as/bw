@@ -160,6 +160,24 @@
       </div>
 
       <div class="t-r">
+        <div class="r-time">
+          <div class="t-col">
+            <i></i>
+            <div class="t-residue">
+              <span>50</span> : <span>08</span>
+            </div>
+          </div>
+          <div class="t-btn has-time">
+            <div class="btn-pause">
+              <i></i>
+              <span>暂停</span>
+            </div>
+            <a href="javascript:;" class="btn-submit">
+              <i></i>
+              <span>交卷</span>
+            </a>
+          </div>
+        </div>
         <div class="r-score">
           <div class="s-num">
             <span>97</span><em>分</em>
@@ -226,9 +244,87 @@
     <div class="wechat-text">微信公众号</div>
   </div>
 
+  <!-- 19-每日一练终端-1 -->
+  <div class="mask">
+    <div class="model model-hf">
+      <p class="txt no-icon">您已暂停考试</p><br>
+      <div class="popup-link closed">继续考试</div>
+    </div>
+  </div>
+
+  <!-- 19-每日一练终端-2 -->
+  <div class="mask">
+    <div class="model model-hf">
+      <p class="txt no-icon">您还有<span id='incomplete'>8</span>道题未做，是否确定交卷？</p><br>
+      <div class="popup-links">
+        <div class="popup-link link-l closed">继续做题</div>
+        <a href="submit.html" class="popup-link">确定交卷</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 19-每日一练终端-3 -->
+  <div class="mask">
+    <div class="model model-hf">
+      <p class="txt no-icon">题目已做完，是否确定交卷？</p><br>
+      <div class="popup-links">
+        <div class="popup-link link-l closed">继续做题</div>
+        <a href="submit.html" class="popup-link">确定交卷</a>
+      </div>
+    </div>
+  </div>
+
   <script src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/js/index.js"></script>
   <script>
     $(function () {
+      // 每日一练终端 做题
+      mouseClick('.zt-item li', null, 'on');
+
+      // 19-每日一练终端-1
+      $('.btn-pause').click(function () {
+        showPop(0);
+      })
+
+      // i: 1 题目还有没做到，i: 2 题目已做完
+      var i = 1;
+      // 判断答题卡里面的题目是否做完
+      function isFinish(answerBox, item, doneClass, i) {
+        // 题目的数量
+        var topicNumber = $(answerBox).find(item);
+
+        // 已完成的题目
+        var finishTopic = $(answerBox).find('.' + doneClass);
+
+        // 未完成的题目
+        var nofinish = topicNumber.length - finishTopic.length;
+
+        $('#incomplete').text(nofinish);
+
+        topicNumber.each(function () {
+
+          if (nofinish > 0) {
+            i = 1;
+          } else {
+            i = 2;
+          }
+
+        })
+
+        showPop(i);
+      }
+
+      // 是否提交
+      function isSubmit(i) {
+        isFinish($('.s-number'), 'a', 'done', i);
+      }
+
+      // 19-每日一练终端-2
+      $('.btn-submit').click(function () {
+        // console.log(111);
+        
+        isSubmit(i)
+      })
+
       // 鼠标滚动，答题卡固定到顶部
       var supspendBox = $('.t-r');
       $(document).scroll(function () {

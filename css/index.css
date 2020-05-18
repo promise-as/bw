@@ -13,13 +13,13 @@ h1, h2, h3, h4, p { *margin-top: 0; }
 
 a { cursor: pointer; }
 
-.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .list-item .d-r .text, .menu-list .l-first .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live .item .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .kc-cont .cont-r .cont-wd li .l-head, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .list-item .d-r .text, .menu-list .l-first .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live li .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .kc-cont .cont-r .cont-wd li .l-head, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
-.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt, i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .list-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue { display: inline-block; *zoom: 1; *display: inline; }
+.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt, i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .list-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue, .exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { display: inline-block; *zoom: 1; *display: inline; }
 
-.header .wrap, .header .wrap .center .nav, .header .wrap .center form, .footer .btm, .mask .zg-popup-7 .btn-box, .modify-address .sel-label-box .sel-box, .bw-sctitle, .bw-live .live-cont, .bw-post .post-cont, .bw-post .cont-wd .wd-detail, .bw-post .cont-r .icon-list, .cont-combo, .bar-slide li, .axn-course, .axn-course .c-l .l-detail, .axn-recent .r-live .item, .axn-combo .combo-cont, .axn-combo .combo-cont .i-stage .s-row, .axn-combo .combo-cont .i-data, .d-answer, .free-trial, .free-trial .t-right .r-choice, .free-trial .t-right .r-choice .c-detail ul, .kc-cont, .kc-cont .cont-l .tab-head, .kc-cont .cont-l .tab-head ul, .kc-cont .cont-l .bd-evaluate li, .order-head, .order-head .h-r ul, .order-address .order-msg ul, .order-address .p-detail ul, .order-address .order-tcp, .live-in, .live-in .in-r .r-hot, .live-in .in-r .r-tea, .live-past ul, .live-past ul li .p-playback, .liveroom-in, .liveroom-in .d-notice .n-row, .tk-tab, .tk-parse ul, .tk-past ul, .tk-exam ul, .yl-tab .b-week ul, .topic-list li, .topic-list .l-title, .exercise-terminal, .exercise-terminal .zt-item .zt-parse .p-intro, .exercise-terminal .r-time, .exercise-terminal .r-scantron .s-number ul, .exercise-terminal .r-score .s-row, .wx, .broadcast li, .broadcast li .txt .b { zoom: 1; }
-.header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .bar-slide li:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-recent .r-live .item:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { clear: both; }
-.header .wrap:before, .header .wrap .center .nav:before, .header .wrap .center form:before, .footer .btm:before, .mask .zg-popup-7 .btn-box:before, .modify-address .sel-label-box .sel-box:before, .bw-sctitle:before, .bw-live .live-cont:before, .bw-post .post-cont:before, .bw-post .cont-wd .wd-detail:before, .bw-post .cont-r .icon-list:before, .cont-combo:before, .bar-slide li:before, .axn-course:before, .axn-course .c-l .l-detail:before, .axn-recent .r-live .item:before, .axn-combo .combo-cont:before, .axn-combo .combo-cont .i-stage .s-row:before, .axn-combo .combo-cont .i-data:before, .d-answer:before, .free-trial:before, .free-trial .t-right .r-choice:before, .free-trial .t-right .r-choice .c-detail ul:before, .kc-cont:before, .kc-cont .cont-l .tab-head:before, .kc-cont .cont-l .tab-head ul:before, .kc-cont .cont-l .bd-evaluate li:before, .order-head:before, .order-head .h-r ul:before, .order-address .order-msg ul:before, .order-address .p-detail ul:before, .order-address .order-tcp:before, .live-in:before, .live-in .in-r .r-hot:before, .live-in .in-r .r-tea:before, .live-past ul:before, .live-past ul li .p-playback:before, .liveroom-in:before, .liveroom-in .d-notice .n-row:before, .tk-tab:before, .tk-parse ul:before, .tk-past ul:before, .tk-exam ul:before, .yl-tab .b-week ul:before, .topic-list li:before, .topic-list .l-title:before, .exercise-terminal:before, .exercise-terminal .zt-item .zt-parse .p-intro:before, .exercise-terminal .r-time:before, .exercise-terminal .r-scantron .s-number ul:before, .exercise-terminal .r-score .s-row:before, .wx:before, .broadcast li:before, .broadcast li .txt .b:before, .header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .bar-slide li:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-recent .r-live .item:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { content: ""; display: table; }
+.header .wrap, .header .wrap .center .nav, .header .wrap .center form, .footer .btm, .mask .zg-popup-7 .btn-box, .modify-address .sel-label-box .sel-box, .bw-sctitle, .bw-live .live-cont, .bw-post .post-cont, .bw-post .cont-wd .wd-detail, .bw-post .cont-r .icon-list, .cont-combo, .axn-course, .axn-course .c-l .l-detail, .axn-combo .combo-cont, .axn-combo .combo-cont .i-stage .s-row, .axn-combo .combo-cont .i-data, .d-answer, .free-trial, .free-trial .t-right .r-choice, .free-trial .t-right .r-choice .c-detail ul, .kc-cont, .kc-cont .cont-l .tab-head, .kc-cont .cont-l .tab-head ul, .kc-cont .cont-l .bd-evaluate li, .order-head, .order-head .h-r ul, .order-address .order-msg ul, .order-address .p-detail ul, .order-address .order-tcp, .live-in, .live-in .in-r .r-hot, .live-in .in-r .r-tea, .live-past ul, .live-past ul li .p-playback, .liveroom-in, .liveroom-in .d-notice .n-row, .tk-tab, .tk-parse ul, .tk-past ul, .tk-exam ul, .yl-tab .b-week ul, .topic-list li, .topic-list .l-title, .exercise-terminal, .exercise-terminal .zt-item .zt-parse .p-intro, .exercise-terminal .r-time, .exercise-terminal .r-scantron .s-number, .exercise-terminal .r-scantron .s-number ul, .exercise-terminal .r-score .s-row, .wx, .broadcast li, .broadcast li .txt .b { zoom: 1; }
+.header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { clear: both; }
+.header .wrap:before, .header .wrap .center .nav:before, .header .wrap .center form:before, .footer .btm:before, .mask .zg-popup-7 .btn-box:before, .modify-address .sel-label-box .sel-box:before, .bw-sctitle:before, .bw-live .live-cont:before, .bw-post .post-cont:before, .bw-post .cont-wd .wd-detail:before, .bw-post .cont-r .icon-list:before, .cont-combo:before, .axn-course:before, .axn-course .c-l .l-detail:before, .axn-combo .combo-cont:before, .axn-combo .combo-cont .i-stage .s-row:before, .axn-combo .combo-cont .i-data:before, .d-answer:before, .free-trial:before, .free-trial .t-right .r-choice:before, .free-trial .t-right .r-choice .c-detail ul:before, .kc-cont:before, .kc-cont .cont-l .tab-head:before, .kc-cont .cont-l .tab-head ul:before, .kc-cont .cont-l .bd-evaluate li:before, .order-head:before, .order-head .h-r ul:before, .order-address .order-msg ul:before, .order-address .p-detail ul:before, .order-address .order-tcp:before, .live-in:before, .live-in .in-r .r-hot:before, .live-in .in-r .r-tea:before, .live-past ul:before, .live-past ul li .p-playback:before, .liveroom-in:before, .liveroom-in .d-notice .n-row:before, .tk-tab:before, .tk-parse ul:before, .tk-past ul:before, .tk-exam ul:before, .yl-tab .b-week ul:before, .topic-list li:before, .topic-list .l-title:before, .exercise-terminal:before, .exercise-terminal .zt-item .zt-parse .p-intro:before, .exercise-terminal .r-time:before, .exercise-terminal .r-scantron .s-number:before, .exercise-terminal .r-scantron .s-number ul:before, .exercise-terminal .r-score .s-row:before, .wx:before, .broadcast li:before, .broadcast li .txt .b:before, .header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { content: ""; display: table; }
 
 input[type="input"], select { appearance: none; -moz-appearance: none; -webkit-appearance: none; }
 input[type="input"]::-webkit-input-placeholder, select::-webkit-input-placeholder { color: #999; font-size: inherit; }
@@ -217,7 +217,7 @@ i, span, em, strong { vertical-align: middle; }
 .footer .xg { vertical-align: text-top; }
 .footer .btm .right .p-box .p1 span { vertical-align: top; }
 
-.bc-br, .bw-class .class-cont, .cont-wd, .bw-post .cont-r, .cont-combo .c-item, .axn-course .c-l, .axn-course .c-r, .axn-recent .r-live .item, .free-trial, .kc-cont .cont-l, .order-address, .live-in, .live-past ul li, .tk-parse li, .tk-past li, .tk-exam li, .lx-tab .tab-body, .no-buy, .topic-list, .exercise-terminal .page-path, .exercise-terminal .zt-item, .exercise-terminal .r-plan, .exercise-terminal .r-scantron { background-color: #ffffff; border-radius: 4px; }
+.bc-br, .bw-class .class-cont, .cont-wd, .bw-post .cont-r, .cont-combo .c-item, .axn-course .c-l, .axn-course .c-r, .axn-recent .r-live li, .free-trial, .kc-cont .cont-l, .order-address, .live-in, .live-past ul li, .tk-parse li, .tk-past li, .tk-exam li, .lx-tab .tab-body, .no-buy, .topic-list, .exercise-terminal .page-path, .exercise-terminal .zt-item, .exercise-terminal .r-plan, .exercise-terminal .r-scantron { background-color: #ffffff; border-radius: 4px; }
 
 .amplify, .cont-combo .c-item:hover { transform: scale(1.1); }
 
@@ -349,6 +349,7 @@ i, span, em, strong { vertical-align: middle; }
 .cont-combo .c-item .item-detail .detail-tea ul { white-space: nowrap; overflow-x: auto; }
 .cont-combo .c-item .item-detail .detail-tea ul::-webkit-scrollbar { display: none; }
 .cont-combo .c-item .item-detail .detail-tea ul li { margin-right: 16px; text-align: center; }
+.cont-combo .c-item .item-detail .detail-tea ul li img { width: 41px; height: 41px; border-radius: 50%; }
 .cont-combo .c-item .item-price { padding: 13px 0 17px; line-height: 26px; color: #ff5e2c; }
 .cont-combo .c-item .item-price span { font-size: 20px; }
 .cont-combo .c-item .item-price em { vertical-align: bottom; }
@@ -360,9 +361,9 @@ i, span, em, strong { vertical-align: middle; }
 .bar-slide .prev:hover, .bar-slide .next:hover { background-color: rgba(0, 0, 0, 0.4); }
 .bar-slide .prev { left: 6px; }
 .bar-slide .next { right: 6px; }
-.bar-slide li .item { width: 20%; float: left; }
-.bar-slide li .item > img { width: 240px; height: 293px; transition: 1s; }
-.bar-slide li .item > img:hover { transform: scale(1.1); }
+.bar-slide li { width: 20%; }
+.bar-slide li img { width: 240px; height: 293px; transition: 1s; }
+.bar-slide li img:hover { transform: scale(1.1); }
 .bar-slide li .team-text { padding: 15px 13px; box-sizing: border-box; }
 .bar-slide li .team-text strong { font-weight: normal; font-size: 18px; }
 .bar-slide li .team-text span { color: #999999; float: right; line-height: 26px; }
@@ -482,21 +483,24 @@ i, span, em, strong { vertical-align: middle; }
 
 .axn-recent { margin-bottom: 40px; }
 .axn-recent .bw-title { margin-bottom: 16px; }
-.axn-recent .r-live .item { width: 389px; height: 123px; padding: 14px 12px; box-sizing: border-box; margin-right: 16px; }
-.axn-recent .r-live .item:nth-of-type(3) { margin-right: 0; }
-.axn-recent .r-live .item > img { float: left; width: 66px; height: 68px; border-radius: 50%; margin-top: 18px; margin-right: 15px; }
-.axn-recent .r-live .item .team-detail { float: left; width: 282px; }
-.axn-recent .r-live .item .team-detail .d-row { line-height: 28px; color: #999999; margin-bottom: 4px; }
-.axn-recent .r-live .item .team-detail .row-yy { float: right; height: 28px; background-color: #fff6f4; border-radius: 4px; padding: 0 8px; box-sizing: border-box; }
-.axn-recent .r-live .item .team-detail .row-yy i { width: 16px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/yy-nor.png) no-repeat; }
-.axn-recent .r-live .item .team-detail .row-yy span { color: #f7623a; line-height: 30px; margin-left: 6px; }
-.axn-recent .r-live .item .team-detail .row-yy:hover { background-image: linear-gradient(90deg, #ff5e2c 0%, #ff9d7e 100%); }
-.axn-recent .r-live .item .team-detail .row-yy:hover span { color: #fff; }
-.axn-recent .r-live .item .team-detail .row-yy:hover i { background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/yy-sel.png) no-repeat; }
-.axn-recent .r-live .item .team-detail .row-ej { background-color: #e8eefe; border-radius: 4px; color: #4464c5; line-height: 21px; margin-right: 8px; }
-.axn-recent .r-live .item .team-detail .d-title { color: #333333; }
-.axn-recent .r-live .item .team-detail .icon-feel { width: 48px; height: 26px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -139px -83px; }
-.axn-recent .prev, .axn-recent .next { top: 32%; }
+.axn-recent .r-live { position: relative; }
+.axn-recent .r-live li { width: 389px !important; height: 123px; padding: 14px 12px; box-sizing: border-box; margin-right: 16px; }
+.axn-recent .r-live li > img { float: left; width: 66px; height: 68px; border-radius: 50%; margin-top: 18px; margin-right: 15px; }
+.axn-recent .r-live li .team-detail { float: left; width: 284px; }
+.axn-recent .r-live li .team-detail .d-row { line-height: 28px; color: #999999; margin-bottom: 4px; }
+.axn-recent .r-live li .team-detail .row-yy { float: right; height: 28px; background-color: #fff6f4; border-radius: 4px; padding: 0 8px; box-sizing: border-box; }
+.axn-recent .r-live li .team-detail .row-yy i { width: 16px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/yy-nor.png) no-repeat; }
+.axn-recent .r-live li .team-detail .row-yy span { color: #f7623a; line-height: 30px; margin-left: 6px; }
+.axn-recent .r-live li .team-detail .row-yy:hover { background-image: linear-gradient(90deg, #ff5e2c 0%, #ff9d7e 100%); }
+.axn-recent .r-live li .team-detail .row-yy:hover span { color: #fff; }
+.axn-recent .r-live li .team-detail .row-yy:hover i { background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/yy-sel.png) no-repeat; }
+.axn-recent .r-live li .team-detail .row-ej { background-color: #e8eefe; border-radius: 4px; color: #4464c5; line-height: 21px; margin-right: 8px; }
+.axn-recent .r-live li .team-detail .d-title { color: #333333; }
+.axn-recent .r-live li .team-detail .icon-feel { width: 48px; height: 26px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -139px -83px; }
+.axn-recent .prev, .axn-recent .next { position: absolute; top: 32%; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; color: #fff; font-size: 28px; text-align: center; cursor: pointer; background-color: rgba(0, 0, 0, 0.2); }
+.axn-recent .prev:hover, .axn-recent .next:hover { background-color: rgba(0, 0, 0, 0.4); }
+.axn-recent .prev { left: 12px; }
+.axn-recent .next { right: 12px; }
 
 .axn-combo { margin-bottom: 40px; }
 .axn-combo .bw-title { margin-bottom: 20px; }
@@ -577,16 +581,18 @@ i, span, em, strong { vertical-align: middle; }
 
 .feel-listen { padding-top: 24px; }
 .feel-listen .l-left { float: left; }
-.feel-listen .l-left .g-item { display: block; height: 102px; background: #ffffff; padding: 25px 28px; box-sizing: border-box; margin-bottom: 10px; }
+.feel-listen .l-left li { background: #ffffff; margin-bottom: 10px; }
+.feel-listen .l-left .g-item { display: block; height: 102px; padding: 25px 28px; box-sizing: border-box; }
 .feel-listen .l-left .on { background-color: #e3eeff; }
 .feel-listen .l-left .on .g-row .r-play { width: 14px; height: 12px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -77px; }
 .feel-listen .l-left .g-row { margin-bottom: 4px; }
 .feel-listen .l-left .r-title { font-size: 16px; font-weight: bold; }
 .feel-listen .l-left .r-listen { width: 48px; height: 26px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -274px -10px; margin-left: 7px; }
-.feel-listen .l-left .r-text { width: 196px; color: #666666; }
+.feel-listen .l-left .r-text { width: 90%; color: #666666; }
 .feel-listen .l-left .r-play { width: 20px; height: 20px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -10px -374px; }
-.feel-listen .l-catalog { float: left; margin-right: 15px; }
+.feel-listen .l-catalog { float: left; margin-right: 15px; width: 270px; }
 .feel-listen .l-catalog .prev, .feel-listen .l-catalog .next { width: 132px; height: 43px; line-height: 43px; background-color: #ffffff; border-radius: 4px; text-align: center; }
+.feel-listen .l-catalog .prev:hover, .feel-listen .l-catalog .next:hover { background-color: #e3eeff; }
 .feel-listen .l-catalog .prev i { width: 15px; height: 9px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -79px -301px; }
 .feel-listen .l-catalog .next { float: right; }
 .feel-listen .l-catalog .next i { width: 15px; height: 9px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -212px -177px; }
@@ -982,12 +988,14 @@ i, span, em, strong { vertical-align: middle; }
 .exercise-terminal .r-time .t-col { float: left; line-height: 24px; }
 .exercise-terminal .r-time .t-col i { width: 24px; height: 24px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -10px -330px; }
 .exercise-terminal .r-time .t-col .t-residue { font-size: 20px; color: #ff5e2c; }
-.exercise-terminal .r-time .t-btn { float: right; line-height: 30px; }
-.exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { float: left; height: 30px; line-height: 26px; padding: 0 14px; box-sizing: border-box; border-radius: 15px; }
-.exercise-terminal .r-time .t-btn .btn-pause { box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25); border: solid 1px #ff5e2c; color: #ff5e2c; margin-right: 10px; cursor: pointer; }
+.exercise-terminal .r-time .t-btn { line-height: 30px; text-align: center; }
+.exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { height: 30px; line-height: 26px; padding: 0 14px; box-sizing: border-box; border-radius: 15px; }
+.exercise-terminal .r-time .t-btn .btn-pause { box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25); border: solid 1px #ff5e2c; color: #ff5e2c; margin-right: 60px; cursor: pointer; }
 .exercise-terminal .r-time .t-btn .btn-pause i { width: 8px; height: 11px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -403px -374px; }
 .exercise-terminal .r-time .t-btn .btn-submit { color: #ffffff; background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%); box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25); }
 .exercise-terminal .r-time .t-btn .btn-submit i { width: 13px; height: 10px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -334px; }
+.exercise-terminal .r-time .has-time { float: right; }
+.exercise-terminal .r-time .has-time .btn-pause { margin-right: 10px; }
 .exercise-terminal .r-scantron { height: 374px; padding: 20px 24px 0; box-sizing: border-box; }
 .exercise-terminal .r-scantron .diff { float: right; }
 .exercise-terminal .r-scantron .diff i { width: 16px; height: 16px; margin-right: 6px; margin-left: 16px; }
@@ -1001,7 +1009,7 @@ i, span, em, strong { vertical-align: middle; }
 .exercise-terminal .r-scantron .s-number a { float: left; width: 31px; height: 31px; line-height: 31px; background-color: #ffffff; border: solid 1px #c1c1c1; box-sizing: border-box; text-align: center; border-radius: 50%; color: #666666; margin-right: 13px; margin-bottom: 14px; }
 .exercise-terminal .r-scantron .s-number a.done { background-color: #ebf0ff; border: solid 1px #ebf0ff; color: #4f5e8c; }
 .exercise-terminal .r-scantron .s-number a.error { background-color: #ff653f; border: solid 1px #ff653f; color: #ffffff; }
-.exercise-terminal .r-score { height: 173px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/zt_1.png) no-repeat; margin-bottom: 20px; text-align: center; padding-top: 20px; box-sizing: border-box; }
+.exercise-terminal .r-score { display: none; height: 173px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/zt_1.png) no-repeat; margin-bottom: 20px; text-align: center; padding-top: 20px; box-sizing: border-box; }
 .exercise-terminal .r-score .s-num { margin-bottom: 8px; }
 .exercise-terminal .r-score .s-num span { font-size: 50px; line-height: 42px; color: #ff5e2c; }
 .exercise-terminal .r-score .s-num em { vertical-align: bottom; }
@@ -1060,5 +1068,31 @@ i, span, em, strong { vertical-align: middle; }
 
 .kczd-cont .qjwt { height: 336px; }
 .kczd-cont .kctj { height: 456px; }
+
+.bw-paid { font-size: 20px; padding-top: 10px; }
+.bw-paid a { padding: 0 6px; border-radius: 4px; background: #ff5e2c; color: #fff; margin-left: 10px; }
+
+.bg-fail { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -53px; margin-top: -10px; top: 50%; left: 0; }
+
+.forget-pwd { height: 648px; background: url("https://img.thea.cn/public/platform/thea/202004/qlp/zg/images/login-banner.png") no-repeat center; }
+.forget-pwd .wrap { position: relative; }
+.forget-pwd .code { position: absolute; top: 360px; left: 228px; }
+.forget-pwd .code div { display: inline-block; width: 120px; text-align: center; margin: 0 15px; }
+.forget-pwd .code div span { width: 120px; }
+.forget-pwd .code div span img { width: 120px; height: 120px; overflow: hidden; }
+.forget-pwd .code div p { font-size: 16px; margin-top: 25px; }
+.forget-pwd .logins { position: absolute; top: 40px; right: 80px; width: 380px; height: 462px; background-color: #ffffff; box-shadow: 0px 0px 27px 0px rgba(169, 169, 169, 0.2); border-radius: 10px; }
+.forget-pwd .logins .top { padding-top: 28px; text-align: center; }
+.forget-pwd .logins .top span { font-size: 16px; cursor: pointer; padding-bottom: 12px; }
+.forget-pwd .logins .account-login { text-align: center; margin-top: 26px; margin-bottom: 36px; }
+.forget-pwd .logins .account-login input { width: 320px; height: 42px; background-color: #ffffff; border-radius: 4px; border: solid 1px #dcdcdc; margin-bottom: 30px; padding-left: 24px; box-sizing: border-box; }
+.forget-pwd .logins .account-login input.user-tel { background: url("https://img.thea.cn/public/platform/thea/202004/qlp/zg/images/icon-phone.png") no-repeat left; background-position-x: 12px; }
+.forget-pwd .logins .account-login input.user-con { background: url("https://img.thea.cn/public/platform/thea/202004/qlp/zg/images/p.png") no-repeat left; background-position-x: 12px; }
+.forget-pwd .logins .account-login input.btn { width: 320px; height: 40px; padding: 0; font-size: 14px; color: #fff; font-weight: bold; background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%); border-radius: 20px; }
+.forget-pwd .logins .register { display: flex; justify-content: space-between; align-items: center; padding: 0 22px; box-sizing: border-box; width: 380px; height: 60px; background-color: #f5f5f5; position: absolute; bottom: 0; left: 0; border-radius: 0 0 10px 10px; }
+.forget-pwd .logins .register a { color: #2365fc; }
+.forget-pwd .logins .auth-code { position: relative; }
+.forget-pwd .logins .auth-code .auth-in { background: url(../images/forget-pwd.png) no-repeat center; background-position-x: 12px; }
+.forget-pwd .logins .auth-code .get-btn { border: none; padding-left: 0; color: #fff; width: 92px; height: 42px; background-color: #2365fc; cursor: pointer; position: absolute; top: 0; right: 30px; }
 
 /*# sourceMappingURL=index.css.map */

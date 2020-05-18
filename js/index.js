@@ -106,7 +106,7 @@ $(function () {
   // 课程终端 左侧tab
   mouseEnter('.tab-head li', '.tab-body .bd-item', 'on');
   // 免费试听
-  mouseEnter('.l-catalog .g-item', null, 'on');
+  mouseEnter('.l-catalog li', null, 'on');
   
   // 每日一练 扫一扫
   mouseEnter('.sys .sys-item', '.sp .sp-item', 'on');

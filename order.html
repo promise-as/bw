@@ -10,6 +10,7 @@
   <title>立即报名</title>
   <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
   <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/platform/thea/202004/hbj/bw/css/index.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
 
   <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
 </head>
@@ -309,7 +310,7 @@
   </div>
 
   <!-- 09-微信支付 -->
-  <div class="mask">
+  <div class="mask" style="display: block;">
     <div class="zg-popup zg-popup-4">
       <div class="close close-2 closed"><i class="icon bg-c_12x12"></i>关闭</div>
       <div class="popup-con">
@@ -332,6 +333,7 @@
           </div>
           <p>请使用微信扫描二维码以完成支付</p>
         </div>
+        <p class="bw-paid">已扫描支付请点击 <a href="">我已支付</a></p>
       </div>
     </div>
   </div>
@@ -360,6 +362,7 @@
           </div>
           <p>请使用支付宝扫描二维码以完成支付</p>
         </div>
+        <p class="bw-paid">已扫描支付请点击 <a href="">我已支付</a></p>
       </div>
     </div>
   </div>
@@ -369,6 +372,13 @@
     <div class="model">
       <p class="txt"><i class="icon bg-sc"></i>支付成功</p>
     </div>
+    <script>
+      // 支付失败的原因
+      var isPay = true;
+      if(isPay){
+        $('.mask').eq(3).find("div p").html('<i class="icon bg-fail"></i>还没扫码支付呢');
+      }
+    </script>
   </div>
 
   <!-- 10-签订协议步骤-1 -->
