@@ -237,6 +237,9 @@ a {
       height: 26px;
       background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/tk_6.png") no-repeat;
     }
+    img{
+      vertical-align: middle;
+    }
   }
 }
 
@@ -3668,7 +3671,7 @@ a {
         line-height: 18px;
         padding: 0 5px;
         font-size: 14px;
-        vertical-align: baseline;
+        vertical-align: text-bottom;
         background-color: #e6bc7a;
         color: #fff;
         border-radius: 0 8px 0 8px;
@@ -3931,7 +3934,6 @@ a {
   }
   /* 真题模拟 */
   .r-score {
-    display: none;
     height: 173px;
     background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/zt_1.png) no-repeat;
     margin-bottom: 20px;
@@ -4352,5 +4354,17 @@ a {
         right: 30px;
       }
     }
+  }
+}
+
+// 解析题
+.zt-item{
+  textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 10px 0;
   }
 }
