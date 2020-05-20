@@ -369,14 +369,24 @@
   <!-- 09-支付成功 -->
   <div class="mask">
     <div class="model">
-      <p class="txt"><i class="icon bg-sc"></i>支付成功</p>
+      <p class="txt pay-sc"><i class="icon bg-sc"></i>支付成功</p>
+      <div class="skip"><span class="time">6</span><span>秒后跳转到某页面</span></div>
     </div>
     <script>
-      // 支付失败的原因
-      var isPay = true;
-      if(isPay){
-        $('.mask').eq(3).find("div p").html('<i class="icon bg-fail"></i>还没扫码支付呢');
+      // 是否支付
+      var isPay = false;
+      if (!isPay) {
+        $('.mask').eq(3).find("div p").html('<i class="icon bg-fail"></i>还没扫码支付呢还没扫');
       }
+      // 跳转倒计时
+      function countdown(aimEle, time) {
+        var timeId = setInterval(function () {
+          time--
+          $(aimEle).text(time)
+          time == 0 ? clearInterval(timeId) : time;
+        }, 1000)
+      }
+      countdown('.skip .time', 6)
     </script>
   </div>
 
@@ -492,7 +502,6 @@
           $(this).parent('.check').toggleClass('choice');
         });
       })
-
 
       // 支付方式
       // 0: 微信，1：支付宝

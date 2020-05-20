@@ -98,6 +98,19 @@
           <div class="zt-collect">
             <i></i><span>收藏</span>
           </div>
+          <script>
+            $(function () {
+              $('.btn-submit').click(function () {
+                // 输入的值
+                var val = $('#t3').find('textarea').val()
+                // 转换成json字符串
+                var jsonStr = JSON.stringify(val)
+                
+                console.log(typeof jsonStr);
+                
+              })
+            })
+          </script>
         </div>
 
         <div class="zt-item radio" id="t4">
@@ -248,7 +261,7 @@
       function multipleHandle(aimEle, className) {
         $(aimEle).each(function (i) {
           var that = this;
-          $(that).click(function(){
+          $(that).click(function () {
             $(that).toggleClass(className)
           })
         })

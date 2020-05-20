@@ -119,15 +119,15 @@
             <span class="on">课程试听</span>
           </div>
           <ul>
-            <li><a href="#">二建法规</a>/</li>
-            <li><a href="#">二建法规</a>/</li>
-            <li><a href="#">二建法规</a>/</li>
-            <li><a href="#">二建法规</a>/</li>
-            <li><a href="#">二建法规</a></li>
+            <li class="sel">二建法规1</li>/
+            <li>二建法规2</li>/
+            <li>二建法规3</li>/
+            <li>二建法规4</li>/
+            <li>二建法规5</li>
           </ul>
           <div class="sc-r">主讲老师：刘戈</div>
         </div>
-        <div class="l-detail">
+        <div class="l-detail sel">
           <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="d-bg">
             <img src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/c.jpg" alt="免费试听">
           </a>
@@ -224,7 +224,6 @@
                   </ul>
                 </div>
               </div>
-
               <div class="list-item">
                 <div class="i-head">
                   <i class="outer-icon"></i>
@@ -287,10 +286,13 @@
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
+        <div class="l-detail">2</div>
+        <div class="l-detail">3</div>
+        <div class="l-detail">4</div>
+        <div class="l-detail">5</div>
       </div>
       <div class="c-r">
         <div class="r-title" title="【2020年二级建造师】超值精讲班">【2020年二级建造师】超值精讲班</div>
@@ -1004,6 +1006,8 @@
     $(".banner").slide();
     $(".bar-slide").slide({ effect: "leftLoop", vis: 5 });
     $(".r-live").slide({ effect: "leftLoop", vis: 3 });
+    // 课程试听
+    mouseClick('.axn-course .bw-sctitle li', '.axn-course .l-detail', 'sel');
   </script>
 
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>

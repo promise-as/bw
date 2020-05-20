@@ -237,7 +237,7 @@ a {
       height: 26px;
       background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/tk_6.png") no-repeat;
     }
-    img{
+    img {
       vertical-align: middle;
     }
   }
@@ -1128,13 +1128,13 @@ a {
         line-height: 28px;
         padding-left: 10px;
         li {
-          float: left;
-          a {
-            padding: 0 10px;
-            color: #666666;
-            &:hover {
-              color: #415dfe;
-            }
+          @extend %in-b;
+          padding: 0 10px;
+          color: #666666;
+          cursor: pointer;
+          &.sel,
+          &:hover {
+            color: #415dfe;
           }
         }
       }
@@ -1142,6 +1142,10 @@ a {
     .l-detail {
       padding-top: 18px;
       @extend %clearfix;
+      display: none;
+      &.sel{
+        display: block;
+      }
       .d-bg {
         float: left;
         img {
@@ -1364,7 +1368,7 @@ a {
     position: relative;
     li {
       @extend .bc-br;
-      width: 389px!important; // 要覆盖superslide的样式
+      width: 389px !important; // 要覆盖superslide的样式
       height: 123px;
       padding: 14px 12px;
       box-sizing: border-box;
@@ -3839,9 +3843,9 @@ a {
         }
       }
     }
-    .has-time{
+    .has-time {
       float: right;
-      .btn-pause{
+      .btn-pause {
         margin-right: 10px;
       }
     }
@@ -4358,13 +4362,25 @@ a {
 }
 
 // 解析题
-.zt-item{
-  textarea{
+.zt-item {
+  textarea {
     width: 100%;
     padding: 10px 20px;
     border: 1px solid #cccccc;
     box-sizing: border-box;
     border-radius: 4px;
     margin: 10px 0;
+  }
+}
+
+// 09-支付成功
+.mask {
+  .model {
+    .pay-sc {
+      line-height: 60px;
+    }
+    .skip {
+      font-size: 16px;
+    }
   }
 }
