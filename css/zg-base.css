@@ -13,7 +13,7 @@ h1, h2, h3, h4, p { *margin-top: 0; }
 
 a { cursor: pointer; }
 
-.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt { display: inline-block; *zoom: 1; *display: inline; }
+.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .header .wrap .center .link-box .icon_phone, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt { display: inline-block; *zoom: 1; *display: inline; }
 
 .header .wrap, .header .wrap .center .nav, .header .wrap .center form, .footer .btm, .mask .zg-popup-7 .btn-box, .modify-address .sel-label-box .sel-box { zoom: 1; }
 .header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after { clear: both; }
@@ -73,10 +73,16 @@ input[type="submit"] { border: none; }
 .header .wrap .center form .bg-icon_search { left: 9px; }
 .header .wrap .center form #text_one { float: left; width: 196px; height: 36px; background-color: #f4f4f4; border-radius: 4px 0px 0px 4px; text-indent: 32px; }
 .header .wrap .center form #submit_one { float: left; width: 54px; height: 36px; color: #fff; background-color: #2358fc; background-image: linear-gradient(90deg, #2358fc 0%, #517cff 100%); border-radius: 0px 4px 4px 0px; }
-.header .wrap .center .link-box { vertical-align: middle; }
+.header .wrap .center .link-box { vertical-align: middle; position: relative; }
 .header .wrap .center .link-box a { color: #333; margin-left: 14px; }
 .header .wrap .center .link-box a:hover { color: #2754df; }
-.header .wrap .center .link-box a.icon_phone { position: relative; padding-left: 18px; }
+.header .wrap .center .link-box .icon_phone { position: relative; padding-left: 18px; margin-left: 30px; cursor: pointer; }
+.header .wrap .center .link-box .icon_phone .phone-text { line-height: 36px; }
+.header .wrap .center .link-box .icon_phone .app-download { width: max-content; padding: 10px 5px 0; box-sizing: border-box; position: absolute; top: 24px; left: -130%; z-index: 100; text-align: center; display: none; }
+.header .wrap .center .link-box .icon_phone .app-download div { float: left; padding: 0 5px; color: #fff; }
+.header .wrap .center .link-box .icon_phone .app-download div img { width: 120px; height: 120px; }
+.header .wrap .center .link-box .icon_phone .app-download div p { line-height: 30px; }
+.header .wrap .center .link-box .icon_phone:hover { color: #2754df; }
 .header .wrap .right { float: right; padding-top: 8px; }
 .header .wrap .right a { color: #333; padding: 8px 0; }
 .header .wrap .right a:hover { color: #2754df; }

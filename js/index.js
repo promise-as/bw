@@ -21,34 +21,41 @@ function mouseClick(headBox, contBox, className) {
 }
 
 // 鼠标移入
-  // contBox: 内容盒子,
-  function mouseEnter(headBox, contBox, className) {
-    $(headBox).each(function (i) {
-      var that = this;
-      $(that).mouseenter(function () {
-        $(that).addClass(className).siblings().removeClass(className);
-        $($(contBox)[i]).addClass(className).siblings().removeClass(className);
-      })
+// contBox: 内容盒子,
+function mouseEnter(headBox, contBox, className) {
+  $(headBox).each(function (i) {
+    var that = this;
+    $(that).mouseenter(function () {
+      $(that).addClass(className).siblings().removeClass(className);
+      $($(contBox)[i]).addClass(className).siblings().removeClass(className);
     })
-  }
+  })
+}
 
 // DOM（不包含图片）加载完之后执行
 $(function () {
   theaMsForm($('.sign-in'));
+  
+  // 头部显示app下载二维码
+  $('.icon_phone').hover(function () {
+    $('.app-download').show();
+  }, function () {
+    $('.app-download').hide();
+  });
 
   // 首页和频道页的类别
-  function classHeightChange(outerEle, parentEle, itemEle){
+  function classHeightChange(outerEle, parentEle, itemEle) {
 
     var itemLen = $(parentEle).find(itemEle).length;
 
-    if(itemLen == 5){
+    if (itemLen == 5) {
       $(parentEle).find(itemEle).width('20%');
     }
-    if(itemLen == 6){
+    if (itemLen == 6) {
       $(parentEle).find(itemEle).width('16.66%');
     }
 
-    if(itemLen >= 7){
+    if (itemLen >= 7) {
       $(parentEle).find(itemEle).width('16.66%');
       $(outerEle).height($(outerEle).height() * 2);
       $(parentEle).css({
@@ -62,7 +69,7 @@ $(function () {
     }
   }
   classHeightChange('.bw-class', '.class-cont', '.c-item');
-  
+
   // 关闭区块
   function closeHandle(closeBtn, closeBox) {
     $(closeBtn).click(function () {
@@ -100,14 +107,14 @@ $(function () {
   // 每日一练终端 收藏i
   unfold('.zt-collect', 'i', 'on');
 
-  
+
   // 首页 右侧tab
   mouseEnter('.sc-l li', '.r-detail .d-item', 'on');
   // 课程终端 左侧tab
   mouseEnter('.tab-head li', '.tab-body .bd-item', 'on');
   // 免费试听
   mouseEnter('.l-catalog li', null, 'on');
-  
+
   // 每日一练 扫一扫
   mouseEnter('.sys .sys-item', '.sp .sp-item', 'on');
 

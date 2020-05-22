@@ -13,13 +13,13 @@ h1, h2, h3, h4, p { *margin-top: 0; }
 
 a { cursor: pointer; }
 
-.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .list-item .d-r .text, .menu-list .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live li .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .kc-cont .cont-r .cont-wd li .l-head, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.bw-live .cont-r li .r-t span, .cont-wd .wd-detail li a, .bw-post .cont-r .r-detail li a, .bw-post .cont-r .r-t, .menu-list .d-r .text, .axn-course .d-catalog .list-item .d-r .text, .axn-course .c-r .r-title, .axn-course .c-r .r-st, .axn-recent .r-live li .team-detail .d-title, .d-answer .an-r .r-title, .feel-listen .l-left .r-text, .course-list .c-item .d-intro, .free-trial .t-right .r-title, .free-trial .t-right .r-st, .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key, .kc-cont .cont-r .cont-wd li .l-head, .topic-list .l-title .t-text, .broadcast li .txt p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
-.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt, i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .axn-course .c-l .bw-sctitle ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .list-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue, .exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { display: inline-block; *zoom: 1; *display: inline; }
+.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .header .wrap .center .link-box .icon_phone, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt, i, span, em, strong, a, .circle-list::before, .bw-btn, .cont-combo .c-item .item-detail .detail-tea ul li, .menu-list .d-r .d-accuracy, .axn-course .c-l .bw-sctitle ul li, .axn-course .c-r .r-tea ul li, .axn-combo .combo-cont .i-swf .icon-list, .pmgressbar, .lx-tab .list-item .i-detail .d-r .d-accuracy, .exercise-terminal .page-path p, .exercise-terminal .r-time .t-col .t-residue, .exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { display: inline-block; *zoom: 1; *display: inline; }
 
-.header .wrap, .header .wrap .center .nav, .header .wrap .center form, .footer .btm, .mask .zg-popup-7 .btn-box, .modify-address .sel-label-box .sel-box, .bw-sctitle, .bw-live .live-cont, .bw-post .post-cont, .bw-post .cont-wd .wd-detail, .bw-post .cont-r .icon-list, .cont-combo, .axn-course, .axn-course .c-l .l-detail, .axn-combo .combo-cont, .axn-combo .combo-cont .i-stage .s-row, .axn-combo .combo-cont .i-data, .d-answer, .free-trial, .free-trial .t-right .r-choice, .free-trial .t-right .r-choice .c-detail ul, .kc-cont, .kc-cont .cont-l .tab-head, .kc-cont .cont-l .tab-head ul, .kc-cont .cont-l .bd-evaluate li, .order-head, .order-head .h-r ul, .order-address .order-msg ul, .order-address .p-detail ul, .order-address .order-tcp, .live-in, .live-in .in-r .r-hot, .live-in .in-r .r-tea, .live-past ul, .live-past ul li .p-playback, .liveroom-in, .liveroom-in .d-notice .n-row, .tk-tab, .tk-parse ul, .tk-past ul, .tk-exam ul, .yl-tab .b-week ul, .topic-list li, .topic-list .l-title, .exercise-terminal, .exercise-terminal .zt-item .zt-parse .p-intro, .exercise-terminal .r-time, .exercise-terminal .r-scantron .s-number, .exercise-terminal .r-scantron .s-number ul, .exercise-terminal .r-score .s-row, .wx, .broadcast li, .broadcast li .txt .b { zoom: 1; }
-.header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { clear: both; }
-.header .wrap:before, .header .wrap .center .nav:before, .header .wrap .center form:before, .footer .btm:before, .mask .zg-popup-7 .btn-box:before, .modify-address .sel-label-box .sel-box:before, .bw-sctitle:before, .bw-live .live-cont:before, .bw-post .post-cont:before, .bw-post .cont-wd .wd-detail:before, .bw-post .cont-r .icon-list:before, .cont-combo:before, .axn-course:before, .axn-course .c-l .l-detail:before, .axn-combo .combo-cont:before, .axn-combo .combo-cont .i-stage .s-row:before, .axn-combo .combo-cont .i-data:before, .d-answer:before, .free-trial:before, .free-trial .t-right .r-choice:before, .free-trial .t-right .r-choice .c-detail ul:before, .kc-cont:before, .kc-cont .cont-l .tab-head:before, .kc-cont .cont-l .tab-head ul:before, .kc-cont .cont-l .bd-evaluate li:before, .order-head:before, .order-head .h-r ul:before, .order-address .order-msg ul:before, .order-address .p-detail ul:before, .order-address .order-tcp:before, .live-in:before, .live-in .in-r .r-hot:before, .live-in .in-r .r-tea:before, .live-past ul:before, .live-past ul li .p-playback:before, .liveroom-in:before, .liveroom-in .d-notice .n-row:before, .tk-tab:before, .tk-parse ul:before, .tk-past ul:before, .tk-exam ul:before, .yl-tab .b-week ul:before, .topic-list li:before, .topic-list .l-title:before, .exercise-terminal:before, .exercise-terminal .zt-item .zt-parse .p-intro:before, .exercise-terminal .r-time:before, .exercise-terminal .r-scantron .s-number:before, .exercise-terminal .r-scantron .s-number ul:before, .exercise-terminal .r-score .s-row:before, .wx:before, .broadcast li:before, .broadcast li .txt .b:before, .header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { content: ""; display: table; }
+.header .wrap, .header .wrap .center .nav, .header .wrap .center form, .footer .btm, .mask .zg-popup-7 .btn-box, .modify-address .sel-label-box .sel-box, .bw-sctitle, .bw-live .live-cont, .bw-post .post-cont, .bw-post .cont-wd .wd-detail, .bw-post .cont-r .icon-list, .cont-combo, .axn-course, .axn-course .c-l .l-detail, .axn-recent .r-live ul, .axn-combo .combo-cont, .axn-combo .combo-cont .i-stage .s-row, .axn-combo .combo-cont .i-data, .d-answer, .free-trial, .free-trial .t-right .r-choice, .free-trial .t-right .r-choice .c-detail ul, .kc-cont, .kc-cont .cont-l .tab-head, .kc-cont .cont-l .tab-head ul, .kc-cont .cont-l .bd-evaluate li, .order-head, .order-head .h-r ul, .order-address .order-msg ul, .order-address .p-detail ul, .order-address .order-tcp, .live-in, .live-in .in-r .r-hot, .live-in .in-r .r-tea, .live-past ul, .live-past ul li .p-playback, .liveroom-in, .liveroom-in .d-notice .n-row, .tk-tab, .tk-parse ul, .tk-past ul, .tk-exam ul, .yl-tab .b-week ul, .topic-list > ul li, .topic-list .l-title, .exercise-terminal, .exercise-terminal .zt-item .zt-parse .p-intro, .exercise-terminal .r-time, .exercise-terminal .r-scantron .s-number, .exercise-terminal .r-scantron .s-number ul, .exercise-terminal .r-score .s-row, .wx, .broadcast li, .broadcast li .txt .b { zoom: 1; }
+.header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-recent .r-live ul:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list > ul li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { clear: both; }
+.header .wrap:before, .header .wrap .center .nav:before, .header .wrap .center form:before, .footer .btm:before, .mask .zg-popup-7 .btn-box:before, .modify-address .sel-label-box .sel-box:before, .bw-sctitle:before, .bw-live .live-cont:before, .bw-post .post-cont:before, .bw-post .cont-wd .wd-detail:before, .bw-post .cont-r .icon-list:before, .cont-combo:before, .axn-course:before, .axn-course .c-l .l-detail:before, .axn-recent .r-live ul:before, .axn-combo .combo-cont:before, .axn-combo .combo-cont .i-stage .s-row:before, .axn-combo .combo-cont .i-data:before, .d-answer:before, .free-trial:before, .free-trial .t-right .r-choice:before, .free-trial .t-right .r-choice .c-detail ul:before, .kc-cont:before, .kc-cont .cont-l .tab-head:before, .kc-cont .cont-l .tab-head ul:before, .kc-cont .cont-l .bd-evaluate li:before, .order-head:before, .order-head .h-r ul:before, .order-address .order-msg ul:before, .order-address .p-detail ul:before, .order-address .order-tcp:before, .live-in:before, .live-in .in-r .r-hot:before, .live-in .in-r .r-tea:before, .live-past ul:before, .live-past ul li .p-playback:before, .liveroom-in:before, .liveroom-in .d-notice .n-row:before, .tk-tab:before, .tk-parse ul:before, .tk-past ul:before, .tk-exam ul:before, .yl-tab .b-week ul:before, .topic-list > ul li:before, .topic-list .l-title:before, .exercise-terminal:before, .exercise-terminal .zt-item .zt-parse .p-intro:before, .exercise-terminal .r-time:before, .exercise-terminal .r-scantron .s-number:before, .exercise-terminal .r-scantron .s-number ul:before, .exercise-terminal .r-score .s-row:before, .wx:before, .broadcast li:before, .broadcast li .txt .b:before, .header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after, .bw-sctitle:after, .bw-live .live-cont:after, .bw-post .post-cont:after, .bw-post .cont-wd .wd-detail:after, .bw-post .cont-r .icon-list:after, .cont-combo:after, .axn-course:after, .axn-course .c-l .l-detail:after, .axn-recent .r-live ul:after, .axn-combo .combo-cont:after, .axn-combo .combo-cont .i-stage .s-row:after, .axn-combo .combo-cont .i-data:after, .d-answer:after, .free-trial:after, .free-trial .t-right .r-choice:after, .free-trial .t-right .r-choice .c-detail ul:after, .kc-cont:after, .kc-cont .cont-l .tab-head:after, .kc-cont .cont-l .tab-head ul:after, .kc-cont .cont-l .bd-evaluate li:after, .order-head:after, .order-head .h-r ul:after, .order-address .order-msg ul:after, .order-address .p-detail ul:after, .order-address .order-tcp:after, .live-in:after, .live-in .in-r .r-hot:after, .live-in .in-r .r-tea:after, .live-past ul:after, .live-past ul li .p-playback:after, .liveroom-in:after, .liveroom-in .d-notice .n-row:after, .tk-tab:after, .tk-parse ul:after, .tk-past ul:after, .tk-exam ul:after, .yl-tab .b-week ul:after, .topic-list > ul li:after, .topic-list .l-title:after, .exercise-terminal:after, .exercise-terminal .zt-item .zt-parse .p-intro:after, .exercise-terminal .r-time:after, .exercise-terminal .r-scantron .s-number:after, .exercise-terminal .r-scantron .s-number ul:after, .exercise-terminal .r-score .s-row:after, .wx:after, .broadcast li:after, .broadcast li .txt .b:after { content: ""; display: table; }
 
 input[type="input"], select { appearance: none; -moz-appearance: none; -webkit-appearance: none; }
 input[type="input"]::-webkit-input-placeholder, select::-webkit-input-placeholder { color: #999; font-size: inherit; }
@@ -75,10 +75,16 @@ input[type="submit"] { border: none; }
 .header .wrap .center form .bg-icon_search { left: 9px; }
 .header .wrap .center form #text_one { float: left; width: 196px; height: 36px; background-color: #f4f4f4; border-radius: 4px 0px 0px 4px; text-indent: 32px; }
 .header .wrap .center form #submit_one { float: left; width: 54px; height: 36px; color: #fff; background-color: #2358fc; background-image: linear-gradient(90deg, #2358fc 0%, #517cff 100%); border-radius: 0px 4px 4px 0px; }
-.header .wrap .center .link-box { vertical-align: middle; }
+.header .wrap .center .link-box { vertical-align: middle; position: relative; }
 .header .wrap .center .link-box a { color: #333; margin-left: 14px; }
 .header .wrap .center .link-box a:hover { color: #2754df; }
-.header .wrap .center .link-box a.icon_phone { position: relative; padding-left: 18px; }
+.header .wrap .center .link-box .icon_phone { position: relative; padding-left: 18px; margin-left: 30px; cursor: pointer; }
+.header .wrap .center .link-box .icon_phone .phone-text { line-height: 36px; }
+.header .wrap .center .link-box .icon_phone .app-download { width: max-content; padding: 10px 5px 0; box-sizing: border-box; position: absolute; top: 24px; left: -130%; z-index: 100; text-align: center; display: none; }
+.header .wrap .center .link-box .icon_phone .app-download div { float: left; padding: 0 5px; color: #fff; }
+.header .wrap .center .link-box .icon_phone .app-download div img { width: 120px; height: 120px; }
+.header .wrap .center .link-box .icon_phone .app-download div p { line-height: 30px; }
+.header .wrap .center .link-box .icon_phone:hover { color: #2754df; }
 .header .wrap .right { float: right; padding-top: 8px; }
 .header .wrap .right a { color: #333; padding: 8px 0; }
 .header .wrap .right a:hover { color: #2754df; }
@@ -373,33 +379,35 @@ i, span, em, strong { vertical-align: middle; }
 .menu-list .feel { color: #ff5f2e; }
 .menu-list .row-play { width: 14px; height: 12px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -77px; }
 .menu-list .row-pause { width: 16px; height: 16px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -122px -374px; vertical-align: middle; }
-.menu-list .list-item { border-bottom: 1px solid #ededed; }
-.menu-list .list-item .outer-icon { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px; margin-right: 14px; }
-.menu-list .list-item .inner-icon { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 10px; }
-.menu-list .list-item .degree { font-size: 12px; color: #999999; }
-.menu-list .list-item .h-name { margin-right: 20px; font-size: 16px; }
-.menu-list .list-item .icon-fix { width: 19px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -304px; margin: 4px 5px; vertical-align: middle; }
-.menu-list .list-item .i-detail { padding-left: 40px; display: none; }
-.menu-list .list-item .i-detail ul { padding: 0 0 10px 3px; line-height: 48px; display: none; }
-.menu-list .list-item .i-detail li { height: 30px; line-height: 30px; position: relative; }
-.menu-list .list-item .i-detail li::before { content: ""; width: 1px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat; position: absolute; left: 5px; top: 26px; }
-.menu-list .list-item .i-detail li:last-child::before { display: none; }
-.menu-list .list-item .icon-c { float: left; width: 12px; height: 13px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat; margin-right: 10px; margin-top: 10px; }
-.menu-list .list-item .d-r { float: left; width: 96%; }
-.menu-list .list-item .d-r .text { width: 78%; vertical-align: middle; }
-.menu-list .list-item .i-head { line-height: 60px; cursor: pointer; }
-.menu-list .list-item .i-head .h-name { font-weight: bold; }
-.menu-list .list-item .i-head .icon-down { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px; margin-right: 14px; }
-.menu-list .list-item .d-head { height: 54px; line-height: 54px; cursor: pointer; }
-.menu-list .list-item .d-head .icon-up { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px; margin-right: 17px; }
-.menu-list .list-item .d-head .icon-down { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 17px; }
-.menu-list .list-item:last-child { border-bottom: none; }
-.menu-list .list-item:last-child .i-head { border-bottom: none; }
-.menu-list .list-item.unfold .i-head { border-bottom: 1px dotted #c1c1c1; }
-.menu-list .list-item.unfold .outer-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px; }
-.menu-list .list-item.unfold .i-detail { display: block; }
-.menu-list .list-item.unfold .i-detail.on .inner-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px; }
-.menu-list .list-item.unfold .i-detail.on ul { display: block; }
+.menu-list .degree { font-size: 12px; color: #999999; }
+.menu-list .h-name { margin-right: 20px; font-size: 16px; font-weight: bold; }
+.menu-list .outer-icon { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px; margin-right: 14px; }
+.menu-list .inner-icon { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 10px; }
+.menu-list .icon-fix { width: 19px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -304px; margin: 4px 5px; vertical-align: middle; }
+.menu-list .i-detail { padding-left: 40px; display: none; }
+.menu-list .i-detail ul { padding: 0 0 10px 3px; line-height: 48px; display: none; }
+.menu-list .i-detail li { height: 30px; line-height: 30px; position: relative; }
+.menu-list .i-detail li::before { content: ""; width: 1px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat; position: absolute; left: 5px; top: 26px; }
+.menu-list .i-detail li:last-child::before { display: none; }
+.menu-list .icon-c { float: left; width: 12px; height: 13px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat; margin-right: 10px; margin-top: 10px; }
+.menu-list .d-r { float: left; width: 96%; }
+.menu-list .d-r .d-accuracy { width: 18%; text-align: center; }
+.menu-list .d-r .d-accuracy span { color: #ff5e2c; }
+.menu-list .d-r .rate { width: 8%; color: #999999; }
+.menu-list .d-r .text { width: 78%; vertical-align: middle; }
+.menu-list .i-head { line-height: 60px; cursor: pointer; }
+.menu-list .i-head .h-name { font-weight: bold; }
+.menu-list .i-head .icon-down { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px; margin-right: 14px; }
+.menu-list .d-head { height: 54px; line-height: 54px; cursor: pointer; }
+.menu-list .d-head .icon-up { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px; margin-right: 17px; }
+.menu-list .d-head .icon-down { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 17px; }
+.menu-list:last-child { border-bottom: none; }
+.menu-list:last-child .i-head { border-bottom: none; }
+.menu-list.unfold .i-head { border-bottom: 1px dotted #c1c1c1; }
+.menu-list.unfold .outer-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px; }
+.menu-list.unfold .i-detail { display: block; }
+.menu-list.unfold .i-detail.on .inner-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px; }
+.menu-list.unfold .i-detail.on ul { display: block; }
 .menu-list .l-first { border-bottom: 1px solid #ededed; }
 .menu-list .f-head, .menu-list .s-head, .menu-list .t-head { cursor: pointer; }
 .menu-list .f-head { line-height: 60px; padding-left: 15px; }
@@ -411,14 +419,12 @@ i, span, em, strong { vertical-align: middle; }
 .menu-list .s-icon { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px; margin-right: 10px; }
 .menu-list .s-three { padding-left: 20px; display: none; }
 .menu-list .t-icon { width: 15px; height: 15px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -264px -374px; margin-right: 10px; }
-.menu-list .t-detail { padding-left: 20px; display: none; }
-.menu-list .t-detail ul { padding: 0 0 10px 3px; line-height: 48px; }
+.menu-list .t-detail { padding: 6px 0 6px 20px; display: none; }
+.menu-list .t-detail ul { padding: 0 0 0 3px; line-height: 48px; }
 .menu-list .t-detail li { height: 30px; line-height: 30px; border-bottom: none; position: relative; }
-.menu-list .t-detail li::before { content: ""; width: 1px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat; position: absolute; left: 5px; top: 26px; }
+.menu-list .t-detail li::before { content: ""; width: 1px; height: 16px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat; position: absolute; left: 5px; top: 26px; z-index: 10; }
 .menu-list .t-detail li:last-child::before { display: none; }
 .menu-list .icon-c { float: left; width: 12px; height: 13px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat; margin-right: 10px; margin-top: 10px; }
-.menu-list .d-r { float: left; width: 96%; }
-.menu-list .d-r .text { width: 78%; vertical-align: middle; }
 .menu-list .i-head { line-height: 60px; cursor: pointer; }
 .menu-list .i-head .h-name { font-weight: bold; }
 .menu-list .i-head .icon-down { width: 22px; height: 22px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px; margin-right: 14px; }
@@ -434,6 +440,8 @@ i, span, em, strong { vertical-align: middle; }
 .menu-list .s-unfold .s-three { display: block; }
 .menu-list .t-unfold .t-icon { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -334px -374px; }
 .menu-list .t-unfold .t-detail { display: block; }
+.menu-list li:hover { background-color: #f5f5f5; }
+.menu-list li:hover .icon-fix { margin: 0; width: 28px; height: 29px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -10px -252px; }
 
 .axn-course { margin-bottom: 40px; }
 .axn-course .c-l { float: left; width: 888px; height: 100%; padding: 20px 18px; box-sizing: border-box; }
@@ -499,7 +507,7 @@ i, span, em, strong { vertical-align: middle; }
 .axn-recent { margin-bottom: 40px; }
 .axn-recent .bw-title { margin-bottom: 16px; }
 .axn-recent .r-live { position: relative; }
-.axn-recent .r-live li { width: 389px !important; height: 123px; padding: 14px 12px; box-sizing: border-box; margin-right: 16px; }
+.axn-recent .r-live li { float: left; width: 389px !important; height: 123px; padding: 14px 12px; box-sizing: border-box; margin-right: 16px; }
 .axn-recent .r-live li > img { float: left; width: 66px; height: 68px; border-radius: 50%; margin-top: 18px; margin-right: 15px; }
 .axn-recent .r-live li .team-detail { float: left; width: 284px; }
 .axn-recent .r-live li .team-detail .d-row { line-height: 28px; color: #999999; margin-bottom: 4px; }
@@ -512,6 +520,7 @@ i, span, em, strong { vertical-align: middle; }
 .axn-recent .r-live li .team-detail .row-ej { background-color: #e8eefe; border-radius: 4px; color: #4464c5; line-height: 21px; margin-right: 8px; }
 .axn-recent .r-live li .team-detail .d-title { color: #333333; }
 .axn-recent .r-live li .team-detail .icon-feel { width: 48px; height: 26px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -139px -83px; }
+.axn-recent .r-live li .team-detail .live-type { font-size: 12px; line-height: 22px; color: #fff; background-image: linear-gradient(-48deg, #2365fc 0%, #5286fe 100%); padding: 0 6px; border-radius: 0 10px 10px 10px; }
 .axn-recent .prev, .axn-recent .next { position: absolute; top: 32%; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; color: #fff; font-size: 28px; text-align: center; cursor: pointer; background-color: rgba(0, 0, 0, 0.2); }
 .axn-recent .prev:hover, .axn-recent .next:hover { background-color: rgba(0, 0, 0, 0.4); }
 .axn-recent .prev { left: 12px; }
@@ -947,6 +956,7 @@ i, span, em, strong { vertical-align: middle; }
 .lx-tab .list-item .i-detail li:last-child .d-r { border-bottom: none; }
 .lx-tab .list-item .i-detail li::before { height: 34px; top: 33px; }
 .lx-tab .list-item .i-detail .icon-c { margin-top: 18px; }
+.lx-tab .d-r .text { width: 58%; }
 
 /* 历年真题 */
 .no-buy { height: 510px; text-align: center; padding-top: 26px; box-sizing: border-box; }
@@ -955,10 +965,10 @@ i, span, em, strong { vertical-align: middle; }
 .no-buy .buy-btn { font-size: 16px; line-height: 40px; color: #ffffff; background-image: linear-gradient(-90deg, #2365fc 0%, #5286fe 100%); box-shadow: 0px 2px 10px 0px rgba(37, 102, 253, 0.25); border-radius: 20px; padding: 0 52px; }
 
 .topic-list { padding: 0 20px; }
-.topic-list li { line-height: 24px; padding: 20px 0 20px 10px; border-bottom: 1px solid #eee; box-sizing: border-box; }
-.topic-list li:last-child { border-bottom: none; }
-.topic-list li:hover { background-color: #f8f8f8; }
-.topic-list li:hover .l-btn { border: none; color: #fff; background-image: linear-gradient(270deg, #ff5e2c 0%, #ffa88d 100%); }
+.topic-list > ul li { line-height: 24px; padding: 20px 0; border-bottom: 1px solid #eee; box-sizing: border-box; }
+.topic-list > ul li:last-child { border-bottom: none; }
+.topic-list > ul li:hover { background-color: #f8f8f8; }
+.topic-list > ul li:hover .l-btn { border: none; color: #fff; background-image: linear-gradient(270deg, #ff5e2c 0%, #ffa88d 100%); }
 .topic-list .l-title, .topic-list .l-score { float: left; }
 .topic-list .l-btn { float: right; }
 .topic-list .l-title { width: 410px; }
@@ -1005,13 +1015,14 @@ i, span, em, strong { vertical-align: middle; }
 .exercise-terminal .r-time .t-col i { width: 24px; height: 24px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -10px -330px; }
 .exercise-terminal .r-time .t-col .t-residue { font-size: 20px; color: #ff5e2c; }
 .exercise-terminal .r-time .t-btn { line-height: 30px; text-align: center; }
-.exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { height: 30px; line-height: 26px; padding: 0 14px; box-sizing: border-box; border-radius: 15px; }
+.exercise-terminal .r-time .t-btn .btn-pause, .exercise-terminal .r-time .t-btn .btn-submit { height: 30px; line-height: 28px; padding: 0 14px; box-sizing: border-box; border-radius: 15px; }
+.exercise-terminal .r-time .t-btn .btn-save { height: 30px; line-height: 28px; padding: 0 14px; box-sizing: border-box; border-radius: 15px; color: #ffffff; background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%); box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25); }
 .exercise-terminal .r-time .t-btn .btn-pause { box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25); border: solid 1px #ff5e2c; color: #ff5e2c; margin-right: 60px; cursor: pointer; }
 .exercise-terminal .r-time .t-btn .btn-pause i { width: 8px; height: 11px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -403px -374px; }
 .exercise-terminal .r-time .t-btn .btn-submit { color: #ffffff; background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%); box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25); }
 .exercise-terminal .r-time .t-btn .btn-submit i { width: 13px; height: 10px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -334px; }
 .exercise-terminal .r-time .has-time { float: right; }
-.exercise-terminal .r-time .has-time .btn-pause { margin-right: 10px; }
+.exercise-terminal .r-time .has-time .btn-pause { margin: 0 6px; }
 .exercise-terminal .r-scantron { height: 374px; padding: 20px 24px 0; box-sizing: border-box; }
 .exercise-terminal .r-scantron .diff { float: right; }
 .exercise-terminal .r-scantron .diff i { width: 16px; height: 16px; margin-right: 6px; margin-left: 16px; }

@@ -39,7 +39,21 @@
         </form>
         <div class="link-box">
           <a href="">学习中心</a>
-          <a href="" class="icon_phone"><i class="icon bg-icon_phone"></i>APP下载</a>
+          <div class="icon_phone">
+            <div class="phone-text">
+              <i class="icon bg-icon_phone"></i>APP下载
+            </div>
+            <div class="app-download">
+              <div class="ios">
+                <img src="https://img.thea.cn/public/platform/thea/202004/qlp/zg/images/code.png">
+                <p>IOS版本</p>
+              </div>
+              <div class="and">
+                <img src="https://img.thea.cn/public/platform/thea/202004/qlp/zg/images/code.png">
+                <p>安卓版本</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="right">
@@ -90,56 +104,94 @@
 
       <div class="tab-body">
         <div class="topic-list">
-          <ul>
-            <li>
-              <div class="l-title">
-                <div class="t-col">
-                  <div class="t-text">2019年 一建《建设工程经济》真题2019年 一建《建设工程经济》真题</div>
+          <!-- 展开与收起 -->
+          <div class="menu-list">
+            <div class="l-first f-unfold">
+              <div class="f-head">
+                <span class="f-text">
+                  <span class="t-text">2019年 一建《建设工程经济》真题</span>
                   <span class="degree">难易程度：</span>
                   <span class="star-m">
                     <i></i><i></i><i></i><i></i><i class="gray"></i>
                   </span>
+                </span>
+              </div>
+              <div class="f-second s-unfold">
+                <div class="s-head">
+                  <i class="s-icon"></i>
+                  <span class="s-text">技术实务</span>
+                </div>
+                <div class="s-three t-unfold">
+                  <div class="t-head">
+                    <i class="t-icon"></i>
+                    <span class="s-text">预习阶段</span>
+                  </div>
+                  <div class="t-detail">
+                    <ul>
+                      <li>
+                        <i class="icon-c"></i>
+                        <div class="d-r">
+                          <a href="" class="text">备考指导</a>
+                          <span class="row-val">高清-20分钟00秒</span><i class="row-play"></i>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="icon-c"></i>
+                        <div class="d-r">
+                          <a href="" class="text">2019精讲视频</a>
+                          <span class="row-val">高清-20分钟00秒</span><i class="row-pause"></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="l-score">
-                <span>总分：85分</span>
-                <span>考试时间：90分钟 </span>
-              </div>
-              <a href="" class="l-btn">开始考试</a>
-            </li>
-            <li>
-              <div class="l-title">
-                <div class="t-col">
-                  <div class="t-text">2019年 一建《建设工程经济》真题</div>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="l-first">
+              <div class="f-head">
+                <span class="f-text">
+                  <span class="t-text">2019年 一建《建设工程经济》真题</span>
                   <span class="degree">难易程度：</span>
                   <span class="star-m">
                     <i></i><i></i><i></i><i></i><i class="gray"></i>
                   </span>
+                </span>
+              </div>
+              <div class="f-second">
+                <div class="s-head">
+                  <i class="s-icon"></i>
+                  <span class="s-text">技术实务</span>
+                </div>
+                <div class="s-three">
+                  <div class="t-head">
+                    <i class="t-icon"></i>
+                    <span class="s-text">预习阶段</span>
+                  </div>
+                  <div class="t-detail">
+                    <ul>
+                      <li>
+                        <i class="icon-c"></i>
+                        <div class="d-r">
+                          <a href="" class="text">备考指导</a>
+                          <span class="row-val">高清-20分钟00秒</span><i class="row-play"></i>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="icon-c"></i>
+                        <div class="d-r">
+                          <a href="" class="text">2019精讲视频</a>
+                          <span class="row-val">高清-20分钟00秒</span><i class="row-pause"></i>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="l-score">
-                <span>总分：85分</span>
-                <span>考试时间：90分钟 </span>
-              </div>
-              <a href="" class="l-btn">开始考试</a>
-            </li>
-            <li>
-              <div class="l-title">
-                <div class="t-col">
-                  <div class="t-text">2019年 一建《建设工程经济》真题</div>
-                  <span class="degree">难易程度：</span>
-                  <span class="star-m">
-                    <i></i><i></i><i></i><i></i><i class="gray"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="l-score">
-                <span>总分：85分</span>
-                <span>考试时间：90分钟 </span>
-              </div>
-              <a href="" class="l-btn">开始考试</a>
-            </li>
-          </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -203,6 +255,24 @@
   </div>
 
   <script type="text/javascript" src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/js/index.js"></script>
+  <script>
+    // 三层 展开与收起
+    // outerBox: 最外层盒子，headBox: 头部盒子
+    function threePlyer(outerBox, headBox, className) {
+      $(outerBox).each(function (i) {
+        var that = this;
+        $(that).find(headBox).click(function () {
+          $($(outerBox)[i]).toggleClass(className);
+        })
+      })
+    }
+    // 第一层
+    threePlyer('.l-first', '.f-head', 'f-unfold');
+    // 第二层
+    threePlyer('.f-second', '.s-head', 's-unfold');
+    // 第三层
+    threePlyer('.s-three', '.t-head', 't-unfold');
+  </script>
 
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
   <script type="text/javascript">

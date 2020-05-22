@@ -39,7 +39,21 @@
         </form>
         <div class="link-box">
           <a href="">学习中心</a>
-          <a href="" class="icon_phone"><i class="icon bg-icon_phone"></i>APP下载</a>
+          <div class="icon_phone">
+            <div class="phone-text">
+              <i class="icon bg-icon_phone"></i>APP下载
+            </div>
+            <div class="app-download">
+              <div class="ios">
+                <img src="https://img.thea.cn/public/platform/thea/202004/qlp/zg/images/code.png">
+                <p>IOS版本</p>
+              </div>
+              <div class="and">
+                <img src="https://img.thea.cn/public/platform/thea/202004/qlp/zg/images/code.png">
+                <p>安卓版本</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="right">
@@ -48,6 +62,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- 中间内容 -->
   <div class="wrap">
@@ -168,6 +183,7 @@
             </div>
           </div>
           <div class="t-btn has-time">
+            <a href="javascript:;" class="btn-save">保存</a>
             <div class="btn-pause">
               <i></i>
               <span>暂停</span>
@@ -321,7 +337,7 @@
       // 19-每日一练终端-2
       $('.btn-submit').click(function () {
         // console.log(111);
-        
+
         isSubmit(i)
       })
 

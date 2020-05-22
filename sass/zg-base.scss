@@ -284,15 +284,48 @@ input[type="submit"] {
 			.link-box {
 				@extend %in-b;
 				vertical-align: middle;
+				position: relative;
 				a {
 					color: #333;
 					margin-left: 14px;
 					&:hover {
 						color: $txt-hover-color;
 					}
-					&.icon_phone {
-						position: relative;
-						padding-left: 18px;
+				}
+				.icon_phone {
+					@extend %in-b;
+					position: relative;
+					padding-left: 18px;
+					margin-left: 30px;
+					cursor: pointer;
+					.phone-text{
+						line-height: 36px;
+					}
+					.app-download {
+						width: max-content;
+						padding: 10px 5px 0;
+						box-sizing: border-box;
+						position: absolute;
+						top: 24px;
+						left: -130%;
+						z-index: 100;
+						text-align: center;
+						display: none;
+						div {
+							float: left;
+							padding: 0 5px;
+							color: #fff;
+							img {
+								width: 120px;
+								height: 120px;
+							}
+							p{
+								line-height: 30px;
+							}
+						}
+					}
+					&:hover{
+						color: $txt-hover-color;
 					}
 				}
 			}

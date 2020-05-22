@@ -811,134 +811,144 @@ a {
     background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -122px -374px;
     vertical-align: middle;
   }
-  .list-item {
-    border-bottom: 1px solid #ededed;
-    .outer-icon {
+  .degree {
+    font-size: 12px;
+    color: #999999;
+  }
+  .h-name {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .outer-icon {
+    width: 22px;
+    height: 22px;
+    background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px;
+    margin-right: 14px;
+  }
+  .inner-icon {
+    width: 18px;
+    height: 18px;
+    background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px;
+    margin-right: 10px;
+  }
+  .icon-fix {
+    width: 19px;
+    height: 22px;
+    background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -304px;
+    margin: 4px 5px;
+    vertical-align: middle;
+  }
+  .i-detail {
+    padding-left: 40px;
+    display: none;
+    ul {
+      padding: 0 0 10px 3px;
+      line-height: 48px;
+      display: none;
+    }
+    li {
+      height: 30px;
+      line-height: 30px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 1px;
+        // height: 38px;
+        height: 16px;
+        background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat;
+        position: absolute;
+        left: 5px;
+        top: 26px;
+      }
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  .icon-c {
+    float: left;
+    width: 12px;
+    height: 13px;
+    background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .d-r {
+    float: left;
+    width: 96%;
+    .d-accuracy {
+      @extend %in-b;
+      width: 18%;
+      text-align: center;
+      span{
+        color: #ff5e2c;
+      }
+    }
+    .rate {
+      width: 8%;
+      color: #999999;
+    }
+    .text {
+      width: 78%;
+      @extend %one;
+      vertical-align: middle;
+    }
+  }
+  .i-head {
+    line-height: 60px;
+    cursor: pointer;
+    .h-name {
+      font-weight: bold;
+    }
+    .icon-down {
       width: 22px;
       height: 22px;
-      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -95px;
+      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px;
       margin-right: 14px;
     }
-    .inner-icon {
+  }
+  .d-head {
+    height: 54px;
+    line-height: 54px;
+    cursor: pointer;
+    .icon-up {
+      width: 18px;
+      height: 18px;
+      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px;
+      margin-right: 17px;
+    }
+    .icon-down {
       width: 18px;
       height: 18px;
       background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px;
-      margin-right: 10px;
+      margin-right: 17px;
     }
-    .degree {
-      font-size: 12px;
-      color: #999999;
+  }
+  &:last-child {
+    border-bottom: none;
+    .i-head {
+      border-bottom: none;
     }
-    .h-name {
-      margin-right: 20px;
-      font-size: 16px;
+  }
+  // 打开
+  &.unfold {
+    .i-head {
+      border-bottom: 1px dotted #c1c1c1;
     }
-    .icon-fix {
-      width: 19px;
-      height: 22px;
-      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -304px;
-      margin: 4px 5px;
-      vertical-align: middle;
+    .outer-icon {
+      background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px;
     }
     .i-detail {
-      padding-left: 40px;
-      display: none;
-      ul {
-        padding: 0 0 10px 3px;
-        line-height: 48px;
-        display: none;
-      }
-      li {
-        height: 30px;
-        line-height: 30px;
-        position: relative;
-        &::before {
-          content: "";
-          width: 1px;
-          // height: 38px;
-          height: 16px;
-          background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat;
-          position: absolute;
-          left: 5px;
-          top: 26px;
+      display: block;
+      &.on {
+        .inner-icon {
+          background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px;
         }
-        &:last-child {
-          &::before {
-            display: none;
-          }
-        }
-      }
-    }
-    .icon-c {
-      float: left;
-      width: 12px;
-      height: 13px;
-      background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat;
-      margin-right: 10px;
-      margin-top: 10px;
-    }
-    .d-r {
-      float: left;
-      width: 96%;
-      .text {
-        width: 78%;
-        @extend %one;
-        vertical-align: middle;
-      }
-    }
-    .i-head {
-      line-height: 60px;
-      cursor: pointer;
-      .h-name {
-        font-weight: bold;
-      }
-      .icon-down {
-        width: 22px;
-        height: 22px;
-        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px;
-        margin-right: 14px;
-      }
-    }
-    .d-head {
-      height: 54px;
-      line-height: 54px;
-      cursor: pointer;
-      .icon-up {
-        width: 18px;
-        height: 18px;
-        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px;
-        margin-right: 17px;
-      }
-      .icon-down {
-        width: 18px;
-        height: 18px;
-        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -222px -330px;
-        margin-right: 17px;
-      }
-    }
-    &:last-child {
-      border-bottom: none;
-      .i-head {
-        border-bottom: none;
-      }
-    }
-    // 打开
-    &.unfold {
-      .i-head {
-        border-bottom: 1px dotted #c1c1c1;
-      }
-      .outer-icon {
-        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -179px;
-      }
-      .i-detail {
-        display: block;
-        &.on {
-          .inner-icon {
-            background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -260px -330px;
-          }
-          ul {
-            display: block;
-          }
+        ul {
+          display: block;
         }
       }
     }
@@ -996,12 +1006,11 @@ a {
     margin-right: 10px;
   }
   .t-detail {
-    padding-left: 20px;
+    padding: 6px 0 6px 20px;
     display: none;
     ul {
-      padding: 0 0 10px 3px;
+      padding: 0 0 0 3px;
       line-height: 48px;
-      // display: none;
     }
     li {
       height: 30px;
@@ -1011,12 +1020,12 @@ a {
       &::before {
         content: "";
         width: 1px;
-        // height: 38px;
         height: 16px;
         background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat;
         position: absolute;
         left: 5px;
         top: 26px;
+        z-index: 10;
       }
       &:last-child {
         &::before {
@@ -1032,15 +1041,6 @@ a {
     background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/lx_1.png) no-repeat;
     margin-right: 10px;
     margin-top: 10px;
-  }
-  .d-r {
-    float: left;
-    width: 96%;
-    .text {
-      width: 78%;
-      @extend %one;
-      vertical-align: middle;
-    }
   }
   .i-head {
     line-height: 60px;
@@ -1106,6 +1106,18 @@ a {
     }
     .t-detail {
       display: block;
+    }
+  }
+
+  li {
+    &:hover {
+      background-color: #f5f5f5;
+      .icon-fix {
+        margin: 0;
+        width: 28px;
+        height: 29px;
+        background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -10px -252px;
+      }
     }
   }
 }
@@ -1434,7 +1446,11 @@ a {
   }
   .r-live {
     position: relative;
+    ul{
+      @extend %clearfix;
+    }
     li {
+      float: left;
       @extend .bc-br;
       width: 389px !important; // 要覆盖superslide的样式
       height: 123px;
@@ -1499,6 +1515,14 @@ a {
           width: 48px;
           height: 26px;
           background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -139px -83px;
+        }
+        .live-type {
+          font-size: 12px;
+          line-height: 22px;
+          color: #fff;
+          background-image: linear-gradient(-48deg, #2365fc 0%, #5286fe 100%);
+          padding: 0 6px;
+          border-radius: 0 10px 10px 10px;
         }
       }
     }
@@ -2964,7 +2988,7 @@ a {
           flex-direction: column;
           justify-content: center;
 
-          img{
+          img {
             width: 100%;
             border-radius: 50%;
           }
@@ -3600,6 +3624,11 @@ a {
       }
     }
   }
+  .d-r {
+    .text {
+      width: 58%;
+    }
+  }
 }
 
 /* 历年真题 */
@@ -3633,21 +3662,23 @@ a {
 .topic-list {
   @extend .bc-br;
   padding: 0 20px;
-  li {
-    line-height: 24px;
-    @extend %clearfix;
-    padding: 20px 0 20px 10px;
-    border-bottom: 1px solid #eee;
-    box-sizing: border-box;
-    &:last-child {
-      border-bottom: none;
-    }
-    &:hover {
-      background-color: #f8f8f8;
-      .l-btn {
-        border: none;
-        color: #fff;
-        background-image: linear-gradient(270deg, #ff5e2c 0%, #ffa88d 100%);
+  > ul {
+    li {
+      line-height: 24px;
+      @extend %clearfix;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+      box-sizing: border-box;
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        background-color: #f8f8f8;
+        .l-btn {
+          border: none;
+          color: #fff;
+          background-image: linear-gradient(270deg, #ff5e2c 0%, #ffa88d 100%);
+        }
       }
     }
   }
@@ -3893,10 +3924,20 @@ a {
       .btn-submit {
         @extend %in-b;
         height: 30px;
-        line-height: 26px;
+        line-height: 28px;
         padding: 0 14px;
         box-sizing: border-box;
         border-radius: 15px;
+      }
+      .btn-save {
+        height: 30px;
+        line-height: 28px;
+        padding: 0 14px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        color: #ffffff;
+        background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%);
+        box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25);
       }
       .btn-pause {
         box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25);
@@ -3924,7 +3965,7 @@ a {
     .has-time {
       float: right;
       .btn-pause {
-        margin-right: 10px;
+        margin: 0 6px;
       }
     }
   }
