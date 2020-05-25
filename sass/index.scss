@@ -1110,6 +1110,7 @@ a {
   }
 
   li {
+    @extend %clearfix;
     &:hover {
       background-color: #f5f5f5;
       .icon-fix {

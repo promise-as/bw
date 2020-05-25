@@ -268,23 +268,27 @@
 
   <script src="https://img.thea.cn/public/platform/thea/202004/hbj/bw/js/index.js"></script>
   <script>
-    $(function(){
+    $(function () {
       // 三层 展开与收起
       // outerBox: 最外层盒子，headBox: 头部盒子
-      function threePlyer(outerBox, headBox, className) {
-        $(outerBox).each(function (i) {
-          var that = this;
-          $(that).find(headBox).click(function () {
-            $($(outerBox)[i]).toggleClass(className);
-          })
+      // function threePlyer(outerBox, headBox, className) {
+      //   $(outerBox).each(function (i) {
+      //     $(this).find(headBox).click(function () {
+      //       $($(outerBox)[i]).toggleClass(className);
+      //     })
+      //   })
+      // }
+      function threePlyer(headBox, className) {
+        $(document).on('click', headBox, function(){
+          $(this).parent().toggleClass(className);
         })
       }
       // 第一层
-      threePlyer('.l-first', '.f-head', 'f-unfold');
+      threePlyer('.f-head', 'f-unfold');
       // 第二层
-      threePlyer('.f-second', '.s-head', 's-unfold');
+      threePlyer('.s-head', 's-unfold');
       // 第三层
-      threePlyer('.s-three', '.t-head', 't-unfold');
+      threePlyer('.t-head', 't-unfold');
     })
   </script>
 
