@@ -2762,7 +2762,7 @@ a {
       width: 198px;
       float: left;
       height: 47px;
-      line-height: 38px;
+      line-height: 44px;
       background-color: #ffffff;
       border-radius: 4px;
       border: solid 1px #dadada;
@@ -3838,6 +3838,13 @@ a {
           background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -137px;
         }
       }
+      &.miss-answer {
+        span {
+          background: #FFB800;
+          color: #fff;
+          border: none;
+        }
+      }
     }
     .zt-collect {
       text-align: right;
@@ -4503,4 +4510,12 @@ a {
       font-size: 16px;
     }
   }
+}
+
+// layui 地址下拉框
+.layui-form-select .layui-input{
+  width: 130px;
+}
+.layui-form .layui-form-checkbox{
+  display: none;
 }
