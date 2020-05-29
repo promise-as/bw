@@ -406,31 +406,25 @@
 
   <!-- 10-签订协议步骤-1 -->
   <div class="mask xy-mask">
-    <div class="zg-popup zg-popup-3 step-2" style="display: block;">
-      <div class="close close-2 closed"><i class="icon bg-c_12x12"></i>关闭</div>
-      <div class="popup-con xieyi">
-        <p class="popup-tit">2019年二级建造师【无忧取证班】套餐协议</p>
-        <div class="txt">
-          <p>深圳市诺达筑工教育科技有限公司（简称诺达筑工）特设2020年二级建造师考试“无忧取证班”网络辅导，用户自愿参加诺达筑工2020年二级建造师“无忧取证班”学习。购买支付成功，则默认为接受以下约定：</p>
-          <p>总 则</p>
-          <p>本课程期限为 4 个 年度。</p>
-          <p>一、用户的权利与义务　</p>
-          <p>1.1.用户按诺达筑工规定的价格交纳学费，以开通所学科目的课程；</p>
-          <p>1.2.用户经认真阅读并充分理解本套餐协议；</p>
-          <p>1.3.用户在签署协议、申请免费重学时，应当提供真实的、一致的信息；提供虚假的、涂改的、不一致的信息可视为放弃后续重学服务；</p>
-          <p>1.4.用户在课程开通后，按照学习计划和进度要求完成所有课程学习，并参加当年考试，方可享受本协议保障套餐；</p>
-          <p>深圳市诺达筑工教育科技有限公司（简称诺达筑工）特设2020年二级建造师考试“无忧取证班”网络辅导，用户自愿参加诺达筑工2020年二级建造师“无忧取证班”学习。购买支付成功，则默认为接受以下约定：</p>
-          <p>总 则</p>
-          <p>本课程期限为 4 个 年度。</p>
-          <p>一、用户的权利与义务　</p>
-          <p>1.1.用户按诺达筑工规定的价格交纳学费，以开通所学科目的课程；</p>
-          <p>1.2.用户经认真阅读并充分理解本套餐协议；</p>
-          <p>1.3.用户在签署协议、申请免费重学时，应当提供真实的、一致的信息；提供虚假的、涂改的、不一致的信息可视为放弃后续重学服务；</p>
-          <p>1.4.用户在课程开通后，按照学习计划和进度要求完成所有课程学习，并参加当年考试，方可享受本协议保障套餐；</p>
-        </div>
+    <div class="zg-popup zg-popup-5 step-1">
+      <div class="popup-con">
+        <p class="popup-tit">用户购买协议</p>
+        <p class="xy-con">用户务必仔细阅读并透彻理解本协议，用户提交信息支付成功的行为视为对本协议全部内容的认可，本协议自用户提交信息之日起生效。</p>
+        <p class="agree">《用户购买协议》</p>
         <div class="popup-link">
           同意并继续
         </div>
+      </div>
+    </div>
+    <div class="zg-popup zg-popup-5 step-3">
+      <div class="popup-con">
+        <p class="popup-tit">填写身份证信息</p>
+        <form class="xy-form">
+          <input type="text" placeholder="请输入您的真实姓名">
+          <input type="text" placeholder="请输入您的身份证号码">
+          <input type="submit" class="popup-link" value="签订协议">
+        </form>
+        <p class="tips">为了确保您的课程能顺利进行，请填写真实有效的身份证信息，若信息有误，将导致课程无法正常开展，您将承担相应风险。</p>
       </div>
     </div>
   </div>
@@ -544,9 +538,17 @@
       })
 
       // 10-签订协议步骤弹窗
-      $('.popup-link').click(function () {
-        $('.mask').hide();
-      })
+			$('.xy-mask .step-1 .agree').click(function(event) {
+				$(this).toggleClass('choice');
+			});
+			$('.xy-mask .step-1 .popup-link').click(function(event) {
+				if ($('.step-1 .agree').hasClass('choice')) {
+					$('.xy-mask .zg-popup').hide();
+					$('.xy-mask .step-3').show();
+				}else{
+          alert('请勾上用户购买协议');
+        }
+			});
     })
   </script>
 

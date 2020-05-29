@@ -491,6 +491,7 @@ i, span, em, strong { vertical-align: middle; }
 .axn-course .c-r .r-tea ul { white-space: nowrap; overflow-x: auto; }
 .axn-course .c-r .r-tea ul::-webkit-scrollbar { display: none; }
 .axn-course .c-r .r-tea ul li { margin-right: 16px; text-align: center; }
+.axn-course .c-r .r-tea ul li img { width: 41px; height: 41px; border-radius: 50%; }
 .axn-course .c-r .r-tea ul li .txt { padding-top: 10px; }
 .axn-course .c-r .r-time { height: 57px; background-color: #f2f2f2; border-radius: 3px; font-size: 12px; padding: 14px 0 14px 14px; box-sizing: border-box; margin-bottom: 20px; }
 .axn-course .c-r .r-time strong { font-weight: normal; color: #777777; padding-left: 4px; }
@@ -646,6 +647,8 @@ i, span, em, strong { vertical-align: middle; }
 /* 课程终端 */
 .free-trial { margin: 10px 0 22px; padding: 24px; box-sizing: border-box; }
 .free-trial .t-left { float: left; margin-right: 30px; }
+.free-trial .t-left .d-bg { width: 529px; height: 297px; }
+.free-trial .t-left .d-bg img { width: 100%; height: 100%; }
 .free-trial .t-right { width: 590px; float: left; line-height: 28px; }
 .free-trial .t-right .r-title { font-size: 18px; font-weight: bold; }
 .free-trial .t-right .r-st { font-size: 12px; color: #999999; }
@@ -718,7 +721,7 @@ i, span, em, strong { vertical-align: middle; }
 .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-c { width: 6px; height: 6px; background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png) -247px -177px; margin-right: 6px; }
 .kc-cont .cont-l .bd-timetable .l-explain .e-row .row-key { width: 77%; vertical-align: middle; }
 .kc-cont .cont-l .bd-evaluate li { padding: 20px 0; }
-.kc-cont .cont-l .bd-evaluate .avatar { float: left; margin-right: 20px; border-radius: 50%; }
+.kc-cont .cont-l .bd-evaluate .avatar { width: 85px; height: 85px; float: left; margin-right: 20px; border-radius: 50%; }
 .kc-cont .cont-l .bd-evaluate .e-detail { float: left; width: 86%; }
 .kc-cont .cont-l .bd-evaluate .e-detail .d-name { font-size: 16px; font-weight: bold; }
 .kc-cont .cont-l .bd-evaluate .e-detail .d-text { line-height: 22px; }
@@ -770,6 +773,7 @@ i, span, em, strong { vertical-align: middle; }
 .order-address .order-msg li:first-child { width: 28%; }
 .order-address .order-msg li:nth-of-type(3) { width: 14%; }
 .order-address .order-msg li:last-child { width: 14%; }
+.order-address .order-msg li img { width: 60px; height: 60px; }
 .order-address .order-msg .msg-item { line-height: 28px; padding-top: 14px; border: solid 1px #e6e6e6; }
 .order-address .order-msg .msg-item ul { margin-bottom: 14px; }
 .order-address .order-msg .msg-item .bg { width: 60px; height: 60px; margin-right: 10px; }
