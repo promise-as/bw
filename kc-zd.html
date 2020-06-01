@@ -619,8 +619,10 @@
     $(function () {
       // 选择课程
       $('.c-detail li').click(function () {
-        $(this).toggleClass('on');
-        event.stopPropagation();
+        $(this).parent().find('li').removeClass('on')
+        $(this).addClass('on')
+        // $(this).toggleClass('on');
+        // event.stopPropagation();
       })
 
       // 阻止点击穿透
@@ -632,6 +634,7 @@
       $(document).click(function () {
         $('.c-detail').removeClass('on');
       });
+
 
       // 常见问题
       $('.icon-list').each(function (i) {
@@ -681,7 +684,7 @@
 
   </script>
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var _echatServer = ['v.rainbowred.com'];
     window._echat = window._echat || function () { (_echat.q = _echat.q || []).push(arguments) }; _echat.l = +new Date;
     _echat('initParam', { companyId: 378 });
@@ -706,7 +709,7 @@
       routeEntranceId && (customObj.routeEntranceId = routeEntranceId);
       ECHAT.customMiniChat(customObj);
     }
-  </script>
+  </script> -->
 
 </body>
 
