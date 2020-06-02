@@ -9,7 +9,8 @@
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <title>课程终端</title>
   <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
-  <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/platform/thea/202004/hbj/bw/css/index.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/platform/thea/202004/hbj/bw/css/index.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
 
   <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
 </head>
@@ -621,20 +622,23 @@
       $('.c-detail li').click(function () {
         $(this).parent().find('li').removeClass('on')
         $(this).addClass('on')
-        // $(this).toggleClass('on');
-        // event.stopPropagation();
       })
+
+      // 关闭空白处关闭选择课程和优惠券
+      // $(document).click(function () {
+      //   $('.c-detail').removeClass('on');
+      //   $('.p-ticket').removeClass('on');
+      // });
 
       // 阻止点击穿透
-      $('.c-detail .d-btn').click(function () {
-        event.stopPropagation();
-      })
-
-      // 关闭选择课程
-      $(document).click(function () {
-        $('.c-detail').removeClass('on');
-      });
-
+      function stopPierce(e) {
+        $(e).click(function () {
+          event.stopPropagation();
+        })
+      }
+      stopPierce('.c-detail li');
+      stopPierce('.c-detail .d-btn');
+      stopPierce('.p-ticket .h-btn');
 
       // 常见问题
       $('.icon-list').each(function (i) {
@@ -645,7 +649,7 @@
 
       // 关闭优惠券
       $('.p-ticket .get').click(function () {
-        hideParent(this, '.p-ticket', 'on');
+        $('.p-ticket').removeClass('on');
       });
 
       // 04-课程终端-详情页-4
@@ -681,7 +685,6 @@
       // 第三层
       threePlyer('.s-three', '.t-head', 't-unfold');
     })
-
   </script>
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
   <!-- <script type="text/javascript">
