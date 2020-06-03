@@ -624,28 +624,26 @@
         $(this).addClass('on')
       })
 
-      // 关闭空白处关闭选择课程和优惠券
-      // $(document).click(function () {
-      //   $('.c-detail').removeClass('on');
-      //   $('.p-ticket').removeClass('on');
-      // });
-
       // 阻止点击穿透
       function stopPierce(e) {
         $(e).click(function () {
           event.stopPropagation();
         })
       }
+      stopPierce('.p-ticket .h-btn');
       stopPierce('.c-detail li');
       stopPierce('.c-detail .d-btn');
-      stopPierce('.p-ticket .h-btn');
+      // 点击空白处关闭优惠券和选择课程
+      $('body').click(function(){
+        $('.p-ticket').removeClass('on');
+      });
 
       // 常见问题
       $('.icon-list').each(function (i) {
         $(this).click(function () {
           $($('.detail-an')[i]).addClass('on').siblings().removeClass('on');
-        })
-      })
+        });
+      });
 
       // 关闭优惠券
       $('.p-ticket .get').click(function () {
@@ -656,9 +654,7 @@
       $('.get').click(function () {
         // 传入的数字是根据该页面有多少个 mask( 类 ) 决定，下标从 0 开始
         showPop(0);
-
         autoClosePopup(1)
-
       });
 
       // time: 时间秒
@@ -713,7 +709,6 @@
       ECHAT.customMiniChat(customObj);
     }
   </script> -->
-
 </body>
 
 </html>

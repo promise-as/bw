@@ -1544,6 +1544,21 @@ a {
         }
       }
     }
+    .p-r {
+      float: right;
+      padding: 0 8px;
+      line-height: 26px;
+      border-radius: 4px;
+      border: solid 1px #ff5e2c;
+      box-sizing: border-box;
+      color: #ff5e2c;
+      margin-top: 6px;
+      &:hover {
+        border: none;
+        background-image: linear-gradient(90deg, #ff5e2c 0%, #ff9d7e 100%);
+        color: #fff;
+      }
+    }
   }
   .prev,
   .next {
@@ -4607,4 +4622,26 @@ a {
 }
 .layui-form .layui-form-checkbox {
   display: none;
+}
+
+// 11-直播-回放
+.model-hf{
+  .close{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: 10px;
+  cursor: pointer; 
+  .bg-c_14x14 {
+      width: 14px;
+      height: 14px;
+      background-position: -376px -159px;
+      margin-top: -7px;
+      left: 50%;
+      top: 50%;
+      margin-left: -7px;
+    }
+  }
 }
