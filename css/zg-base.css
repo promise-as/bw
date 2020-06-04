@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body { overflow-x: auto; min-width: 1200px; font-size: 14px; color: #444; background-color: #f2f2f2; }
+body { font-size: 14px; color: #444; background-color: #f2f2f2; }
 
 p { line-height: 1.6; }
 
