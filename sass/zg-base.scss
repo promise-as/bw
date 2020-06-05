@@ -657,7 +657,7 @@ input[type="submit"] {
 	}
 	.zg-popup-4 {
 		width: 560px;
-		height: 560px;
+		height: 590px;
 		background: url(../images/tc-3.png) no-repeat;
 		background-size: 100% 100%;
 		border-radius: 20px;
@@ -837,7 +837,7 @@ input[type="submit"] {
 		.btn-box {
 			@extend %clearfix;
 			margin-right: -20px;
-			max-height: 178px;
+			min-height: 160px;
 			overflow-y: auto;
 			.sel-btn {
 				float: left;
