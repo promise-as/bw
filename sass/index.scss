@@ -20,6 +20,9 @@ strong {
 a {
   @extend %in-b;
 }
+input{
+  text-indent: 1em;
+}
 
 /* 样式冲突 修正 */
 
@@ -819,6 +822,8 @@ a {
     width: 14px;
     height: 12px;
     background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -77px;
+    vertical-align: inherit;
+    margin-left: 4px;
   }
   .row-pause {
     width: 16px;
@@ -892,8 +897,6 @@ a {
     margin-top: 10px;
   }
   .d-r {
-    // float: left;
-    width: 96%;
     .d-accuracy {
       @extend %in-b;
       width: 18%;
@@ -906,11 +909,7 @@ a {
       width: 8%;
       color: #999999;
     }
-    .text {
-      width: 78%;
-      @extend %one;
-      vertical-align: middle;
-    }
+    
   }
   .i-head {
     line-height: 60px;
@@ -1021,27 +1020,16 @@ a {
     margin-right: 10px;
   }
   .t-detail {
-    padding: 10px 0 10px 20px;
+    padding: 8px 0 8px 20px;
     display: none;
     ul {
       padding: 0 0 0 3px;
       line-height: 48px;
     }
     li {
-      height: 34px;
       line-height: 34px;
       border-bottom: none;
       position: relative;
-      &::before {
-        content: "";
-        width: 1px;
-        height: 16px;
-        background: url(https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/line_2.png) no-repeat;
-        position: absolute;
-        left: 5px;
-        top: 26px;
-        z-index: 10;
-      }
       &:last-child {
         &::before {
           display: none;
@@ -1114,7 +1102,7 @@ a {
       display: block;
     }
   }
-  // 第二层
+  // 第三层
   .t-unfold {
     .t-icon {
       background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -334px -374px;
@@ -1125,7 +1113,7 @@ a {
   }
 
   li {
-    @extend %clearfix;
+    // @extend %clearfix;
     &:hover {
       background-color: #f5f5f5;
       .icon-fix {
@@ -1259,10 +1247,9 @@ a {
         .text {
           width: 78%;
           @extend %one;
-          vertical-align: middle;
-          margin-right: 4px;
         }
       }
+      
       .feel {
         color: #ff5f2e;
       }
@@ -1324,38 +1311,45 @@ a {
     .t-head {
       line-height: 30px;
     }
-    .d-r {
-      width: 90%;
-      .text {
-        width: 76%;
-      }
-      &:hover{
-        .row-play{
-          display: none;
-        }
-        .text{
-          width: 90%;
-          // overflow-x: unset;
-          position: relative;
-          z-index: 100;
-        }
-      }
-    }
     .t-detail {
-      ul {
-        padding: 8px 0;
-      }
       li {
-        height: 28px;
+        // border: 1px solid #000;
         line-height: 28px;
         &::before {
           top: 24px;
+        }
+      }
+      .d-r{
+        .text {
+          width: 83%;
+          @extend %one;
+        }
+        &:hover {
+          .text {
+            white-space: normal;
+          }
         }
       }
     }
     .f-unfold {
       .f-head {
         background-color: #f2f2f2;
+      }
+    }
+    .d-r {
+      position: relative;
+      .row-play{
+        position: absolute;
+        right: 6px;
+        top: -8px;
+        bottom: 0;
+        margin: auto;
+      }
+      &:hover{
+        height: auto;
+        .row-play{
+          top: 0;
+        }
       }
     }
   }
@@ -1941,7 +1935,7 @@ a {
   padding-top: 24px;
   .l-left {
     float: left;
-    .bd{
+    .bd {
       li {
         height: 102px;
         background: #ffffff;
@@ -1964,11 +1958,11 @@ a {
     }
     .g-row {
       margin-bottom: 4px;
-      &:hover{
-        .r-play{
+      &:hover {
+        .r-play {
           display: none;
         }
-        .r-text{
+        .r-text {
           width: 100%;
           white-space: normal;
         }
@@ -2143,7 +2137,7 @@ a {
   .t-left {
     float: left;
     margin-right: 30px;
-    .t-detail{
+    .t-detail {
       width: 530px;
       height: 300px;
     }
@@ -2485,6 +2479,14 @@ a {
           left: 70px;
         }
       }
+      .t-detail{
+        .icon-c{
+          margin-top: 10px;
+        }
+        .text{
+          width: 74%;
+        }
+      }
     }
     .bd-intro {
       padding: 30px;
@@ -2551,8 +2553,8 @@ a {
         @extend %clearfix;
       }
       .avatar {
-        width: 85px;
-        height: 85px;
+        width: 80px;
+        height: 80px;
         float: left;
         margin-right: 20px;
         border-radius: 50%;
@@ -4078,12 +4080,12 @@ a {
         color: #ffffff;
         background-image: linear-gradient(270deg, #2365fc 0%, #5286fe 100%);
         box-shadow: 0px 2px 10px 0px rgba(35, 101, 252, 0.25);
+        margin: 0 10px;
       }
       .btn-pause {
         box-shadow: 0px 2px 10px 0px rgba(255, 97, 48, 0.25);
         border: solid 1px #ff5e2c;
         color: #ff5e2c;
-        margin: 0 10px;
         cursor: pointer;
         i {
           width: 8px;
@@ -4654,16 +4656,16 @@ a {
 }
 
 // 11-直播-回放
-.model-hf{
-  .close{
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  z-index: 10;
-  right: 10px;
-  top: 10px;
-  cursor: pointer; 
-  .bg-c_14x14 {
+.model-hf {
+  .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    .bg-c_14x14 {
       width: 14px;
       height: 14px;
       background-position: -376px -159px;
@@ -4676,25 +4678,25 @@ a {
 }
 
 // 04-课程终端-详情页-4
-.mask{
-  .model{
-    .close{
-			width: 30px;
-			height: 30px;
-			position: absolute;
-			z-index: 10;
-			right: 10px;
-			top: 10px;
-			cursor: pointer; 
-			.bg-c_14x14 {
-			    width: 14px;
-			    height: 14px;
-			    background-position: -376px -159px;
-				margin-top: -7px;
-				left: 50%;
-				top: 50%;
-				margin-left: -7px;
-			}
-		}
+.mask {
+  .model {
+    .close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      z-index: 10;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      .bg-c_14x14 {
+        width: 14px;
+        height: 14px;
+        background-position: -376px -159px;
+        margin-top: -7px;
+        left: 50%;
+        top: 50%;
+        margin-left: -7px;
+      }
+    }
   }
 }
