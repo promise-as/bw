@@ -302,22 +302,24 @@ input[type="submit"] {
 						line-height: 36px;
 					}
 					.app-download {
-						width: max-content;
-						padding: 10px 5px 0;
+						display: none;
+						width: 245px;
+						height: 168px;
+						padding: 30px 5px 0;
 						box-sizing: border-box;
 						position: absolute;
-						top: 24px;
+						top: 32px;
 						left: -130%;
 						z-index: 100;
 						text-align: center;
-						display: none;
+						background: url(../images/app-bg.png) no-repeat;
 						div {
-							float: left;
-							padding: 0 5px;
-							color: #fff;
+							@extend %in-b;
+							color: #444444;
+							padding: 0 8px;
 							img {
-								width: 120px;
-								height: 120px;
+								width: 90px;
+								height: 90px;
 							}
 							p{
 								line-height: 30px;

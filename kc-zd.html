@@ -174,17 +174,17 @@
                     <div class="l-explain">
                       <div class="e-row">
                         <i class="row-c"></i>
-                        <a href="" class="row-key">2020年二建管理备考导学班2020年二建管理备考导学班2020年二建管理备考导学班2020年二建管理备考导学班</a>
+                        <a href="javascript:;" class="row-key">2020年二建管理备考导学班2020年二建管理备考导学班2020年二建管理备考导学班2020年二建管理备考导学班</a>
                         <span class="row-val">高清-20分钟00秒</span><i class="row-play"></i>
                       </div>
                       <div class="e-row">
                         <i class="row-c"></i>
-                        <a href="" class="row-key">2020年二建管理备考导学班</a>
+                        <a href="javascript:;" class="row-key">2020年二建管理备考导学班</a>
                         <span class="row-val">高清-20分钟00秒</span><a href="javascript:;" class="row-pause"></a>
                       </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="on">
                     <div class="l-head">
                       <i class="h-icon"></i>
                       <span class="h-text">管理超值精讲套餐</span>
@@ -194,12 +194,12 @@
                     <div class="l-explain">
                       <div class="e-row">
                         <i class="row-c"></i>
-                        <a href="" class="row-key">2020年二建管理备考导学班</a>
+                        <a href="javascript:;" class="row-key">2020年二建管理备考导学班</a>
                         <span class="row-val">高清-20分钟00秒</span><i class="row-play"></i>
                       </div>
                       <div class="e-row">
                         <i class="row-c"></i>
-                        <a href="" class="row-key">2020年二建管理备考导学班</a>
+                        <a href="javascript:;" class="row-key">2020年二建管理备考导学班</a>
                         <span class="row-val">高清-20分钟00秒</span><a href="javascript:;" class="row-pause"></a>
                       </div>
                     </div>
@@ -681,6 +681,15 @@
       threePlyer('.f-second', '.s-head', 's-unfold');
       // 第三层
       threePlyer('.s-three', '.t-head', 't-unfold');
+
+      // 课程终端 课程表
+      $('.l-explain').each(function(){
+        var that = this;
+        $(that).click(function(){
+          $('.l-explain').removeClass('active');
+          $(that).addClass('active');
+        });
+      });
     })
   </script>
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>

@@ -13,7 +13,7 @@ h1, h2, h3, h4, p { *margin-top: 0; }
 
 a { cursor: pointer; }
 
-.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .header .wrap .center .link-box .icon_phone, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt { display: inline-block; *zoom: 1; *display: inline; }
+.header .wrap .center .nav, .header .wrap .center form, .header .wrap .center .link-box, .header .wrap .center .link-box .icon_phone, .header .wrap .center .link-box .icon_phone .app-download div, .footer .xg, .footer .btm .right .ma, .footer .btm .right .p-box, .mask .popup-link, .mask .model .txt, .mask .zg-popup-1 .t-2, .mask .zg-popup-1 .tag-box .tag, .mask .zg-popup-4 .popup-tit, .mask .zg-popup-6 .popup-tit, .mask .zg-popup-4 .zf-msg .l-txt, .mask .zg-popup-6 .zf-msg .l-txt, .mask .zg-popup-4 .zf-msg .r-txt, .mask .zg-popup-6 .zf-msg .r-txt, .modify-address label .l-txt { display: inline-block; *zoom: 1; *display: inline; }
 
 .header .wrap, .header .wrap .center .nav, .header .wrap .center form, .footer .btm, .mask .zg-popup-7 .btn-box, .modify-address .sel-label-box .sel-box { zoom: 1; }
 .header .wrap:after, .header .wrap .center .nav:after, .header .wrap .center form:after, .footer .btm:after, .mask .zg-popup-7 .btn-box:after, .modify-address .sel-label-box .sel-box:after { clear: both; }
@@ -78,9 +78,9 @@ input[type="submit"] { border: none; }
 .header .wrap .center .link-box a:hover { color: #2754df; }
 .header .wrap .center .link-box .icon_phone { position: relative; padding-left: 18px; margin-left: 30px; cursor: pointer; }
 .header .wrap .center .link-box .icon_phone .phone-text { line-height: 36px; }
-.header .wrap .center .link-box .icon_phone .app-download { width: max-content; padding: 10px 5px 0; box-sizing: border-box; position: absolute; top: 24px; left: -130%; z-index: 100; text-align: center; display: none; }
-.header .wrap .center .link-box .icon_phone .app-download div { float: left; padding: 0 5px; color: #fff; }
-.header .wrap .center .link-box .icon_phone .app-download div img { width: 120px; height: 120px; }
+.header .wrap .center .link-box .icon_phone .app-download { display: none; width: 245px; height: 168px; padding: 30px 5px 0; box-sizing: border-box; position: absolute; top: 32px; left: -130%; z-index: 100; text-align: center; background: url(../images/app-bg.png) no-repeat; }
+.header .wrap .center .link-box .icon_phone .app-download div { color: #444444; padding: 0 8px; }
+.header .wrap .center .link-box .icon_phone .app-download div img { width: 90px; height: 90px; }
 .header .wrap .center .link-box .icon_phone .app-download div p { line-height: 30px; }
 .header .wrap .center .link-box .icon_phone:hover { color: #2754df; }
 .header .wrap .right { float: right; padding-top: 8px; }
