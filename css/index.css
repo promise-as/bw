@@ -333,8 +333,14 @@ input { text-indent: 1em; }
 .bw-post .cont-r .r-detail .d-item { display: none; }
 .bw-post .cont-r .r-detail .d-item.on { display: block; }
 .bw-post .cont-r .r-detail li a { width: 96%; }
+.bw-post .cont-r .r-detail .pointer { text-align: center; font-size: 16px; }
+.bw-post .cont-r .r-detail .pointer .prev, .bw-post .cont-r .r-detail .pointer .next { width: 25px; height: 25px; cursor: pointer; margin: 0 4px; }
+.bw-post .cont-r .r-detail .pointer .prev { background: url(../images/l_nor.png) no-repeat; }
+.bw-post .cont-r .r-detail .pointer .prev:hover { background: url(../images/l_sel.png) no-repeat; }
+.bw-post .cont-r .r-detail .pointer .next { background: url(../images/r_nor.png) no-repeat; }
+.bw-post .cont-r .r-detail .pointer .next:hover { background: url(../images/r_sel.png) no-repeat; }
 .bw-post .cont-r .news ul { padding-top: 20px; }
-.bw-post .cont-r .icon-list { border-bottom: 1px solid #ededed; padding: 14px 0; }
+.bw-post .cont-r .icon-list { border-bottom: 1px solid #ededed; padding: 13px 0; }
 .bw-post .cont-r .icon-list:last-child { border-bottom: none; }
 .bw-post .cont-r .icon-list i { width: 11px; height: 12px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -431px -302px; float: left; margin-top: 7px; }
 .bw-post .cont-r .icon-list .list-r { float: left; width: 94%; line-height: 22px; }
