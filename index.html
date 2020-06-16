@@ -1503,7 +1503,7 @@
   </script>
 
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     var _echatServer = ['v.rainbowred.com'];
     window._echat = window._echat || function () { (_echat.q = _echat.q || []).push(arguments) }; _echat.l = +new Date;
     _echat('initParam', { companyId: 378 });
@@ -1516,6 +1516,7 @@
       echat.setAttribute('charset', 'UTF-8');
       echat.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'vs.rainbowred.com/visitor/echat.js';
       var s = document.getElementsByTagName('script')[0];
+      console.log(s.parentNode, echat, 111);
       s.parentNode.insertBefore(echat, s);
     })();
     function ECHATCustomMiniChat(echatTag, visEvt, lan, metaData, myData, routeEntranceId) {
@@ -1528,7 +1529,7 @@
       routeEntranceId && (customObj.routeEntranceId = routeEntranceId);
       ECHAT.customMiniChat(customObj);
     }
-  </script> -->
+  </script>
 </body>
 
 </html>
