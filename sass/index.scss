@@ -4496,6 +4496,13 @@ input {
   left: 62%;
   top: 0;
 }
+// 要适应 1366 x 768
+@media screen and (max-width: 1366px){
+  .suspend{
+    left: 66.8%;
+  }
+}
+
 
 .kczd-cont {
   .qjwt {

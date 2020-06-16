@@ -1122,6 +1122,7 @@ input { text-indent: 1em; }
 
 .suspend { position: fixed; left: 62%; top: 0; }
 
+@media screen and (max-width: 1366px) { .suspend { left: 66.8%; } }
 .kczd-cont .qjwt { height: 336px; }
 .kczd-cont .kctj { height: 456px; }
 
