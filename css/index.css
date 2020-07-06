@@ -1027,6 +1027,7 @@ input { text-indent: 1em; }
 .exercise-terminal .zt-item li.error-answer span { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -53px; }
 .exercise-terminal .zt-item li.right-answer span { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -388px -137px; }
 .exercise-terminal .zt-item li.miss-answer span { background: #ffb800; color: #fff; border: none; }
+.exercise-terminal .zt-item li .small-img { max-width: 99%; margin-top: 0; margin-left: 35px; }
 .exercise-terminal .zt-item .zt-collect { text-align: right; }
 .exercise-terminal .zt-item .zt-collect i { width: 18px; height: 18px; background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -146px -330px; margin-right: 4px; cursor: pointer; }
 .exercise-terminal .zt-item .zt-collect.on i { background: url("https://img.thea.cn/public/platform/thea/202004/hbj/bw/images/sprites.png") -184px -330px; }
@@ -1171,5 +1172,11 @@ input { text-indent: 1em; }
 .mask .bw-btn { font-size: 16px; padding: 0 26px; height: 40px; line-height: 40px; border-radius: 20px; color: #fff; box-shadow: 0px 3px 35px 0px rgba(255, 98, 49, 0.35); margin-left: 20px; }
 
 .bd-timetable .l-explain.active .row-key { color: #3969fd; }
+
+.small-img { margin-top: 10px; margin-left: 25px; cursor: pointer; }
+
+.big-img { display: none; width: 100%; height: 100%; position: fixed; z-index: 100; left: 0; top: 0; background: url(../images/mask.png); text-align: center; }
+.big-img .img-cont { width: 90%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.big-img .img-cont .close { width: 14px; height: 14px; position: absolute; right: 20px; top: 20px; z-index: 10; cursor: pointer; background: url(../images/css_sprites.png) -376px -159px; }
 
 /*# sourceMappingURL=index.css.map */

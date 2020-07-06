@@ -602,24 +602,25 @@ input {
           @extend %one;
         }
       }
-      .pointer{
+      .pointer {
         text-align: center;
         font-size: 16px;
-        .prev, .next{
+        .prev,
+        .next {
           width: 25px;
           height: 25px;
           cursor: pointer;
           margin: 0 4px;
         }
-        .prev{
+        .prev {
           background: url(../images/l_nor.png) no-repeat;
-          &:hover{
+          &:hover {
             background: url(../images/l_sel.png) no-repeat;
           }
         }
-        .next{
+        .next {
           background: url(../images/r_nor.png) no-repeat;
-          &:hover{
+          &:hover {
             background: url(../images/r_sel.png) no-repeat;
           }
         }
@@ -3998,6 +3999,12 @@ input {
           border: none;
         }
       }
+      // 小图片
+      .small-img {
+        max-width: 99%;
+        margin-top: 0;
+        margin-left: 35px;
+      }
     }
     .zt-collect {
       text-align: right;
@@ -4497,12 +4504,11 @@ input {
   top: 0;
 }
 // 要适应 1366 x 768
-@media screen and (max-width: 1366px){
-  .suspend{
+@media screen and (max-width: 1366px) {
+  .suspend {
     left: 66.8%;
   }
 }
-
 
 .kczd-cont {
   .qjwt {
@@ -4760,6 +4766,41 @@ input {
       .row-key {
         color: #3969fd;
       }
+    }
+  }
+}
+
+// 题目中有图片
+.small-img {
+  margin-top: 10px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.big-img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background: url(../images/mask.png);
+  text-align: center;
+  .img-cont {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .close {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 10;
+      cursor: pointer;
+      background: url(../images/css_sprites.png) -376px -159px;
     }
   }
 }
